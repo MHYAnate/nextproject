@@ -1,0 +1,106 @@
+.cover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 7vh;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 30vw;
+  padding-top: 1.2%;
+  background-color: silver;
+}
+.ilud{
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+}
+.ilinkupdirect{
+  text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px white;
+  font-size: 0.7em;
+  font-weight: bold;
+  background-color: white;
+  width: 25vw;
+  text-align: center;
+}
+.mix{
+  margin-left: -1.7vw;
+}
+@media screen and (max-width: 1120px){
+  .ilinkupdirect{
+    text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px white;
+    font-size: 0.544em;
+    font-weight: bold;
+    background-color: white;
+    width: 25vw;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 620px){
+  .mix{
+    margin-left: -5.7%;
+  }
+  .ilud{
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+}
+}
+@media screen and (min-width: 420px){
+  .mix{
+    margin-left: -5.7%;
+  }
+}
+@media screen and (min-width: 520px){
+  .mix{
+    margin-left: -3.7%;
+  }
+}
+@media screen and (min-width: 620px){
+  .mix{
+    margin-left: -2.7%;
+  } 
+  .cover{
+    padding-top: 0.7%;
+  }
+  .ilud{
+    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 820px){
+  .mix{
+    margin-left: -2.2%;
+  } 
+}
+@media screen and (min-width: 1020px){
+  .mix{
+    margin-left: -2.2%;
+  } 
+  .cover{
+    padding-top: 0.3%;
+  }
+}
+@media screen and (min-width: 1400px){
+  .mix{
+    margin-left: -1.5%;
+  } 
+}
