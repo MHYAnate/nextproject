@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CarouselProps {
 	items: {
@@ -45,10 +46,13 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
 		<div className={styles.parent}>
 			<div className={styles.imgform}>
 				<div className={styles.imgcontainer}>
-					<img
+					<Image
+					  width={500}
+					  height={500}
 						className={styles.img}
 						src={items[activeIndex].img}
 						alt="Picture"
+						priority={true}
 					/>
 				</div>
 				<button className={styles.linkBtn}>

@@ -6,7 +6,6 @@ import { Services } from "@/features/addCarousel/data";
 import InCarousel from "@/features/addCarousel/ad1";
 import Iludfooter from "@/features/iludfooter/iludfooter";
 import AboutContainer from "@/features/aboutUs/about";
-import Ai from "@/features/ai-ts/aiBtn";
 import ContactUsBtn from "@/features/contactUs/contactUsBtn";
 import UserBtn from "@/features/frontUserBtn/userBtnContainer";
 
@@ -30,7 +29,7 @@ export default function Home() {
 				<div className={styles.footer}>
 					<div className={styles.contactUs}>
 						<div className={styles.ask_ai}>
-							<Ai />
+							
 						</div>
 						<div className={styles.copyRight}>
 							<Iludfooter />
