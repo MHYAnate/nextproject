@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import styles from "./styles.module.css";
-import App from "../forms/reUsePin";
 import VendorSignUp from "../forms/vendorSignUp";
 
 interface post {

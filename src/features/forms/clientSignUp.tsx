@@ -155,7 +155,7 @@ export default function ClientSignUp() {
 				setFocus("passCode3");
 			}
 		}
-	}, [setFocus, check0, check1, check2, check3]);
+	}, [setFocus, check0, check1, check2, check3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId]);
 
 	React.useEffect(() => {
 		if (
@@ -210,7 +210,7 @@ export default function ClientSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUp as any); // Add 'as any' to cast the type
 		};
-	}, [check0, check1, check2, check3, isDirty, setFocus]);
+	}, [check0, check1, check2, check3,isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
 	React.useEffect(() => {
 		const onKeyUpV = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -242,7 +242,7 @@ export default function ClientSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
 		};
-	}, [checkV0, checkV1, checkV2, checkV3, isDirty, setFocus]);
+	}, [checkV0, checkV1, checkV2, checkV3,isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -275,7 +275,7 @@ export default function ClientSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUp as any); // Add 'as any' to cast the type
 		};
-	}, [check0, check1, check2, check3, isDirty, setFocus]);
+	}, [check0, check1, check2, check3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
 	React.useEffect(() => {
 		const onKeyUpV = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -308,11 +308,11 @@ export default function ClientSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
 		};
-	}, [checkV0, checkV1, checkV2, checkV3, isDirty, setFocus]);
+	}, [checkV0, checkV1, checkV2, checkV3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
 	React.useEffect(() => {
 		setValue("pinCode", pinCode);
-	}, [checkV0, checkV1, checkV2, checkV3, isDirty, setFocus]);
+	}, [setValue,pinCode]);
 
   async function SignUp(userData: UserData) {
 		let result: any = null;

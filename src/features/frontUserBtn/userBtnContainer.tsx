@@ -33,7 +33,7 @@ export default function UserBtn() {
             onClick={() =>tab === 'Existing' ? selectTab(''):selectTab('Existing')}
           >
             <span className={tab === 'Existing'?styles.tabSpan2:styles.tabSpan1}>
-            Existing_User's
+            Existing_User&apos;s
            </span>
           </TabButton>
         </div>
@@ -42,7 +42,7 @@ export default function UserBtn() {
             onClick={() =>tab === 'New' ? selectTab(''):selectTab('New')}
           >
              <span className={tab === 'New'?styles.tabSpan2:styles.tabSpan1}>
-              New_User's
+              New_User&apos;s
             </span>
           </TabButton>
         </div>

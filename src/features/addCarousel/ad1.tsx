@@ -40,7 +40,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 
 	const inIntervalTime = useMemo(() => {
 		return 1500;
-	}, [activeIndex, Services]);
+	}, []);
 
 	const serviceImage = useMemo(() => {
 		return Services[activeIndex].services[inneractiveIndex]?.src;
@@ -56,7 +56,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		}, intervalTime);
 
 		return () => clearInterval(interval);
-	}, [intervalTime]);
+	}, [intervalTime, handleNext]);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -64,7 +64,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		}, inIntervalTime);
 
 		return () => clearInterval(interval);
-	}, [inIntervalTime, [serviceTitle, serviceImage]]);
+	}, [inIntervalTime,inhandleNext, serviceTitle, serviceImage]);
 
 	return (
 		<div className={styles.parent}>
@@ -177,4 +177,5 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		</div>
 	);
 });
+InCarousel.displayName='InCarousel';
 export default InCarousel;

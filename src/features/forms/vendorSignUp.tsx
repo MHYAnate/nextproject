@@ -120,7 +120,7 @@ export default function VendorSignUp() {
 				setFocus("passCode3");
 			}
 		}
-	}, [setFocus, check0, check1, check2, check3]);
+	}, [setFocus, check0, check1, check2, check3,isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId]);
 
   React.useEffect(() => {
 		if (isDirty &&document.activeElement !== userNameId &&
@@ -139,7 +139,7 @@ export default function VendorSignUp() {
 				setFocus("passCodeV3");
 			}
 		}
-	}, [setFocus, checkV0, checkV1, checkV2, checkV3]);
+	}, [setFocus, checkV0, checkV1, checkV2, checkV3,isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId]);
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -168,7 +168,7 @@ export default function VendorSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUp as any); // Add 'as any' to cast the type
 		};
-	}, [check0, check1, check2, check3, isDirty, setFocus]); 
+	}, [check0, check1, check2, check3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]); 
 
   React.useEffect(() => {
 		const onKeyUpV = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -197,7 +197,7 @@ export default function VendorSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
 		};
-	}, [checkV0, checkV1, checkV2, checkV3, isDirty, setFocus]);
+	}, [checkV0, checkV1, checkV2, checkV3,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
 
 	React.useEffect(()=>{
@@ -226,7 +226,7 @@ export default function VendorSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUp as any); // Add 'as any' to cast the type
 		};
-	}, [check0, check1, check2, check3, isDirty, setFocus]);
+	}, [check0, check1, check2, check3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
   React.useEffect(()=>{
 		const onKeyUpV = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -254,7 +254,7 @@ export default function VendorSignUp() {
 		return () => {
 			window.removeEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
 		};
-	}, [checkV0, checkV1, checkV2, checkV3, isDirty, setFocus]);
+	}, [checkV0, checkV1, checkV2, checkV3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId, setFocus]);
 
 
 	const autoCategory = Services.find(
@@ -306,7 +306,7 @@ export default function VendorSignUp() {
 
 	React.useEffect(()=>{
 		setValue("pinCode", pinCode)
-	},[checkV0, checkV1, checkV2, checkV3, isDirty, setFocus])
+	},[setValue,pinCode])
 
 	return (
 		<div className={styles.formContainer}>

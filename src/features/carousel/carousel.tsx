@@ -38,7 +38,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
 		}, 3000);
 
 		return () => clearInterval(interval);
-	}, []);
+	}, [handleNext]);
 
 	const star = items[activeIndex].like - items[activeIndex].dislike;
 

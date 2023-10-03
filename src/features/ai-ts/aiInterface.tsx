@@ -129,7 +129,7 @@ const AiInterface: React.FC = () => {
         nodeStop?.removeEventListener("click", handleStopClick);
       }
 		};
-	}, []);
+	}, [generate, handleStopClick]);
 
 
 	return (

@@ -69,7 +69,7 @@ export default function VendorLogIn() {
 				setFocus("passCode3");
 			}
 		}
-	}, [setFocus, check0, check1, check2, check3]);
+	}, [setFocus, check0, check1, check2, check3, isDirty]);
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {

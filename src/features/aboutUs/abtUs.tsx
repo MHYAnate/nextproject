@@ -309,4 +309,6 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 	);
 };
 
+AboutTab.displayName ='AboutTab';
+
 export default AboutTab;
