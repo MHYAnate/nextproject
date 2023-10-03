@@ -149,15 +149,14 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn1} className={styles.tabHolder}>
-						<picture>
-							<source srcSet={autoCategory?.src} type="image/avif" />
-							<source srcSet={autoCategory?.src} type="image/webp" />
-							<img
-								className={styles.img1}
-								src={autoCategory?.src}
-								alt={autoCategory?.category}
-							/>
-						</picture>
+						<Image
+							className={styles.img1}
+							src={autoCategory ? autoCategory.src : ""}
+							alt={autoCategory ? autoCategory.category : ""}
+							width={500}
+							height={500}
+							unoptimized
+						/>
 						{autoCategory?.category}
 						<div className={styles.chevron}>
 							{btnVisible1 ? (
