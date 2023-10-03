@@ -178,7 +178,7 @@ export default function ClientSignUp() {
 				setFocus("passCodeV3");
 			}
 		}
-	}, [setFocus, checkV0, checkV1, checkV2, checkV3]);
+	}, [setFocus, checkV0, checkV1, checkV2, checkV3, isDirty,userAddressId, userNameId,mobileNumberId,mobileNumberVId]);
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {

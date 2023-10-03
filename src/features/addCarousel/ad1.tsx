@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, memo } from "react";
+import React, { useState, useEffect, useMemo, memo, useCallback } from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
@@ -20,19 +20,19 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [inneractiveIndex, setInnerActiveIndex] = useState(0);
 
-	const handleNext = () => {
+	const handleNext = useCallback( () => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === Services.length - 1 ? 0 : prevIndex + 1
 		);
-	};
+	},[activeIndex, setActiveIndex]);
 
-	const inhandleNext = () => {
+	const inhandleNext = useCallback(() => {
 		setInnerActiveIndex((prevIndex) =>
 			prevIndex === Services[activeIndex].services.length - 1
 				? 0
 				: prevIndex + 1
 		);
-	};
+	},[inneractiveIndex,setInnerActiveIndex]);
 
 	const intervalTime = useMemo(() => {
 		return 1555 * Services[activeIndex].services.length - 1;

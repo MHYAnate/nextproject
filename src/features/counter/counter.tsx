@@ -1,11 +1,12 @@
 "use client"
 import React from 'react'
-import type { RootState } from '../../app/store'
+// import type { RootState } from '../../app/store'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './counterSlice'
+//any meant to be rootstate
 
 export function Counter() {
-  const count = useSelector((state: RootState) => state.counter.value)
+  const count = useSelector((state: any ) => state.counter.value)
   const dispatch = useDispatch()
 
   return (

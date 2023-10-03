@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,11 +20,11 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
 
 	const [activeIndex, setActiveIndex] = useState(0);
   
-	const handleNext = () => {
+	const handleNext = useCallback( () => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === items.length - 1 ? 0 : prevIndex + 1
 		);
-	};
+	},[setActiveIndex,activeIndex]);
 
 	const handlePrev = () => {
 		setActiveIndex((prevIndex) =>

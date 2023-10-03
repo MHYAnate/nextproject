@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState,useCallback } from "react";
 import styles from "./styles.module.css";
 
 const AiInterface: React.FC = () => {
@@ -25,17 +25,17 @@ const AiInterface: React.FC = () => {
 		setBtnVisible((prevBtnVisible) => !prevBtnVisible);
 	};
 
-  const handleStopClick = () => {
+  const handleStopClick = useCallback(() => {
     if (controller) {
       controller.abort(); // Abort the ongoing fetch request
       controller = null; // Reset the controller
       resultTest.current= null
     }
-  };
+  },[controller]);
 
  
 
-	const generate = async (): Promise<void> => {
+	const generate = useCallback( async (): Promise<void> => {
    if(!promtInput.current?.value) {
     alert("please enter a prompt.")
    }
@@ -84,7 +84,7 @@ const AiInterface: React.FC = () => {
 		} finally {
       controller.abort();
     }
-	};
+	},[controller,resultTest,startBtn,promtInput]);
 
 	useEffect(() => {
 		const nodeInput = promtInput.current;

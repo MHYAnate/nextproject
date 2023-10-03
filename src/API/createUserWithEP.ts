@@ -1,6 +1,6 @@
 'use client'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { app } from "@/firebase/client";
+import { firebaseConfig } from "@/firebase/client";
 import { storage } from "@/firebase/client";
 import { database } from "@/firebase/client";
 import { useRouter } from 'next/router';
@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 
 function Firebase() {
   return {
-    auth: getAuth(app),
+    auth: getAuth(firebaseConfig),
     storage,
     database,
   };
