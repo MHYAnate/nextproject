@@ -1,5 +1,5 @@
 import React, { useState, memo, useTransition } from "react";
-
+import Image from "next/image";
 import styles from "./styles.module.css";
 import { TabButton } from "./aboutBtn";
 
@@ -77,7 +77,14 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		return autoCategory.services.map((service) => (
 			<div className={styles.renderCover} key={service.id}>
 				{/* You can display the service name, image, or any other information you need */}
-				<img className={styles.img} src={service.src} alt={service.name} />
+				<Image
+					className={styles.img}
+					src={service.src}
+					alt={service.name}
+					width={500}
+					height={500}
+					unoptimized
+				/>
 				<p>{service.name}</p>
 			</div>
 		));
@@ -92,7 +99,14 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		return maintenanceCategory.services.map((service) => (
 			<div className={styles.renderCover} key={service.id}>
 				{/* You can display the service name, image, or any other information you need */}
-				<img className={styles.img} src={service.src} alt={service.name} />
+				<Image
+					className={styles.img}
+					src={service.src}
+					alt={service.name}
+					width={500}
+					height={500}
+					unoptimized
+				/>
 				<p>{service.name}</p>
 			</div>
 		));
@@ -107,7 +121,14 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		return personalCategory.services.map((service) => (
 			<div className={styles.renderCover} key={service.id}>
 				{/* You can display the service name, image, or any other information you need */}
-				<img className={styles.img} src={service.src} alt={service.name} />
+				<Image
+					className={styles.img}
+					src={service.src}
+					alt={service.name}
+					width={500}
+					height={500}
+					unoptimized
+				/>
 				<p>{service.name}</p>
 			</div>
 		));
@@ -128,11 +149,15 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn1} className={styles.tabHolder}>
-						<img
-							className={styles.img1}
-							src={autoCategory?.src}
-							alt={autoCategory?.category}
-						/>
+						<picture>
+							<source srcSet={autoCategory?.src} type="image/avif" />
+							<source srcSet={autoCategory?.src} type="image/webp" />
+							<img
+								className={styles.img1}
+								src={autoCategory?.src}
+								alt={autoCategory?.category}
+							/>
+						</picture>
 						{autoCategory?.category}
 						<div className={styles.chevron}>
 							{btnVisible1 ? (
