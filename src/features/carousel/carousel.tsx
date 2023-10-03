@@ -24,7 +24,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === items.length - 1 ? 0 : prevIndex + 1
 		);
-	},[setActiveIndex,activeIndex]);
+	},[setActiveIndex,activeIndex, items.length]);
 
 	const handlePrev = () => {
 		setActiveIndex((prevIndex) =>

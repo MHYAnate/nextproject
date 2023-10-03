@@ -24,7 +24,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === Services.length - 1 ? 0 : prevIndex + 1
 		);
-	},[activeIndex, setActiveIndex]);
+	},[activeIndex, setActiveIndex, Services.length]);
 
 	const inhandleNext = useCallback(() => {
 		setInnerActiveIndex((prevIndex) =>
@@ -32,7 +32,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 				? 0
 				: prevIndex + 1
 		);
-	},[inneractiveIndex,setInnerActiveIndex]);
+	},[inneractiveIndex,setInnerActiveIndex, Services, activeIndex]);
 
 	const intervalTime = useMemo(() => {
 		return 1555 * Services[activeIndex].services.length - 1;

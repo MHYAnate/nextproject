@@ -21,11 +21,14 @@ const AiInterface: React.FC = () => {
 
   let controller: AbortController | null = null; // AbortController instance
 
+	const controllerRef = useRef<AbortController | null>(null);
+
 	const handleToggleBtn = () => {
 		setBtnVisible((prevBtnVisible) => !prevBtnVisible);
 	};
 
   const handleStopClick = useCallback(() => {
+		controllerRef.current = controller;
     if (controller) {
       controller.abort(); // Abort the ongoing fetch request
       controller = null; // Reset the controller
@@ -33,15 +36,13 @@ const AiInterface: React.FC = () => {
     }
   },[controller]);
 
- 
-
 	const generate = useCallback( async (): Promise<void> => {
    if(!promtInput.current?.value) {
     alert("please enter a prompt.")
    }
 
    if(startBtn.current){
-   startBtn.current?.disabled 
+   startBtn.current.disabled 
   }
 
   if(resultTest.current){
