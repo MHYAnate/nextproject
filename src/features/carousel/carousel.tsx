@@ -53,6 +53,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
 						src={items[activeIndex].img}
 						alt="Picture"
 						priority={true}
+						unoptimized
 					/>
 				</div>
 				<button className={styles.linkBtn}>

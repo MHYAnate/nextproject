@@ -89,6 +89,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 							height={500}
 							src={Services[activeIndex].src}
               priority={true}
+              unoptimized
 						/>
 					</div>
 				</div>
@@ -108,6 +109,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								height={500}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
                 priority={true}
+                unoptimized
 							/>
 						</div>
 						<div className={styles.back}>
@@ -119,6 +121,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								height={500}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
                 priority={true}
+                unoptimized
 							/>
 						</div>
 						<div className={styles.right}>
@@ -130,6 +133,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								height={500}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
                 priority={true}
+                unoptimized
 							/>
 						</div>
 						<div className={styles.left}>
@@ -141,6 +145,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								height={500}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
                 priority={true}
+                unoptimized
 							/>
 						</div>
 						<div className={styles.top}>
@@ -152,6 +157,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								height={500}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
                 priority={true}
+                unoptimized
 							/>
 						</div>
 						<div className={styles.bottom}>
@@ -162,7 +168,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								width={500}
 								height={500}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                
+                unoptimized
 							/>
 						</div>
 					</div>
