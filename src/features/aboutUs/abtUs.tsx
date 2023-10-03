@@ -203,10 +203,13 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn2} className={styles.tabHolder}>
-						<img
+						<Image
 							className={styles.img1}
-							src={maintenanceCategory?.src}
-							alt={maintenanceCategory?.category}
+							src={maintenanceCategory?maintenanceCategory.src:""}
+							alt={maintenanceCategory?maintenanceCategory.category:""}
+							width={500}
+							height={500}
+							unoptimized
 						/>
 						{maintenanceCategory?.category}
 						<div className={styles.chevron}>
@@ -254,10 +257,13 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn3} className={styles.tabHolder}>
-						<img
+						<Image
 							className={styles.img1}
-							src={personalCategory?.src}
-							alt={personalCategory?.category}
+							src={personalCategory?personalCategory.src:""}
+							alt={personalCategory?personalCategory.category:""}
+							width={500}
+							height={500}
+							unoptimized
 						/>
 						{personalCategory?.category}
 						<div className={styles.chevron}>
