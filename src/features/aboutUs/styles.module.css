@@ -130,5 +130,6 @@
 }
 .tabin{
   display: flex;
+  align-items: center;
 }
 
