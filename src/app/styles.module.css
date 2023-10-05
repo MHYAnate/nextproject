@@ -11,13 +11,13 @@
 }
 
 .nav{
-  width: 66vw;
+  width: 95vw;
   height: 7vh;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   padding-right: 1%;
 }
 
@@ -93,4 +93,13 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+}
+.ilud{
+
+  height: 7vh;
+  width: 20vw;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: black;
+  display: flex;
+  align-items: center;
 }

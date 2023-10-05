@@ -4,15 +4,17 @@
   align-items: center;
   justify-content: center;
 	height: 5svh;
-  width: 30dvw;
+  width: 33dvw;
   background-color: black;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 black, 0 1.5px 5px 0 white;
+ margin-left: -15vw;
 }
 
 .contact{
   position: fixed;
-  margin-bottom: 11svh;
+  margin-top: 11svh;
+  font-size: smaller;
 }
 
 
@@ -26,6 +28,7 @@
   align-items: center;
   text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
   font-weight: bold;
+  font-size: smaller;
   padding-left: 0.5dvw;
 }
 

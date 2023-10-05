@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-const Iludfooter = () => {
+const Iludlogo = () => {
 	return (
 		<>
 			<div className={styles.contain}>
@@ -40,4 +40,4 @@ const Iludfooter = () => {
 	);
 };
 
-export default Iludfooter;
+export default Iludlogo;

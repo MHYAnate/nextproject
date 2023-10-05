@@ -25,6 +25,7 @@
   height: 5.5vh;
   width: 30vw;
   background-color: rgb(243 244 246);
+  margin-left: -7vw;
 }
 
 .ServiceClick{
@@ -77,16 +78,20 @@
 .abtSvg{
   width: 8dvw;
   height: 3.5svh;
+  color: black;
 }
 .span{
   margin-right: 0.5dvw;
   font-size: small;
+  margin-top: 0.4vh;
+  color: black;
 }
 .aims{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 2dvw;
   font-weight: 100;
   font-size: 0.7em;
+  color: black;
 }
 .tabCover{
   margin-top: 1svh;
@@ -97,6 +102,7 @@
   display: flex;
   align-items: center;
   width: 90dvw;
+  justify-content: space-between;
 }
 .tabControl{
   max-height: 50svh;
@@ -110,16 +116,19 @@
 .svg1{
   width: 11dvw;
   height: 4svh;
-  margin-left: 10dvw;
 }
 .svg2{
   width: 10dvw;
   height: 4svh;
-  margin-left: 8dvw;
 }
 .svg3{
   width: 10dvw;
   height: 4svh;
-  margin-left: 18dvw;
+}
+.sname{
+  color: black;
+}
+.tabin{
+  display: flex;
 }
 

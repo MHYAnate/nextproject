@@ -85,7 +85,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					height={500}
 					unoptimized
 				/>
-				<p>{service.name}</p>
+				<p className={styles.sname}>{service.name}</p>
 			</div>
 		));
 	}
@@ -107,7 +107,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					height={500}
 					unoptimized
 				/>
-				<p>{service.name}</p>
+				<p className={styles.sname}>{service.name}</p>
 			</div>
 		));
 	}
@@ -129,7 +129,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					height={500}
 					unoptimized
 				/>
-				<p>{service.name}</p>
+				<p className={styles.sname}>{service.name}</p>
 			</div>
 		));
 	}
@@ -149,6 +149,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn1} className={styles.tabHolder}>
+						<div  className={styles.tabin}>
 						<Image
 							className={styles.img1}
 							src={autoCategory ? autoCategory.src : ""}
@@ -158,6 +159,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 							unoptimized
 						/>
 						{autoCategory?.category}
+						</div>
 						<div className={styles.chevron}>
 							{btnVisible1 ? (
 								<svg
@@ -203,6 +205,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn2} className={styles.tabHolder}>
+						<div className={styles.tabin}>
 						<Image
 							className={styles.img1}
 							src={maintenanceCategory?maintenanceCategory.src:""}
@@ -212,6 +215,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 							unoptimized
 						/>
 						{maintenanceCategory?.category}
+						</div>
 						<div className={styles.chevron}>
 							{btnVisible2 ? (
 								<svg
@@ -257,6 +261,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					<div onClick={handleToggleBtn3} className={styles.tabHolder}>
+						<div  className={styles.tabin}>
 						<Image
 							className={styles.img1}
 							src={personalCategory?personalCategory.src:""}
@@ -266,6 +271,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 							unoptimized
 						/>
 						{personalCategory?.category}
+						</div>
 						<div className={styles.chevron}>
 							{btnVisible3 ? (
 								<svg
