@@ -143,6 +143,7 @@
   display: flex;
   padding-left: 3.5%;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: black;
 }
 
 
@@ -151,8 +152,8 @@
   width: 10dvw;
   height: 4svh;
   color: black;
-  box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
   border-radius: 1svh;
+	border: 1px solid silver;
 }
 
 .img1{
