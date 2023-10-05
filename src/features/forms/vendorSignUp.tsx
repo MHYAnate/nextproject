@@ -386,7 +386,7 @@ export default function VendorSignUp() {
 							</select>
 						</div>
 						<div>
-							<select className={styles.select} {...register("selectFieldOption")}>
+							<select className={styles.selectOp} {...register("selectFieldOption")}>
 								{check4 === "Automotive" && renderAutomotiveServices()}
 								{check4 === "Maintenance" && renderMaintenance1Services()}
 								{check4 === "Personal" && renderPersonalServices()}
