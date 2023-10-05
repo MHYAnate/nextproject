@@ -194,27 +194,27 @@
 	}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 313px) {
 	.front {
-		transform: translateZ(49.5px);
+		transform: translateZ(59.5px);
 	}
 
 	.back {
-		transform: rotateY(180deg) translateZ(49.5px);
+		transform: rotateY(180deg) translateZ(59.5px);
 	}
 
 	.right {
-		transform: rotateY(90deg) translateZ(49.5px);
+		transform: rotateY(90deg) translateZ(59.5px);
 	}
 	.left {
-		transform: rotateY(-90deg) translateZ(49.5px);
+		transform: rotateY(-90deg) translateZ(59.5px);
 	}
 
 	.top {
-		transform: rotateX(90deg) translateZ(49.5px);
+		transform: rotateX(90deg) translateZ(59.5px);
 	}
 
 	.bottom {
-		transform: rotateX(-90deg) translateZ(49.5px);
+		transform: rotateX(-90deg) translateZ(59.5px);
 	}
 }
