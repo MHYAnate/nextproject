@@ -17,10 +17,7 @@ export default function Home() {
 				<div className={styles.header}>
 					<div className={styles.nav}>
 						<AboutContainer />
-            <div>
-              <ContactUsBtn />
-            </div>
-						<Iludlogo />
+            <ContactUsBtn/>
 					</div>
 				</div>
 				<div>

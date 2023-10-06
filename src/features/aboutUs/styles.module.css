@@ -18,14 +18,11 @@
 
 .click{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  border: 1px solid silver;
   border-radius: 3%;
   height: 5.5vh;
-  width: 30vw;
-  background-color: rgb(243 244 246);
-  margin-left: -7vw;
+  width: 65vw;
+  border-radius: 3px;
 }
 
 .ServiceClick{
@@ -74,18 +71,32 @@
   align-items: center;
   padding-top: 0.5svh;
   font-weight: bold;
-  padding-top: 0.5vh;
+  background-color: rgb(194, 255, 194);
+  border: 1px solid  rgb(194, 255, 194);
+  width: 65vw;
+  border-radius: 3px;
+  color: black;
+}
+
+.tabBtnclicked{
+  display: flex;
+  align-items: center;
+  padding-top: 0.5svh;
+  font-weight: bold;
+  background-color: lime;
+  border: 2px solid lime;
+  width: 65vw;
+  border-radius: 3px;
+  color: white;
 }
 .abtSvg{
   width: 8dvw;
   height: 3.5svh;
-  color: black;
 }
 .span{
-  margin-right: 0.5dvw;
-  font-size: small;
+  font-size: smaller;
   margin-top: 0.4vh;
-  color: black;
+  padding-bottom: 0.7vh;
 }
 .aims{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -133,4 +144,6 @@
   display: flex;
   align-items: center;
 }
+
+
 

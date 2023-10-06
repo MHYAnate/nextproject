@@ -4,11 +4,8 @@
   align-items: center;
   justify-content: center;
 	height: 5svh;
-  width: 33dvw;
-  background-color: black;
+  width: 27vw;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 black, 0 1.5px 5px 0 white;
- margin-left: -15vw;
 }
 
 .contact{
@@ -21,7 +18,9 @@
 .contactBtn {
 	display: flex;
 	color: white;
-  background-color: black;
+  background-color:rgb(194, 255, 194);
+  border: 1px solid  rgb(194, 255, 194);
+  width: 27vw;
   height: 5svh;
   display: flex;
   justify-content: center;
@@ -51,8 +50,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33dvw;
-  background-color: black;
+  width: 32vw;
+  background-color: lime;
   color: white;
 }
 
