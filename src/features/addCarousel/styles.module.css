@@ -6,7 +6,7 @@
 	height: 27vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-top: 0.333%;
-	background-color: white;
+	background-color: lime;
 }
 .titleCard {
 	width: 100vw;
@@ -20,19 +20,39 @@
 }
 .titleSpan1 {
 	font-size: 0.7em;
-	font-weight: bold;
-	color: black;
+	font-weight: bolder;
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 }
 .titleSpan {
-	font-size: 0.5em;
+	font-size: 1.2em;
 	font-weight: bold;
-	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	color: white;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+}
+.titleCover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4vh;
+	width: 44vw;
+	background-color: lime;
+	border-top-right-radius: 3px;
+}
+.titleCover1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4vh;
+	width: 44vw;
+	background-color: lime;
+	border-top-left-radius: 3px;
 }
 
 .mainCard {
@@ -41,8 +61,8 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-  background-color:rgb(215, 234, 213);
-	border: 1px solid black;
+	background-color: rgb(215, 234, 213);
+
 }
 
 .cardL {
@@ -53,7 +73,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-  background-color:whitesmoke;
+	background-color: whitesmoke;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
@@ -66,7 +86,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background-color:whitesmoke;
+	background-color: whitesmoke;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -74,8 +94,16 @@
 .imgCover1 {
 	width: 44vw;
 	height: 17vh;
-
-	border-radius: 5px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left: 2px solid lime;
+}
+.imgCover2 {
+	width: 44vw;
+	height: 17vh;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-right: 2px solid lime;
 }
 
 .imgL {
@@ -85,7 +113,6 @@
 	padding-bottom: inherit;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 .imgCover {
 	width: 37vh;
@@ -113,6 +140,3 @@
 	justify-content: center;
 	align-items: center;
 }
-
-
-

@@ -70,7 +70,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		<div className={styles.parent}>
 			<div className={styles.mainCard}>
 				<div className={styles.cardL}>
-					<div>
+					<div className={styles.titleCover1}>
 						<span className={styles.titleSpan}>
 							{" "}
 							{Services[activeIndex].category}
@@ -89,12 +89,12 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 					</div>
 				</div>
 				<div className={styles.cardL}>
-					<div>
-						<span className={styles.titleSpan}>
+					<div className={styles.titleCover}>
+						<span className={styles.titleSpan1}>
 							{Services[activeIndex]?.services[inneractiveIndex]?.name}{" "}Service
 						</span>
 					</div>
-					<div className={styles.imgCover1}>
+					<div className={styles.imgCover2}>
 						<Image
 							object-fit="cover"
 							className={styles.imgL}
