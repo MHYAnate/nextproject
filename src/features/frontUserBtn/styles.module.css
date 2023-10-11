@@ -64,10 +64,9 @@
 .userBtnWrapper2{
   width: 47dvw;
   height: 7svh;
-  background-color:rgb(215, 234, 213);
+  background-color: #108a00;
   border-radius: 1svh;
-  border: 2px solid #108a00;
-  color: black;
+  color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
   display: flex;
