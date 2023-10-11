@@ -88,17 +88,16 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 						/>
 					</div>
 				</div>
-				<div className={styles.cardS}>
+				<div className={styles.cardL}>
 					<div>
 						<span className={styles.titleSpan}>
 							{Services[activeIndex]?.services[inneractiveIndex]?.name}{" "}
 						</span>
 					</div>
-
 					<div className={styles.imgCover1}>
 						<Image
 							object-fit="cover"
-							className={styles.img}
+							className={styles.imgL}
 							alt="Picture of the author"
 							width={100}
 							height={100}
