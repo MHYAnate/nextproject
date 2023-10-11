@@ -70,7 +70,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		<div className={styles.parent}>
 			<div className={styles.titleCard}>
 				<div className={styles.bckgrnd}>
-					<span className={styles.topSpan}>Instant Linking Up Directory </span>
+					<span className={styles.topSpan}>Internet Linking Up Directory </span>
 				</div>
 			</div>
 			<div className={styles.mainCard}>
