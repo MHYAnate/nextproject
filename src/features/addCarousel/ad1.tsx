@@ -91,7 +91,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 				<div className={styles.cardL}>
 					<div>
 						<span className={styles.titleSpan}>
-							{Services[activeIndex]?.services[inneractiveIndex]?.name}{" "}
+							{Services[activeIndex]?.services[inneractiveIndex]?.name}{" "}Service
 						</span>
 					</div>
 					<div className={styles.imgCover1}>
