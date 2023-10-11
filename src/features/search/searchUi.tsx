@@ -1,10 +1,10 @@
 import React, { memo } from "react";
 import styles from "./styles.module.css";
-import Other from "../other/other";
+
 interface post {
   index: number;
 }
-const ContactUs = memo(function PostsTab() {
+const SearchUi = memo(function PostsTab() {
 	let items = [];
 	for (let i = 0; i < 1; i++) {
     items.push(<SlowPost key={i} index={i} />);
@@ -24,7 +24,7 @@ const SlowPost: React.FC<post> = () => {
 	return (
 		
 		<li className={styles.contactUsIn}>
-			<Other />
+			
 			
       
 		</li>
@@ -32,4 +32,4 @@ const SlowPost: React.FC<post> = () => {
 	);
 };
 
-export default ContactUs;
+export default SearchUi;

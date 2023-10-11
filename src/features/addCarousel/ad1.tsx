@@ -112,65 +112,6 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
                 unoptimized
 							/>
 						</div>
-						<div className={styles.back}>
-							<Image
-								object-fit="cover"
-								className={styles.img}
-								alt="Picture of the author"
-								width={500}
-								height={500}
-								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                priority={true}
-                unoptimized
-							/>
-						</div>
-						<div className={styles.right}>
-							<Image
-								object-fit="cover"
-								className={styles.img}
-								alt="Picture of the author"
-								width={500}
-								height={500}
-								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                priority={true}
-                unoptimized
-							/>
-						</div>
-						<div className={styles.left}>
-							<Image
-								object-fit="cover"
-								className={styles.img}
-								alt="Picture of the author"
-								width={500}
-								height={500}
-								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                priority={true}
-                unoptimized
-							/>
-						</div>
-						<div className={styles.top}>
-							<Image
-								object-fit="cover"
-								className={styles.img}
-								alt="Picture of the author"
-								width={500}
-								height={500}
-								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                priority={true}
-                unoptimized
-							/>
-						</div>
-						<div className={styles.bottom}>
-							<Image
-								object-fit="cover"
-								className={styles.img}
-								alt="Picture of the author"
-								width={500}
-								height={500}
-								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                unoptimized
-							/>
-						</div>
 					</div>
 				</div>
 			</div>

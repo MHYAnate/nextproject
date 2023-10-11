@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import { Services } from "@/features/addCarousel/data";
 import InCarousel from "@/features/addCarousel/ad1";
-import Iludlogo from "@/features/iludlogo/iludlogo";
+import SearchUiBtn from "@/features/search/searchUiBtn";
 import AboutContainer from "@/features/aboutUs/about";
 import ContactUsBtn from "@/features/contactUs/contactUsBtn";
 import UserBtn from "@/features/frontUserBtn/userBtnContainer";
@@ -17,6 +17,7 @@ export default function Home() {
 				<div className={styles.header}>
 					<div className={styles.nav}>
 						<AboutContainer />
+						<SearchUiBtn/>
             <ContactUsBtn/>
 					</div>
 				</div>
@@ -27,9 +28,7 @@ export default function Home() {
 					<UserBtn />
 				</div>
 				<div className={styles.footer}>
-					<div className={styles.contactUs}>
-						
-					</div>
+	
 				</div>
 			</div>
 		</>

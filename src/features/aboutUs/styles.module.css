@@ -71,8 +71,8 @@
   align-items: center;
   padding-top: 0.5svh;
   font-weight: bold;
-  background-color: rgb(194, 255, 194);
-  border: 1px solid  rgb(194, 255, 194);
+  background-color: rgb(215, 234, 213);
+  border: 2px solid black;
   width: 65vw;
   border-radius: 3px;
   color: black;
@@ -84,7 +84,6 @@
   padding-top: 0.5svh;
   font-weight: bold;
   background-color: lime;
-  border: 2px solid lime;
   width: 65vw;
   border-radius: 3px;
   color: white;

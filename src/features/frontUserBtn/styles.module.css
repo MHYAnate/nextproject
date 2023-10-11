@@ -4,7 +4,7 @@
 
 .case{
   height: 10svh;
-  width: 45dvw;
+  width: 47dvw;
   height: fit-content;
 
 }
@@ -25,12 +25,12 @@
 }
 
 .userBtn1{
-  width: 45dvw;
+  width: 47dvw;
   height: 7svh;
 }
 
 .userBtn2{
-  width: 45dvw;
+  width: 47dvw;
   height: 7svh;
   box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
   border-radius: 1svh;
@@ -39,9 +39,9 @@
   font-weight:bold ;
 }
 .userBtnWrapper1{
-  width: 45dvw;
+  width: 47dvw;
   height: 7svh;
-  box-shadow: 0 4px 8px 0 black, 0 1.5px 5px 0 white;
+  background-color: lime;
   border-radius: 1svh;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
@@ -50,20 +50,19 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 .svg{
   width: 10dvw;
   height: 7svh;
-  
 }
 
 .userBtnWrapper2{
-  width: 45dvw;
+  width: 47dvw;
   height: 7svh;
-  box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
+  background-color:rgb(215, 234, 213);
   border-radius: 1svh;
-  color: white;
+  border: 2px solid black;
+  color: black;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
   display: flex;
