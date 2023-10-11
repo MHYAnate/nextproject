@@ -22,7 +22,7 @@
 	font-size: 0.7em;
 	font-weight: bolder;
 	font-family: 'Times New Roman', Times, serif;
-	color: white;
+	color: black;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -31,7 +31,7 @@
 	font-size: 1.2em;
 	font-weight: bold;
 	font-family: 'Times New Roman', Times, serif;
-	color: white;
+	color: black;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -42,7 +42,7 @@
 	align-items: center;
 	height: 4vh;
 	width: 44vw;
-	background-color: lime;
+	background-color: rgb(215, 234, 213);
 	border-top-right-radius: 3px;
 }
 .titleCover1 {
@@ -51,7 +51,7 @@
 	align-items: center;
 	height: 4vh;
 	width: 44vw;
-	background-color: lime;
+	background-color: rgb(215, 234, 213);
 	border-top-left-radius: 3px;
 }
 
@@ -96,14 +96,14 @@
 	height: 17vh;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-	border-left: 2px solid lime;
+	border-left: 2px solid  rgb(215, 234, 213);
 }
 .imgCover2 {
 	width: 44vw;
 	height: 17vh;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-	border-right: 2px solid lime;
+	border-right: 2px solid  rgb(215, 234, 213);
 }
 
 .imgL {
