@@ -44,16 +44,16 @@
 }
 .userBtnWrapper1{
   width: 95dvw;
-  height: 7svh;
+  height: 9svh;
   background-color: #108a00;
   border-radius: 1svh;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
-  font-weight:bold ;
+  font-weight:bolder ;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 7;
+  z-index: 2;
   position: fixed;
 }
 .svg{
