@@ -13,7 +13,7 @@ export const TabButton: React.FC<TabButtonProps>=({ children, isActive, onClick 
   // }
   
   return (
-    <button className={styles.userBtn1} onClick={() => {
+    <button className={isActive?styles.userBtn2:styles.userBtn1} onClick={() => {
       onClick();
     }}>
       {children}

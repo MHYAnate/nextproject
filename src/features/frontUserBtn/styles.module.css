@@ -28,6 +28,10 @@
   width: 47dvw;
   height: 7svh;
 }
+.userBtn2{
+  width: 95dvw;
+  height: 6svh;
+}
 
 .userBtn2{
   width: 47dvw;
@@ -39,17 +43,18 @@
   font-weight:bold ;
 }
 .userBtnWrapper1{
-  width: 47dvw;
+  width: 95dvw;
   height: 7svh;
   background-color: lime;
   border-radius: 1svh;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
-  transform: scale(0.95);
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 7;
+  position: fixed;
 }
 .svg{
   width: 10dvw;
@@ -61,7 +66,7 @@
   height: 7svh;
   background-color:rgb(215, 234, 213);
   border-radius: 1svh;
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
