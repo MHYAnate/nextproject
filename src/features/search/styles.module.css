@@ -47,7 +47,7 @@
 }
 .conbtn{
   background-color:rgb(215, 234, 213);
-  border: 1px solid black;
+  border: 2px solid  #108a00;
   color: black;
   width: 15vw;
   height: 5.5svh;
@@ -58,8 +58,8 @@
 }
 
 .conbtnClick{
-  background-color: lime;
-  border: 2px solid lime;
+  background-color: #108a00;
+  border: 2px solid #108a00;
   color: white;
   width: 13vw;
   height: 5svh;

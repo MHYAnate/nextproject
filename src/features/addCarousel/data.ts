@@ -24,13 +24,13 @@ export const Services = [
       },
       {
         "id": 4,
-        "name": "panel beater",
+        "name": "Panel beater",
         "src": "/service/panel_beater.jpg",
         "link": "",
       },
       {
         "id": 5,
-        "name": "re-wire",
+        "name": "Re-Wire",
         "src": "/service/re-wire.jpg",
         "link": "",
       },
@@ -61,7 +61,7 @@ export const Services = [
       },
       {
 				"id": 2,
-				"name": "brick laying",
+				"name": "Brick laying",
 				"src": "/service/masonry.jpg",
 				"link": "",
 			},
@@ -115,7 +115,7 @@ export const Services = [
 			},
       {
         "id": 11,
-        "name": "tiling",
+        "name": "Tiling",
         "src": "/service/tiling.jpg",
         "link": "",
       },
@@ -146,7 +146,7 @@ export const Services = [
       },
       {
         "id": 3,
-        "name": "bbq",
+        "name": "Bbq",
         "src": "/service/bbq.jpg",
         "link": "",
       },
@@ -165,7 +165,7 @@ export const Services = [
      
       {
         "id": 6,
-        "name": "catering",
+        "name": "Catering",
         "src": "/service/catering.jpg",
         "link": "",
       },
@@ -207,7 +207,7 @@ export const Services = [
       },
       {
         "id": 13,
-        "name": "maid",
+        "name": "Maid",
         "src": "/service/maid.jpg",
         "link": "",
       },
@@ -226,7 +226,7 @@ export const Services = [
       },
       {
         "id": 16,
-        "name": "security",
+        "name": "Security",
         "src": "/service/security.jpg",
         "link": "",
       },

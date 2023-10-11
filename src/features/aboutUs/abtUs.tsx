@@ -138,7 +138,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		<>
 			<p className={styles.aims}>
 				{" "}
-				Aims at providing clients a seamless linking platform to a highly competitive service
+				Check out the list of highly competitive service
 				providers within this dynamic categories
 			</p>
 			<hr />
