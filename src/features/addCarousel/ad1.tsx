@@ -20,11 +20,11 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [inneractiveIndex, setInnerActiveIndex] = useState(0);
 
-	const handleNext = useCallback( () => {
+	const handleNext = useCallback(() => {
 		setActiveIndex((prevIndex) =>
 			prevIndex === Services.length - 1 ? 0 : prevIndex + 1
 		);
-	},[activeIndex, setActiveIndex, Services.length]);
+	}, [activeIndex, setActiveIndex, Services.length]);
 
 	const inhandleNext = useCallback(() => {
 		setInnerActiveIndex((prevIndex) =>
@@ -32,7 +32,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 				? 0
 				: prevIndex + 1
 		);
-	},[inneractiveIndex,setInnerActiveIndex, Services, activeIndex]);
+	}, [inneractiveIndex, setInnerActiveIndex, Services, activeIndex]);
 
 	const intervalTime = useMemo(() => {
 		return 1555 * Services[activeIndex].services.length - 1;
@@ -64,7 +64,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		}, inIntervalTime);
 
 		return () => clearInterval(interval);
-	}, [inIntervalTime,inhandleNext, serviceTitle, serviceImage]);
+	}, [inIntervalTime, inhandleNext, serviceTitle, serviceImage]);
 
 	return (
 		<div className={styles.parent}>
@@ -83,8 +83,8 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 							width={500}
 							height={500}
 							src={Services[activeIndex].src}
-              priority={true}
-              unoptimized
+							priority={true}
+							unoptimized
 						/>
 					</div>
 				</div>
@@ -94,24 +94,23 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 							{Services[activeIndex]?.services[inneractiveIndex]?.name}{" "}
 						</span>
 					</div>
-					<div className={styles.imgCover}>
-						<div className={styles.front}>
-							<Image
-								object-fit="cover"
-								className={styles.img}
-								alt="Picture of the author"
-								width={100}
-								height={100}
-								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-                priority={true}
-                unoptimized
-							/>
-						</div>
+
+					<div className={styles.imgCover1}>
+						<Image
+							object-fit="cover"
+							className={styles.img}
+							alt="Picture of the author"
+							width={100}
+							height={100}
+							src={Services[activeIndex]?.services[inneractiveIndex]?.src}
+							priority={true}
+							unoptimized
+						/>
 					</div>
 				</div>
 			</div>
 		</div>
 	);
 });
-InCarousel.displayName='InCarousel';
+InCarousel.displayName = "InCarousel";
 export default InCarousel;
