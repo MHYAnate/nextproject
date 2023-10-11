@@ -68,11 +68,6 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 
 	return (
 		<div className={styles.parent}>
-			<div className={styles.titleCard}>
-				<div className={styles.bckgrnd}>
-					<span className={styles.topSpan}>Internet Linking Up Directory </span>
-				</div>
-			</div>
 			<div className={styles.mainCard}>
 				<div className={styles.cardL}>
 					<div>
@@ -105,8 +100,8 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 								object-fit="cover"
 								className={styles.img}
 								alt="Picture of the author"
-								width={500}
-								height={500}
+								width={100}
+								height={100}
 								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
                 priority={true}
                 unoptimized
