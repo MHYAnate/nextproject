@@ -6,7 +6,7 @@
 .header{
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
-  font-size: larger;
+  font-size: large;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
   align-items: center;
   background-color: #108a00;
   color: white;
-  height: 30px;
+  height: 35px;
   border-radius: 20px;
 }
 .eSvg{

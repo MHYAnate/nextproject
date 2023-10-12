@@ -23,8 +23,9 @@ const Other = () => {
 					<span>E-Commerce platform</span>
 				</li>
 				<p className={styles.paragraph}>
-					Here you can seamlessly lease, buy and sell goods at your disposal to
-					whom you will and when you will
+					ILUD E-Commerce platform provide Users the opportunity to seamlessly
+					lease, buy and sell goods at their disposal to whom they will and when
+					they will
 				</p>
 				<hr />
 				<li className={styles.liCover}>
@@ -44,8 +45,9 @@ const Other = () => {
 					<span>E-Community chatroom</span>
 				</li>
 				<p className={styles.paragraph}>
-					Here you can seamlessly update and stay up to date at real-time on
-					those socio-economic matters that matters to you around about you
+					ILUD E-Community chatroom platform provide Users the opportunity to
+					seamlessly update and stay up to date at real-time on those
+					socio-economic matters that matters to our Users around about them
 				</p>
 				<hr />
 			</ul>
