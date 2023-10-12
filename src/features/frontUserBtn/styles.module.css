@@ -95,17 +95,14 @@
 .existingClientUser{
  width: 97dvw;
  height: 77svh;
- background-color:  rgb(243 244 246);
 }
 .newClientUser{
   width: 97dvw;
   height: 77svh;
-  background-color:  rgb(243 244 246);
 }
 .existingServiceProviderUser{
   width: 95dvw;
  height: 77svh;
- background-color:  rgb(243 244 246);
 }
 
 .existingClientUserIn{
@@ -144,7 +141,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: silver;
   width: 95dvw;
   height: 77svh;
   margin-left: 1.3dvw;
@@ -215,7 +211,6 @@
   top: 1svh;
   left: 2.45dvw;
   z-index: 5;
-  background-color:  rgb(243 244 246);
   height: 70svh;
 }
 
@@ -242,3 +237,13 @@
   box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
 }
 
+.newUser{
+  display: flex;
+  justify-content: center;
+  width: 100dvw;
+}
+.existingUser{
+  display: flex;
+  justify-content: center;
+  width: 100dvw;
+}
