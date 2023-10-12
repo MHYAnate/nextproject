@@ -18,13 +18,13 @@
 }
 
 .btnCard{
-  margin-top: 3vh;
+  margin-top: 1vh;
   margin-bottom: 1.5vh;
   width:96dvw;
   height: 55svh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
 }

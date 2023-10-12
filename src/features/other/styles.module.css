@@ -1,0 +1,49 @@
+.contain{
+  background-color: white;
+  width: 99dvw;
+  height: fit-content;
+}
+.header{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.ulClass{
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 5px;
+}
+
+.liCover{
+  display: flex;
+  align-items: center;
+  background-color: #108a00;
+  color: white;
+  border-radius: 20px;
+}
+.eSvg{
+  width: 8dvw;
+  height: 3.5svh;
+  margin-left: 1dvw;
+  margin-right: 1dvw;
+}
+.chatSvg{
+  width: 8dvw;
+  height: 3.5svh;
+  margin-left: 1dvw;
+  margin-right: 1dvw;
+}
+
+.paragraph{
+  margin-top: 1svh;
+  margin-bottom: 1svh;
+  margin-left: 1dvw;
+  background-color: rgb(215, 234, 213);
+  font-size: .9em;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  padding-left: 10px;
+}
