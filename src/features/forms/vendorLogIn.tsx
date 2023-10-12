@@ -132,11 +132,11 @@ export default function VendorLogIn() {
 					className={styles.input}
 					{...register("number", {
 						pattern: {
-							value: /^\d{11}$/,
-							message: `Eleven Digit's Required`,
+							value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+								message: `Email Required`,
 						},
 					})}
-					placeholder="Mobile_Number"
+					placeholder="Email"
 				/>
 
 				{/* {errors?.number && (
