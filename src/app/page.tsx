@@ -23,7 +23,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div>
-					<span className={styles.paspinComfirm}>We are currently offering seamless linkages to</span>
+					<span className={styles.offer}>Currently offering seamless linkages to</span>
 					<InCarousel Services={Services} />
 				</div>
 				<div className={styles.btnCard}>

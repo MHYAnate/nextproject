@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 const Other = () => {
 	return (
 		<div className={styles.contain}>
-			<h1 className={styles.header}>linkup and get access to our robust</h1>
+			<h1 className={styles.header}>Linkup and get access to our robust</h1>
 			<ul className={styles.ulClass}>
 				<li className={styles.liCover}>
 					<div>
