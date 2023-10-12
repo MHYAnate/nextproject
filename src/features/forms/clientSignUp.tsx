@@ -361,7 +361,7 @@ export default function ClientSignUp() {
 							},
 						})}
 						id="uName"
-						placeholder="User_Name"
+						placeholder="User Name"
 					/>
 				</div>
 				<div>
@@ -389,7 +389,7 @@ export default function ClientSignUp() {
 							},
 						})}
 						id="uNumberV"
-						placeholder="Mobile_Number"
+						placeholder="Mobile Number"
 					/>
 				</div>
 
@@ -406,7 +406,7 @@ export default function ClientSignUp() {
 							},
 						})}
 						id="uAddress"
-						placeholder="User_Address"
+						placeholder="Address"
 					/>
 				</div>
 				<div>

@@ -323,7 +323,7 @@ export default function VendorSignUp() {
 								},
 							})}
 							id="uName"
-							placeholder="User_Name"
+							placeholder="User Name"
 						/>
 					</div>
 					<div>
@@ -332,12 +332,12 @@ export default function VendorSignUp() {
 							className={styles.input}
 							{...register("number", {
 								pattern: {
-									value: /^\d{11}$/,
-									message: `Eleven Digit's Required`,
+									value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+								message: `Email Required`,
 								},
 							})}
 							id="uNumber"
-							placeholder="Mobile_Number"
+							placeholder="Email"
 						/>
 					</div>
 					<div>
@@ -351,7 +351,7 @@ export default function VendorSignUp() {
 								},
 							})}
 							id="uNumberV"
-							placeholder="Mobile_Number"
+							placeholder="Mobile Number"
 						/>
 					</div>
 					{/* {errors?.number && (
@@ -367,7 +367,7 @@ export default function VendorSignUp() {
 								},
 							})}
 							id="uAddress"
-							placeholder="User_Address"
+							placeholder="Address"
 						/>
 					</div>
 					<div>

@@ -13,7 +13,7 @@
 	width: 90dvw;
 	height: 50svh;
 	overflow-y: auto;
-	background-color:silver;
+	background-color:rgb(215, 234, 213);
 	padding-bottom: 3svh;
 }
 
@@ -27,7 +27,6 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  letter-spacing: 4dvw;
   box-shadow: -2px 2px 5px grey;
   padding-left: 1dvw;
   padding-right: 1dvw;
@@ -112,11 +111,11 @@
 }
 
 .button {
-  background-color: black;
+  background-color: #108a00;
 	color: white;
 	width: 85dvw;
   margin-top: 3svh;
-	box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
+	box-shadow: 0 2px 4px 0 #108a00, 0 0.75px 2.5px 0 white;
   height: 5.55svh;
   border-radius: 1svh;
 }
@@ -124,14 +123,14 @@
 
 .passcodeContainer{
 	margin-top: 1.5svh;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 70dvw;
   height: 6svh;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 2px solid silver;
 }
 .btn{
   width: fit-content;
@@ -142,7 +141,7 @@
   border-radius: 7px;
   display: flex;
   padding-left: 3.5%;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 2px solid silver;
 	color: black;
 }
 
@@ -172,7 +171,6 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-  letter-spacing: 1dvw;
   box-shadow: -2px 2px 5px grey;
   padding-left: 1dvw;
   padding-right: 1dvw;
