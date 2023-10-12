@@ -94,17 +94,17 @@
 
 .existingClientUser{
  width: 95dvw;
- height: 65svh;
+ height: 80svh;
  background-color:  rgb(243 244 246);
 }
 .newClientUser{
   width: 95dvw;
-  height: 65svh;
+  height: 80svh;
   background-color:  rgb(243 244 246);
 }
 .existingServiceProviderUser{
   width: 95dvw;
- height: 65svh;
+ height: 80svh;
  background-color:  rgb(243 244 246);
 }
 
@@ -113,7 +113,7 @@
   flex-direction: column;
   align-items: center;
   width: 92dvw;
-  height: 65svh;
+  height: 80svh;
   margin-left: 1.3dvw;
   margin-top: 0.65svh;
 }
@@ -134,9 +134,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
   width: 92dvw;
-  height: 65svh;
+  height: 80svh;
   margin-left: 1.3dvw;
   margin-top: 0.65svh;
 }
@@ -147,7 +146,7 @@
   justify-content: space-between;
   background-color: silver;
   width: 92dvw;
-  height: 65svh;
+  height: 80svh;
   margin-left: 1.3dvw;
   margin-top: 0.65svh;
 }
@@ -166,7 +165,7 @@
   align-items: center;
   background-color: white;
   width: 92dvw;
-  height: 65svh;
+  height: 80svh;
   margin-left: 1.3dvw;
   margin-top: 0.65svh;
 }
@@ -217,7 +216,7 @@
   left: 2.45dvw;
   z-index: 5;
   background-color:  rgb(243 244 246);
-  height: 58svh;
+  height: 73svh;
 }
 
 
