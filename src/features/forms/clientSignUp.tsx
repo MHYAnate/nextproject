@@ -410,6 +410,7 @@ export default function ClientSignUp() {
 					/>
 				</div>
 				<div>
+				<span className={styles.paspinComfirm}>Enter PinCode</span>
 					<div className={styles.passcodeContainer}>
 						<input
 							{...register("passCode0", {
@@ -494,6 +495,9 @@ export default function ClientSignUp() {
 					</div>
 				</div>
 				<div>
+					
+					<span className={styles.paspinComfirm}>Re-confirm PinCode</span>
+						
 					<div className={styles.passcodeContainer}>
 						<input
 							{...register("passCodeV0", {

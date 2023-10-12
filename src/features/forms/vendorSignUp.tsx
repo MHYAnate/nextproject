@@ -394,6 +394,7 @@ export default function VendorSignUp() {
 						</div>
 					</div>
 					<div>
+					<span className={styles.paspinComfirm1}>Enter PinCode</span>
 						<div className={styles.passcodeContainer}>
 							<input
 								{...register("passCode0", {
@@ -481,6 +482,7 @@ export default function VendorSignUp() {
 						</div>
 					</div>
 					<div>
+					<span className={styles.paspinComfirm1}>Re-confirm PinCode</span>
 						<div className={styles.passcodeContainer}>
 							<input
 								{...register("passCodeV0", {

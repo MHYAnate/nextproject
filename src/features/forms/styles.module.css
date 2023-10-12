@@ -212,3 +212,22 @@
 	display: none;
 }
 
+.paspinComfirm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Times New Roman', Times, serif;
+  color: #108a00;
+	position: relative;
+	top: 0.3em;
+	height: 1vh;
+}
+.paspinComfirm1{
+	align-items: center;
+	font-family: 'Times New Roman', Times, serif;
+  color: #108a00;
+	position: relative;
+	top: 0.3em;
+	height: 1vh;
+}
+
