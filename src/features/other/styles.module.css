@@ -51,11 +51,10 @@
   margin-right: 5px;
   margin-left: 5px;
   background-color: rgb(215, 234, 213);
-  font-size: .9em;
+  font-size: 1.2em;
   color: black;
   padding-left: 10px;
   border-radius: 5px;
   border: 1px solid #108a00;
   font-family: cursive;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
