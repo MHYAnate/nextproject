@@ -17,17 +17,26 @@
   padding-right: 1%;
 }
 
-.btnCard{
+.bodyCard{
   margin-top: 1vh;
-  margin-bottom: 1.5vh;
   width:96dvw;
   height: 60svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
   align-items: center;
   background-color: whitesmoke;
 }
+.other{
+  margin-bottom: 1svh;
+  overflow-y: auto;
+  width: 90dvw;
+}
+.userbtn{
+  height: fit-content;
+}
+
 
 .footer{
   display: flex;
@@ -90,4 +99,5 @@
 	height: 3vh;
   background-color:rgb(215, 234, 213);
   width: 99vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

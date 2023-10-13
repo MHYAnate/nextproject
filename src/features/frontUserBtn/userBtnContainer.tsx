@@ -18,7 +18,7 @@ export default function UserBtn() {
 
 ;
   return (
-    <>
+    <div className={styles.coverDiv}>
       <div className={styles.caseContainer}>
         <div className={styles.case}>
           {tab === 'Existing' && <Existing />}
@@ -47,6 +47,6 @@ export default function UserBtn() {
           </TabButton>
         </div>
       </div>
-    </>
+    </div>
   );
 }

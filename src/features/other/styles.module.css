@@ -1,6 +1,6 @@
 .contain{
   background-color: white;
-  width: 99dvw;
+  width: 90dvw;
   height: fit-content;
 }
 .header{
@@ -12,6 +12,10 @@
   align-items: center;
   color: #108a00;
   margin-bottom: 1svh;
+  background-color: rgb(215, 234, 213);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin-top: 1svh;
 }
 .ulClass{
   padding-left: 5px;
@@ -26,6 +30,7 @@
   color: white;
   height: 35px;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .eSvg{
   width: 8dvw;
@@ -43,10 +48,14 @@
 .paragraph{
   margin-top: 1svh;
   margin-bottom: 1svh;
-  margin-left: 1dvw;
+  margin-right: 5px;
+  margin-left: 5px;
   background-color: rgb(215, 234, 213);
   font-size: .9em;
-  font-family: 'Times New Roman', Times, serif;
   color: black;
   padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #108a00;
+  font-family: cursive;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

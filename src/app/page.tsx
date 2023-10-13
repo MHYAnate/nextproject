@@ -26,9 +26,14 @@ export default function Home() {
 					<span className={styles.offer}>Currently offering seamless linkages to</span>
 					<InCarousel Services={Services} />
 				</div>
-				<div className={styles.btnCard}>
-					<Other/>
-					<UserBtn />
+				<div className={styles.bodyCard}>
+					<div className={styles.other}>
+						<Other/>
+					</div>
+					<div className={styles.userbtn}>
+						<UserBtn />
+					</div>
+					
 				</div>
 				<div className={styles.footer}>
 	

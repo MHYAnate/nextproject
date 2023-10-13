@@ -1,6 +1,12 @@
+.coverDiv{
+  width: 99dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .caseContainer{
   width: 100%;
-  margin-bottom: -5vh;
+  margin-bottom: -2.5svh;
 }
 
 .case{
