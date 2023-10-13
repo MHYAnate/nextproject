@@ -13,7 +13,6 @@
   height: 10svh;
   width: 47dvw;
   height: fit-content;
-
 }
 
 .userBtnContainer{
@@ -36,7 +35,7 @@
   height: 7svh;
 }
 .userBtn2{
-  width: 95dvw;
+  width: 99dvw;
   height: 6svh;
 }
 
@@ -50,7 +49,7 @@
   font-weight:bold ;
 }
 .userBtnWrapper1{
-  width: 95dvw;
+  width: 99dvw;
   height: 7svh;
   background-color: #108a00;
   border-radius: 1svh;
@@ -86,7 +85,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 95dvw;
+  width: 99dvw;
   height: 10svh;
 }
 
@@ -94,30 +93,33 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 95dvw;
+  width: 99dvw;
   height: 10svh;
 }
 
 .existingClientUser{
- width: 97dvw;
+ width: 99dvw;
  height: 77svh;
 }
 .newClientUser{
-  width: 97dvw;
+  width: 99dvw;
   height: 77svh;
+  display: flex;
+  justify-content: center;
 }
 .existingServiceProviderUser{
-  width: 95dvw;
+  width: 99dvw;
  height: 77svh;
 }
 
 .existingClientUserIn{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 95dvw;
+  width: 99dvw;
   height: 77svh;
-  margin-left: 1.3dvw;
+  
   margin-top: 0.65svh;
 }
 .logInHeader{
@@ -125,7 +127,7 @@
   font-weight: bold;
   box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-shadow: 0.25px 0.25px 1px white, 0 0 7px white, 0 0 1.25px white;
-  width: 90dvw;
+  width:99dvw;
   height: 5svh;
   display: flex;
   justify-content: center;
@@ -137,9 +139,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 95dvw;
+  width: 99dvw;
   height: 77svh;
-  margin-left: 1.3dvw;
+  
   margin-top: 0.65svh;
 }
 .newServiceProviderUserIn{
@@ -147,9 +149,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 95dvw;
+  width: 99dvw;
   height: 77svh;
-  margin-left: 1.3dvw;
+  
   margin-top: 0.65svh;
 }
 .overFlow{
@@ -158,7 +160,7 @@
   align-items: center;
   justify-content: center;
   overflow-y: auto;
-  width: 95dvw;
+  width: 99dvw;
   height: 47svh;
 }
 .existingServiceProviderUserIn{
@@ -166,14 +168,14 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 95dvw;
+  width: 99dvw;
   height: 77svh;
-  margin-left: 1.3dvw;
+  
   margin-top: 0.65svh;
 }
 
 .userSvg{
-  width: 90dvw;
+  width:99dvw;
   height: 7svh;
   border-top-left-radius: 1svh;
   border-top-right-radius: 1svh;
@@ -215,14 +217,14 @@
 .innerCase{
   position: fixed;
   top: 1svh;
-  left: 2.45dvw;
   z-index: 5;
   height: 70svh;
 }
 
 
+
 .logInCover{
-  width: 95dvw;
+  width: 99dvw;
   height: 7svh;
   border-bottom-left-radius: 1dvw;
   border-bottom-right-radius: 1dvw;
