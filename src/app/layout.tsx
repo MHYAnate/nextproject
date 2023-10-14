@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'ILUD',
-  description: 'I Link Up Direct',
+  description: 'Internet Linking Up Directory',
 }
 
 export default function RootLayout({
