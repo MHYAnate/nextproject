@@ -88,19 +88,19 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 							/>
 						</div>
 						<div className={styles.inBodyCardCategory}>
-							<div className={Services[activeIndex].category === Services[0].category?styles.highLighted:styles.spanCategory}>
+							<div onClick={()=>setActiveIndex(0)} className={Services[activeIndex].category === Services[0].category?styles.highLighted:styles.spanCategory}>
 								<span className={styles.catSpan}>
 									{" "}
 									{Services[0].category}
 								</span>
 							</div>
-							<div className={Services[activeIndex].category === Services[1].category?styles.highLighted:styles.spanCategory}>
+							<div onClick={()=>setActiveIndex(1)} className={Services[activeIndex].category === Services[1].category?styles.highLighted:styles.spanCategory}>
 								<span className={styles.catSpan}>
 									{" "}
 									{Services[1].category}
 								</span>
 							</div>
-							<div className={Services[activeIndex].category === Services[2].category?styles.highLighted:styles.spanCategory}>
+							<div onClick={()=>setActiveIndex(2)} className={Services[activeIndex].category === Services[2].category?styles.highLighted:styles.spanCategory}>
 								<span className={styles.catSpan}>
 									{" "}
 									{Services[2].category}
