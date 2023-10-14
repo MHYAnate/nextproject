@@ -28,7 +28,7 @@ export default function Home() {
 				</div>
 				<div className={styles.bodyCard}>
 					<div className={styles.other}>
-						<Other/>
+						
 					</div>
 					<div className={styles.userbtn}>
 						<UserBtn />
