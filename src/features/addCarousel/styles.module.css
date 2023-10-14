@@ -153,6 +153,7 @@
 .titleTopSpan{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: .7rem;
+	font-weight: bolder;
   display: flex;
   justify-content: center;
   align-items: center;

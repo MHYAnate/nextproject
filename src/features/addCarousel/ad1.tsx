@@ -76,7 +76,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 						</span>
 					</div>
 					<div className={styles.bodyCardCategory}>
-						<div className={styles.imgCover1}>
+						<div className={styles.catImgCover}>
 							<Image
 								className={styles.imgCat}
 								alt="Picture of the author"
