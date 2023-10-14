@@ -72,7 +72,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 				<div className={styles.cardCategory}>
 					<div className={styles.titleTop}>
 						<span className={styles.titleTopSpan}>
-							{Services[activeIndex].category} Services such as
+							{Services[activeIndex].category} Services like
 						</span>
 					</div>
 					<div className={styles.bodyCardCategory}>
