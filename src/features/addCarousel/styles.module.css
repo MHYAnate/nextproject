@@ -148,6 +148,7 @@
   width: inherit;
   height: 4vh;
   border-top-right-radius: 3px;
+	border-bottom: 1px solid #108a00;
 }
 
 .titleTopSpan{
@@ -163,7 +164,7 @@
 .cardCategory{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 47vw;
 	height: 22vh;
