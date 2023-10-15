@@ -15,7 +15,8 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
 }
 
 .bodyCard{
