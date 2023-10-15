@@ -35,11 +35,11 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 	}, [inneractiveIndex, setInnerActiveIndex, Services, activeIndex]);
 
 	const intervalTime = useMemo(() => {
-		return 5000 * Services[activeIndex].services.length - 1;
+		return 7000 * Services[activeIndex].services.length - 1;
 	}, [activeIndex, Services]);
 
 	const inIntervalTime = useMemo(() => {
-		return 5000;
+		return 7000;
 	}, []);
 
 	const serviceImage = useMemo(() => {
