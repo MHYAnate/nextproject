@@ -54,7 +54,7 @@ const  SlowPost: React.FC<post> =()=> {
         onClick={() =>tab === 'Existing' ? selectTab(''):selectTab('Existing')}
       >
         <span className={tab === 'Existing'?styles.tabSpan2:styles.tabSpan1}>
-        Existing Vendor
+        Vendor
         </span>
       </TabButton>
       </div>
@@ -63,7 +63,7 @@ const  SlowPost: React.FC<post> =()=> {
         onClick={() =>tab === 'New' ? selectTab(''):selectTab('New')}
       >
         <span className={tab === 'New'?styles.tabSpan2:styles.tabSpan1}>
-        Existing Client 
+        Client 
         </span>
       </TabButton>
       </div>
