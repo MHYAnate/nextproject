@@ -72,12 +72,12 @@
   padding-top: 0.5svh;
   font-weight: bold;
   background-color: rgb(215, 234, 213);
-  width: 65vw;
+  width: 69vw;
   height: 5.5svh;
   border-radius: 3px;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border:1px solid black;
+  border:3px solid black;
 }
 
 .tabBtnclicked{
