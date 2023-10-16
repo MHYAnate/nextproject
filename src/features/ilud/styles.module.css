@@ -1,13 +1,10 @@
 .cover{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 7vh;
+  height: 5.5svh;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-left: 3%;
-  padding-right: 3%;
   width: 30vw;
-  padding-top: 1.2%;
   background-color: silver;
 }
 .ilud{
@@ -15,32 +12,18 @@
   font-size: 0.7em;
   font-weight: bold;
   color: white;
-  background-color: black;
-  width: 15vw;
+  background-image: linear-gradient(to left, #108a00, #ADFF29);
+  width: inherit;
+  height: inherit;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.ilinkupdirect{
-  text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px white;
-  font-size: 0.7em;
-  font-weight: bold;
-  background-color: white;
-  width: 25vw;
-  text-align: center;
-}
+
 .mix{
   margin-left: -1.7vw;
 }
-@media screen and (max-width: 1120px){
-  .ilinkupdirect{
-    text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px white;
-    font-size: 0.544em;
-    font-weight: bold;
-    background-color: white;
-    width: 25vw;
-    text-align: center;
-  }
-}
+
 
 
 @media screen and (max-width: 620px){
@@ -49,11 +32,12 @@
   }
   .ilud{
   text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: bold;
   color: white;
-  background-color: black;
-  width: 15vw;
+ background-image: linear-gradient(to left, #108a00, #ADFF29);
+  width: inherit;
+  height: inherit;
   display: flex;
   justify-content: center;
 }
@@ -80,8 +64,9 @@
     font-size: 0.7em;
     font-weight: bold;
     color: white;
-    background-color: black;
-    width: 15vw;
+   background-image: linear-gradient(to left, #108a00, #ADFF29);
+    width: inherit;
+    height: inherit;
     display: flex;
     justify-content: center;
   }

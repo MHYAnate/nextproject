@@ -3,7 +3,7 @@
 	flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 15vw;
+  width: 10vw;
   height: 5svh;
   border-radius: 5px;
 }
@@ -20,13 +20,16 @@
 
 .contactUs{
   width: 100vw;
-  background-color: whitesmoke;
+  left: 1dvw;
+  top: 6.9svh;
+  position: fixed;
+  background-color: rgb(215, 234, 213);
 }
 .contactUsIn{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 99vw;
   background-color: white;
   color: black;
 }
@@ -59,8 +62,8 @@
 }
 
 .conbtnClick{
-  background-color:  #108a00;
-  border: 2px solid  #108a00;
+  background-color: #108a00;
+  border: 2px solid #108a00;
   color: white;
   width: 13vw;
   height: 5svh;
@@ -81,6 +84,7 @@
   height: 3svh;
   margin-left: -1dvw;
   margin-right: -1dvw;
+  
 }
 .con{
   width: 100vw;

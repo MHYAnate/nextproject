@@ -17,27 +17,25 @@ export default function Home() {
 			<div className={styles.main}>
 				<div className={styles.header}>
 					<div className={styles.nav}>
-						<AboutContainer />
-						<SearchUiBtn/>
-            <ContactUsBtn/>
+						<div>
+							<AboutContainer />
+						</div>
+						<div><Ilud/></div>
 					</div>
 				</div>
 				<div>
-					<span className={styles.offer}>Currently offering seamless linkages to</span>
+					<span className={styles.offer}>
+						Currently offering seamless linkages to
+					</span>
 					<InCarousel Services={Services} />
 				</div>
 				<div className={styles.bodyCard}>
-					<div className={styles.other}>
-						
-					</div>
+					<div className={styles.other}></div>
 					<div className={styles.userbtn}>
 						<UserBtn />
 					</div>
-					
 				</div>
-				<div className={styles.footer}>
-	
-				</div>
+				<div className={styles.footer}></div>
 			</div>
 		</>
 	);
