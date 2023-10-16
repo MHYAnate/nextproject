@@ -120,7 +120,7 @@
   width: 99dvw;
   height: 77svh;
   
-  margin-top: 0.65svh;
+  
 }
 .logInHeader{
   color: white;
@@ -142,7 +142,7 @@
   width: 99dvw;
   height: 77svh;
   
-  margin-top: 0.65svh;
+  
 }
 .newServiceProviderUserIn{
   display: flex;
@@ -152,7 +152,7 @@
   width: 99dvw;
   height: 77svh;
   
-  margin-top: 0.65svh;
+  
 }
 .overFlow{
   display: flex;
@@ -171,7 +171,7 @@
   width: 99dvw;
   height: 77svh;
   
-  margin-top: 0.65svh;
+  
 }
 
 .userSvg{
@@ -216,7 +216,7 @@
 
 .innerCase{
   position: fixed;
-  top: 0.1svh;
+  top: 0.01svh;
   z-index: 5;
   height: 81svh;
 }
