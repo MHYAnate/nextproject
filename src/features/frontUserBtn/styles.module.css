@@ -216,7 +216,7 @@
 
 .innerCase{
   position: fixed;
-  top: 0.5svh;
+  top: 0.1svh;
   z-index: 5;
   height: 81svh;
 }
