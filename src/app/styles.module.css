@@ -33,6 +33,7 @@
   margin-bottom: 1svh;
   overflow-y: auto;
   width: 90dvw;
+  height: fit-content;
 }
 .userbtn{
   height: fit-content;
@@ -98,6 +99,7 @@
 	position: relative;
   font-weight: bolder;
 	height: 7vh;
+  font-size: 1.2em;
   background-image: linear-gradient(to bottom, white, #ADFF29);
   width: 99vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

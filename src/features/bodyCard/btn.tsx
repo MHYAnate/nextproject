@@ -11,9 +11,7 @@ export const TabButton: React.FC<TabButtonProps>=({ children, isActive, onClick 
   //   return <b onClick={onClick}>{children}</b>
   // }
   return (
-    <button 
-    className={styles.contactBtn}
-    onClick={() => {
+    <button className={styles.click} onClick={() => {
       onClick();
     }}>
       {children}

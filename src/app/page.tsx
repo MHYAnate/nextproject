@@ -4,11 +4,9 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import { Services } from "@/features/addCarousel/data";
 import InCarousel from "@/features/addCarousel/ad1";
-import SearchUiBtn from "@/features/search/searchUiBtn";
 import AboutContainer from "@/features/aboutUs/about";
-import ContactUsBtn from "@/features/contactUs/contactUsBtn";
 import UserBtn from "@/features/frontUserBtn/userBtnContainer";
-import Other from "@/features/other/other";
+
 
 export default function Home() {
 	return (
