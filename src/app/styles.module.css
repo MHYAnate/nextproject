@@ -45,7 +45,7 @@
   justify-content: space-around;
   align-items: center;
   width:100vw;
-  height: 5vh;
+  height: 7vh;
   border-top: 1px solid silver;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: black;
@@ -82,7 +82,6 @@
   height: 100vh;
 }
 .ilud{
-
   height: 7vh;
   width: 20vw;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -99,8 +98,12 @@
 	position: relative;
   font-weight: bolder;
 	height: 7vh;
-  font-size: 1.2em;
+  
   background-image: linear-gradient(to bottom, white, #ADFF29);
   width: 99vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.paraTop{
+  font-size: 1.1em;
+  transform: scaleY(1.5);
 }

@@ -23,7 +23,7 @@ export default function Home() {
 				</div>
 				<div>
 					<span className={styles.offer}>
-						Currently offering seamless linkages to
+					<p className={styles.paraTop}>	Currently offering seamless linkages to</p>
 					</span>
 					<InCarousel Services={Services} />
 				</div>
