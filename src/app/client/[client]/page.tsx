@@ -3,6 +3,10 @@ import { getClientRealTimDoc } from "@/firebase/firebase";
 import { getAuth } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { firebaseConfig, storage, database, clientColRef } from "@/firebase/client";
+
+import {redirect} from "next/navigation";
+import{useLayoutEffect} from "react"
+
 import {
 	doc,
 	addDoc,
@@ -14,10 +18,16 @@ import {
 
 
 const auth = getAuth();
+
 const currentUser = auth.currentUser;
 firebaseConfig
 
-function ClientPage() {
+const ClientPage =() => {
+
+
+ if(!currentUser){
+	redirect("/");
+ }
 	return (
 		<>
 			<div>{currentUser?.email} working</div>

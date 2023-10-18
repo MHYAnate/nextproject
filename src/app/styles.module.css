@@ -10,7 +10,7 @@
   width: 99vw;
   height: 7vh;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -21,18 +21,25 @@
 .bodyCard{
   margin-top: 1vh;
   width:96dvw;
-  height: 60svh;
+  height: 45svh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .other{
-  margin-bottom: 1svh;
+  margin-bottom: 2svh;
+  margin-top: 2svh;
   overflow-y: auto;
-  width: 90dvw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 99dvw;
   height: fit-content;
 }
 .userbtn{
@@ -45,7 +52,7 @@
   justify-content: space-around;
   align-items: center;
   width:100vw;
-  height: 7vh;
+  height: 4vh;
   border-top: 1px solid silver;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: black;

@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 
 
-const CommerceRender= memo(() => {
+const VacancyRender= memo(() => {
 	let items = [];
 
 	for (let i = 1; i < 2; i++) {
@@ -27,19 +27,19 @@ const SlowPost = () => {
 			<div className={styles.intabCover}>
 				<Image
 					className={styles.img}
-					src={"/platform/commerce.jpg"}
+					src={"/platform/vacancy.jpg"}
 					alt={"chat"}
 					width={500}
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.aims}> Real Time Commerce</p>
+				<p className={styles.aims}> Real Time Vacancy</p>
 			<hr />
 			</div>
 		</>
 	);
 };
 
-CommerceRender.displayName = "CommerceRender";
+VacancyRender.displayName = "VacancyRender";
 
-export default CommerceRender;
+export default VacancyRender;

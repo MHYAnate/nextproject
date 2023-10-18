@@ -6,7 +6,10 @@ import { Services } from "@/features/addCarousel/data";
 import InCarousel from "@/features/addCarousel/ad1";
 import AboutContainer from "@/features/aboutUs/about";
 import UserBtn from "@/features/frontUserBtn/userBtnContainer";
-
+import { AutomativeTab } from "@/features/bodyCard/tabAutomative";
+import { MaintainaceTab } from "@/features/bodyCard/tabMaintnce";
+import VendorCard from "@/features/bodyCard/vendorCard";
+import PlatformCard from "@/features/bodyCard/platformCard";
 
 export default function Home() {
 	return (
@@ -18,21 +21,30 @@ export default function Home() {
 						<div>
 							<AboutContainer />
 						</div>
-						<div><Ilud/></div>
+						<div>
+							<Ilud />
+						</div>
 					</div>
 				</div>
 				<div>
 					<span className={styles.offer}>
-					<p className={styles.paraTop}>	Currently offering seamless linkages to</p>
+						<p className={styles.paraTop}>
+							{" "}
+							Currently offering seamless linkages to
+						</p>
 					</span>
 					<InCarousel Services={Services} />
 				</div>
 				<div className={styles.bodyCard}>
-					<div className={styles.other}></div>
-					<div className={styles.userbtn}>
+				
+						<VendorCard/>
+						<PlatformCard/>
+					
+					
+				</div>
+				<div className={styles.userbtn}>
 						<UserBtn />
 					</div>
-				</div>
 				<div className={styles.footer}></div>
 			</div>
 		</>

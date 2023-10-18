@@ -1,11 +1,11 @@
 import { useState, useTransition } from "react";
 import { TabButton } from "./btn";
 import styles from "./styles.module.css";
-import CommerceRender from "./eCommerce";
+import VacancyRender from "./vacancy";
 import Image from "next/image";
 import { Services } from "../addCarousel/data";
 
-export const CommerceTab = () => {
+export const VacancyTab = () => {
 	const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState("");
 
@@ -18,17 +18,17 @@ export const CommerceTab = () => {
 	return (
 		<>
 			<TabButton
-				onClick={() => (tab === "Commerce" ? selectTab("") : selectTab("Commerce"))}
+				onClick={() => (tab === "Vacancy" ? selectTab("") : selectTab("Vacancy"))}
 			>
-				<div className={tab === "Commerce" ? styles.tabBtnclicked : styles.tabBtn}>
-					{tab === "Commerce" ? (
+				<div className={tab === "Vacancy" ? styles.tabBtnclicked : styles.tabBtn}>
+					{tab === "Vacancy" ? (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}>E Commerce</p>
+							<p className={styles.aims}> Vacancy Room</p>
 							<hr />
 							<Image
 								className={styles.img}
-								src={"/platform/commerce.jpg"}
-								alt={"Commerce"}
+								src={"/platform/vacancy.jpg"}
+								alt={"Vacancy"}
 								width={500}
 								height={500}
 								unoptimized
@@ -36,12 +36,12 @@ export const CommerceTab = () => {
 						</div>
 					) : (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}>E Commerce</p>
+							<p className={styles.aims}> Vacancy Room</p>
 							<hr />
 							<Image
 								className={styles.img}
-								src={"/platform/commerce.jpg"}
-								alt={"commerce"}
+								src={"/platform/Vacancy.jpg"}
+								alt={"Vacancy"}
 								width={500}
 								height={500}
 								unoptimized
@@ -53,7 +53,7 @@ export const CommerceTab = () => {
 				</div>
 			</TabButton>
 			<hr />
-			{tab === "Commerce" && <CommerceRender />}
+			{tab === "Vacancy" && <VacancyRender />}
 		</>
 	);
 };

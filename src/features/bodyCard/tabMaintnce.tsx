@@ -1,11 +1,25 @@
 import { useState, useTransition } from "react";
 import { TabButton } from "./btn";
 import styles from "./styles.module.css";
-import CommerceRender from "./eCommerce";
+import MaintainaceRender from "./maintaince";
 import Image from "next/image";
 import { Services } from "../addCarousel/data";
 
-export const CommerceTab = () => {
+interface CarouselProps {
+	Services: {
+		id: number;
+		category: string;
+		src: string;
+		services: {
+			id: number;
+			name: string;
+			src: string;
+			link: string;
+		}[];
+	}[];
+}
+
+export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 	const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState("");
 
@@ -18,17 +32,18 @@ export const CommerceTab = () => {
 	return (
 		<>
 			<TabButton
-				onClick={() => (tab === "Commerce" ? selectTab("") : selectTab("Commerce"))}
+				onClick={() => (tab === "Automative" ? selectTab("") : selectTab("Automative"))}
 			>
-				<div className={tab === "Commerce" ? styles.tabBtnclicked : styles.tabBtn}>
-					{tab === "Commerce" ? (
+				<div className={tab === "Automative" ? styles.tabBtnclicked : styles.tabBtn}>
+					{tab === "Automative" ? (
+						
 						<div className={styles.tabCover}>
-							<p className={styles.aims}>E Commerce</p>
-							<hr />
+							<p className={styles.aims}> {Services[1].category} Vendors </p>
+						<hr />
 							<Image
 								className={styles.img}
-								src={"/platform/commerce.jpg"}
-								alt={"Commerce"}
+								src={Services[1].src}
+								alt={Services[1].category}
 								width={500}
 								height={500}
 								unoptimized
@@ -36,12 +51,12 @@ export const CommerceTab = () => {
 						</div>
 					) : (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}>E Commerce</p>
-							<hr />
+							<p className={styles.aims}> {Services[1].category} Vendors </p>
+						<hr />
 							<Image
 								className={styles.img}
-								src={"/platform/commerce.jpg"}
-								alt={"commerce"}
+								src={Services[1].src}
+								alt={Services[1].category}
 								width={500}
 								height={500}
 								unoptimized
@@ -53,7 +68,7 @@ export const CommerceTab = () => {
 				</div>
 			</TabButton>
 			<hr />
-			{tab === "Commerce" && <CommerceRender />}
+			{tab === "Automative" && <MaintainaceRender Services={Services} />}
 		</>
 	);
-};
+}

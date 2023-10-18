@@ -5,7 +5,8 @@
   left: 1dvw;
   top: 7.5svh;
   position: fixed;
-  background-color: rgb(215, 234, 213);
+  background-image: linear-gradient(to bottom, #108a00, #ADFF29);
+  border: 1px solid #108a00;
   z-index: 3;
   overflow-y: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -24,7 +25,8 @@
   align-items: center;
   color: #108a00;
   margin-bottom: 1svh;
-  background-color: rgb(215, 234, 213);
+  background-image: linear-gradient(to top, #108a00, #ADFF29);
+  border: 1px solid #108a00;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   margin-top: 1svh;
@@ -62,7 +64,8 @@
   margin-bottom: 1svh;
   margin-right: 5px;
   margin-left: 5px;
-  background-color: rgb(215, 234, 213);
+  background-image: linear-gradient(to bottom, #108a00, #ADFF29);
+  border: 1px solid #108a00;
   font-size: 1.2em;
   color: black;
   padding-left: 10px;
