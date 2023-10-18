@@ -1,9 +1,5 @@
 import React, { memo } from "react";
 import styles from "./styles.module.css";
-import { useState, useTransition } from "react";
-import { TabButton } from "./inBtn";
-import Passcode from "../passcode/passcode";
-import Number from "../number/number";
 import ClientSignUp from "../forms/clientSignUp";
 
 interface post {

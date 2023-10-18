@@ -1,7 +1,5 @@
 import React, { memo } from 'react';
 import styles from "./styles.module.css";
-import Passcode from "../passcode/passcode";
-import Number from "../number/number";
 import VendorLogIn from '../forms/vendorLogIn';
 
 interface post {
