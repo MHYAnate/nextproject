@@ -40,7 +40,7 @@ export const VacancyTab = () => {
 							<hr />
 							<Image
 								className={styles.img}
-								src={"/platform/Vacancy.jpg"}
+								src={"/platform/vacancy.jpg"}
 								alt={"Vacancy"}
 								width={500}
 								height={500}
