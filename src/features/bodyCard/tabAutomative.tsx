@@ -38,7 +38,7 @@ export const AutomativeTab: React.FC<CarouselProps> = ({Services}) =>{
 					{tab === "Automative" ? (
 						
 						<div className={styles.tabCover}>
-							<p className={styles.aims}> {Services[0].category} Vendors </p>
+							<p className={styles.aims}> {Services[0].category} Services </p>
 						<hr />
 							<Image
 								className={styles.img}
@@ -51,7 +51,7 @@ export const AutomativeTab: React.FC<CarouselProps> = ({Services}) =>{
 						</div>
 					) : (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}> {Services[0].category} Vendors </p>
+							<p className={styles.aims}> {Services[0].category} Services </p>
 						<hr />
 							<Image
 								className={styles.img}

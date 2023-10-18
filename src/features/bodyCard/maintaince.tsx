@@ -46,7 +46,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.aims}> {Services[1].category} Vendors</p>
+				<p className={styles.aims}> {Services[1].category} Services</p>
 			<hr />
 			</div>
 		</>
