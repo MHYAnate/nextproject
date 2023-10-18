@@ -21,7 +21,7 @@
 .bodyCard{
   margin-top: 1vh;
   width:96dvw;
-  height: 45svh;
+  height: 42svh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   justify-content: space-around;
   align-items: center;
   width:100vw;
-  height: 4vh;
+  height: 7vh;
   border-top: 1px solid silver;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: black;

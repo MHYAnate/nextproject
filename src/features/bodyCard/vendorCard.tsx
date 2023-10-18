@@ -7,9 +7,7 @@ import { PersonalTab } from "./tabPersonal";
 const VendorCard = () => {
 	return (
 		<div className={styles.vendorsCover}>
-      <div className={styles.titleCover}><p className={styles.cardTitle}>Vendors</p></div>
-			
-
+     
 			<div className={styles.vendor}>
 				<AutomativeTab Services={Services} />
 				<MaintainaceTab Services={Services} />

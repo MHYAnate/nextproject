@@ -23,7 +23,7 @@ export const VacancyTab = () => {
 				<div className={tab === "Vacancy" ? styles.tabBtnclicked : styles.tabBtn}>
 					{tab === "Vacancy" ? (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}> Vacancy Room</p>
+							<p className={styles.aims}> Vacancies</p>
 							<hr />
 							<Image
 								className={styles.img}
@@ -36,7 +36,7 @@ export const VacancyTab = () => {
 						</div>
 					) : (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}> Vacancy Room</p>
+							<p className={styles.aims}> Vacancies</p>
 							<hr />
 							<Image
 								className={styles.img}

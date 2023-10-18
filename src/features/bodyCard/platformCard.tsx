@@ -7,9 +7,6 @@ import { VacancyTab } from "./tabVacancy";
 const PlatformCard = () => {
 	return (
 		<div className={styles.vendorsCover}>
-			<div className={styles.titleCover}>
-				<p className={styles.cardTitle}>Platforms</p>
-			</div>
 
 			<div className={styles.vendor}>
 				<CommerceTab />
