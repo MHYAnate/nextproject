@@ -86,7 +86,8 @@
   font-weight: bolder;
  }
  .vendorsCover{
-  margin-top: 2vh;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
   width: 95vw;
   height: 22vh;
   display: flex;
