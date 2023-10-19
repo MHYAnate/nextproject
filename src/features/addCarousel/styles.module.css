@@ -114,16 +114,18 @@
 	width: 40vw;
   height: 20vh;
 	height: inherit;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
 }
 .imgCover {
-	width: 37vh;
+	width: 40vw;
 	height: 17vh;
 	padding-right: 5vw;
 	position: relative;
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
 }
 
 .img {
@@ -135,7 +137,7 @@
 }
 
 .front {
-	width: 44vw;
+	width: 40vw;
 	height: 17vh;
 	border-radius: 5px;
 	display: flex;
