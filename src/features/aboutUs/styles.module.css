@@ -76,6 +76,7 @@
   height: 5.5svh;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
   
 }
 
@@ -98,7 +99,6 @@
   margin-top: 0.4vh;
   padding-bottom: 0.7vh;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 }
 .aims{
   font-family: 'Times New Roman', Times, serif;
