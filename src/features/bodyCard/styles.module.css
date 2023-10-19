@@ -87,7 +87,7 @@
  }
  .vendorsCover{
   width: 95vw;
-  height: 27vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +114,7 @@
 
  .vendor{
   width: 95vw;
-  height: 25vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
