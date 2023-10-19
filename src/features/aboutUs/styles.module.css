@@ -87,7 +87,6 @@
   background-color:  #108a00;
   width: 65vw;
   height: 5svh;
-  border-radius: 3px;
   color: white;
 }
 .abtSvg{
@@ -95,9 +94,11 @@
   height: 3.5svh;
 }
 .span{
-  font-size: smaller;
+  font-size: 1rem;
   margin-top: 0.4vh;
-  padding-bottom: 0.7vh;
+  padding-bottom: 0.3vh;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 }
 .aims{
   font-family: 'Times New Roman', Times, serif;
