@@ -1,3 +1,10 @@
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
 .header{
   display: flex;
   width: 100vw;
@@ -7,28 +14,25 @@
 }
 
 .nav{
-  width: 99vw;
+  width: 100vw;
   height: 7vh;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid black;
 
 }
 
 .bodyCard{
-  margin-top: 1vh;
-  width:96dvw;
-  height: 42svh;
+  width:100dvw;
+  height: 50svh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
   align-items: center;
   background-color: white;
+
 }
 .other{
   margin-bottom: 2svh;
@@ -81,13 +85,7 @@
   margin-right: 1em;
 }
 
-.main{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-}
+
 .ilud{
   height: 7vh;
   width: 20vw;
@@ -96,20 +94,7 @@
   display: flex;
   align-items: center;
 }
-.offer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Times New Roman', Times, serif;
-  color:#108a00;
-	position: relative;
-  font-weight: bolder;
-	height: 7vh;
-  
-  background-image: linear-gradient(to bottom, white, #ADFF29);
-  width: 99vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 .paraTop{
   font-size: 1.1em;
   transform: scaleY(1.5);

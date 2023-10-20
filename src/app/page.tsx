@@ -10,6 +10,7 @@ import { AutomativeTab } from "@/features/bodyCard/tabAutomative";
 import { MaintainaceTab } from "@/features/bodyCard/tabMaintnce";
 import VendorCard from "@/features/bodyCard/vendorCard";
 import PlatformCard from "@/features/bodyCard/platformCard";
+import PanelCard from "@/features/bodyCard/panelCard";
 
 export default function Home() {
 	return (
@@ -27,24 +28,19 @@ export default function Home() {
 					</div>
 				</div>
 				<div>
-					<span className={styles.offer}>
-						<p className={styles.paraTop}>
-							{" "}
-							Currently Offering Seamless Linkages To
-						</p>
-					</span>
 					<InCarousel Services={Services} />
 				</div>
+				<div>
+					<PanelCard />
+				</div>
+
 				<div className={styles.bodyCard}>
-				
-						<VendorCard/>
-						<PlatformCard/>
-					
-					
+					<VendorCard />
+					<PlatformCard />
 				</div>
 				<div className={styles.userbtn}>
-						<UserBtn />
-					</div>
+					<UserBtn />
+				</div>
 				<div className={styles.footer}></div>
 			</div>
 		</>

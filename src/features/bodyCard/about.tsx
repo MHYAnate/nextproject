@@ -1,10 +1,10 @@
 import React, { useState, memo, useTransition } from "react";
-import Image from "next/image";
 import styles from "./styles.module.css";
+import Ilud from "../ilud/ilud";
 
 
 
-const ContactUsRender= memo(() => {
+const AboutUsRender= memo(() => {
 	let items = [];
 
 	for (let i = 1; i < 2; i++) {
@@ -25,21 +25,14 @@ const SlowPost = () => {
 		<>
 			
 			<div className={styles.intabCover}>
-				<Image
-					className={styles.img}
-					src={"/platform/contact.jpg"}
-					alt={"chat"}
-					width={500}
-					height={500}
-					unoptimized
-				/>
-				<p className={styles.aims}> contact us</p>
+				<Ilud/>
+				<p className={styles.aims}>aims at seamless linkages</p>
 			<hr />
 			</div>
 		</>
 	);
 };
 
-ContactUsRender.displayName = "ContactUsRender";
+AboutUsRender.displayName = "AboutUsRender";
 
-export default ContactUsRender;
+export default AboutUsRender;

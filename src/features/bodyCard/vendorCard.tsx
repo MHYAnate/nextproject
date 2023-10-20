@@ -6,14 +6,14 @@ import { Services } from "@/features/addCarousel/data";
 import { PersonalTab } from "./tabPersonal";
 const VendorCard = () => {
 	return (
-		<div className={styles.vendorsCover}>
+		
      
 			<div className={styles.vendor}>
 				<AutomativeTab Services={Services} />
 				<MaintainaceTab Services={Services} />
 				<PersonalTab Services={Services} />
 			</div>
-		</div>
+		
 	);
 };
 

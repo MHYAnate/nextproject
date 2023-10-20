@@ -1,9 +1,9 @@
 import { useState, useTransition } from "react";
 import { TabButton } from "./inTabButton";
 import styles from "./styles.module.css";
-import ContactUsRender from "./contact";
+import AboutUsRender from "./about";
 
-export const ContactUsTab = () => {
+export const AboutUsTab = () => {
 	const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState("");
 
@@ -17,7 +17,7 @@ export const ContactUsTab = () => {
 		<>
 			<TabButton
 				onClick={() =>
-					tab === "ContactUs" ? selectTab("") : selectTab("ContactUs")
+					tab === "AboutUs" ? selectTab("") : selectTab("AboutUs")
 				}
 			>
 				<div className={styles.tabBtnP}>
@@ -28,10 +28,10 @@ export const ContactUsTab = () => {
 							data-name="Layer 1"
 							viewBox="0 0 24 24"
 							className={styles.svg}
-              fill="dodgerblue"
-              stroke="dodgerblue"
+              fill="green"
+              stroke="green"
 						>
-							<path d="M8,20H0V3C0,1.346,1.346,0,3,0h2c1.654,0,3,1.346,3,3V20ZM21,2H9.899c.066,.323,.101,.658,.101,1V22H0v2H24V5c0-1.654-1.346-3-3-3ZM13,20c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm4,8c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm4,8c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm0-4c-.552,0-1-.448-1-1s.448-1,1-1,1,.448,1,1-.448,1-1,1Zm1-5h-7v-3h6c.552,0,1,.448,1,1v2Z" />
+							<path d="M14,7.25A1.75,1.75,0,1,1,12.25,5.5,1.751,1.751,0,0,1,14,7.25ZM24,12A12,12,0,1,0,12,24H24Zm-3,0v9H12a9,9,0,1,1,9-9Zm-7,.5A2.5,2.5,0,0,0,11.5,10H9v3h2v5h3Z" />
 						</svg>
 						<hr />
 						<p className={styles.aims}> </p>
@@ -39,7 +39,7 @@ export const ContactUsTab = () => {
 				</div>
 			</TabButton>
 			<hr />
-			{tab === "ContactUs" && (
+			{tab === "AboutUs" && (
 				<div>
 					<div className={styles.close} onClick={() => selectTab("")}>
 						<svg
@@ -51,7 +51,7 @@ export const ContactUsTab = () => {
 							<path d="m24 5a3 3 0 0 0 -3-3h-13.242l-7.758 10 7.758 10h13.242a3 3 0 0 0 3-3zm-6.041 9.543-1.414 1.414-2.545-2.543-2.543 2.543-1.414-1.414 2.543-2.543-2.543-2.543 1.414-1.414 2.543 2.543 2.543-2.543 1.414 1.414-2.543 2.543z" />
 						</svg>
 					</div>
-					<ContactUsRender />
+					<AboutUsRender />
 				</div>
 			)}
 		</>

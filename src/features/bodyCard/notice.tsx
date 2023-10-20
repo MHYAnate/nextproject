@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 
 
-const ContactUsRender= memo(() => {
+const NoticeRender= memo(() => {
 	let items = [];
 
 	for (let i = 1; i < 2; i++) {
@@ -27,19 +27,19 @@ const SlowPost = () => {
 			<div className={styles.intabCover}>
 				<Image
 					className={styles.img}
-					src={"/platform/contact.jpg"}
+					src={"/platform/notice.jpg"}
 					alt={"chat"}
 					width={500}
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.aims}> contact us</p>
+				<p className={styles.aims}> Real Time Notification</p>
 			<hr />
 			</div>
 		</>
 	);
 };
 
-ContactUsRender.displayName = "ContactUsRender";
+NoticeRender.displayName = "NoticeRender";
 
-export default ContactUsRender;
+export default NoticeRender;

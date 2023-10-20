@@ -6,14 +6,14 @@ import { VacancyTab } from "./tabVacancy";
 
 const PlatformCard = () => {
 	return (
-		<div className={styles.vendorsCover}>
+		
 
 			<div className={styles.vendor}>
 				<CommerceTab />
 				<VacancyTab />
 				<ChatTab />
 			</div>
-		</div>
+		
 	);
 };
 

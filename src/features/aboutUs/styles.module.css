@@ -71,20 +71,17 @@
   align-items: center;
   padding-top: 0.5svh;
   font-weight: bold;
-  background-image: linear-gradient(to right, #108a00, #ADFF29);
+  background-color: #108a00;
   width: 69vw;
   height: 5.5svh;
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
-  
+  color: white;
+
 }
 
 .tabBtnclicked{
   display: flex;
   align-items: center;
   padding-top: 0.5svh;
-  font-weight: bold;
   background-color:  #108a00;
   width: 65vw;
   height: 5svh;
@@ -95,10 +92,11 @@
   height: 3.5svh;
 }
 .span{
-  font-size: 1.1rem;
+  font-size: .9rem;
   margin-top: 0.4vh;
   padding-bottom: 0.7vh;
   font-weight: bolder;
+  transform: scaleY(1.3);
 }
 .aims{
   font-family: 'Times New Roman', Times, serif;

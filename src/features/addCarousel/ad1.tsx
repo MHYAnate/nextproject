@@ -32,7 +32,7 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 				? 0
 				: prevIndex + 1
 		);
-	}, [ setInnerActiveIndex, Services, activeIndex]);
+	}, [setInnerActiveIndex, Services, activeIndex]);
 
 	const intervalTime = useMemo(() => {
 		return 10000 * Services[activeIndex].services.length - 1;
@@ -69,12 +69,13 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 	return (
 		<div className={styles.parent}>
 			<div className={styles.mainCard}>
-				<div className={styles.cardCategory}>
-					<div className={styles.titleTop}>
-						<span className={styles.titleTopSpan}>
-							{Services[activeIndex].category} Services like
-						</span>
-					</div>
+				<div className={styles.titleTop}>
+					<span className={styles.titleTopSpan}>
+						{Services[activeIndex].category} Services such as{" "}
+						{Services[activeIndex]?.services[inneractiveIndex]?.name} Service
+					</span>
+				</div>
+				<div className={styles.mainBody}>
 					<div className={styles.bodyCardCategory}>
 						<div className={styles.catImgCover}>
 							<Image
@@ -88,48 +89,51 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 							/>
 						</div>
 						<div className={styles.inBodyCardCategory}>
-							<div onClick={()=>setActiveIndex(0)} className={Services[activeIndex].category === Services[0].category?styles.highLighted:styles.spanCategory}>
-								<span className={styles.catSpan}>
-									{" "}
-									{Services[0].category}
-								</span>
+							<div
+								onClick={() => setActiveIndex(0)}
+								className={
+									Services[activeIndex].category === Services[0].category
+										? styles.highLighted
+										: styles.unHighLighted
+								}
+							>
+								<span className={styles.catSpan}> {Services[0].category}</span>
 							</div>
-							<div onClick={()=>setActiveIndex(1)} className={Services[activeIndex].category === Services[1].category?styles.highLighted:styles.spanCategory}>
-								<span className={styles.catSpan}>
-									{" "}
-									{Services[1].category}
-								</span>
+							<div
+								onClick={() => setActiveIndex(1)}
+								className={
+									Services[activeIndex].category === Services[1].category
+										? styles.highLighted
+										: styles.unHighLighted
+								}
+							>
+								<span className={styles.catSpan}> {Services[1].category}</span>
 							</div>
-							<div onClick={()=>setActiveIndex(2)} className={Services[activeIndex].category === Services[2].category?styles.highLighted:styles.spanCategory}>
-								<span className={styles.catSpan}>
-									{" "}
-									{Services[2].category}
-								</span>
+							<div
+								onClick={() => setActiveIndex(2)}
+								className={
+									Services[activeIndex].category === Services[2].category
+										? styles.highLighted
+										: styles.unHighLighted
+								}
+							>
+								<span className={styles.catSpan}> {Services[2].category}</span>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className={styles.cardLCover}>
-					<div className={styles.cardL}>
-						<div className={styles.titleCover}>
-							<span className={styles.titleSpan1}>
-								{Services[activeIndex]?.services[inneractiveIndex]?.name}{" "}
-								Services
-							</span>
-						</div>
-						<div className={styles.carouselImageCover}>
-							<div className={styles.imgCover2}>
-								<Image
-									object-fit="cover"
-									className={styles.imgSlide}
-									alt="Picture of the author"
-									width={100}
-									height={100}
-									src={Services[activeIndex]?.services[inneractiveIndex]?.src}
-									priority={true}
-									unoptimized
-								/>
-							</div>
+
+					<div className={styles.carouselImageCover}>
+						<div className={styles.slider}>
+							<Image
+								object-fit="cover"
+								className={styles.imgSlide}
+								alt="Picture of the author"
+								width={100}
+								height={100}
+								src={Services[activeIndex]?.services[inneractiveIndex]?.src}
+								priority={true}
+								unoptimized
+							/>
 						</div>
 					</div>
 				</div>
