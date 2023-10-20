@@ -4,14 +4,14 @@
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 25vh;
+	height: 26vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: white;
 }
 
 .mainCard {
 	width: 99vw;
-	height: 24vh;
+	height: 25vh;
 	flex-direction: column;
 	display: flex;
 	justify-content: space-evenly;
@@ -20,12 +20,14 @@
 
 .titleTop{
   width: inherit;
-  height: 4vh;
-	border-bottom: 1px solid  #108a00;
+  height: 5vh;
+	
 	display: flex;
   justify-content: center;
   align-items: center;
+	background-image: linear-gradient(to top, white, #108a00);
 }
+
 
 .titleTopSpan{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #108a00;
+  color: black;
 	transform: scaleY(1.5);
 	
 }
@@ -48,7 +50,7 @@
 
 .bodyCardCategory{
   width: 47vw;
-  height: 17vh;
+  height: 18vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -56,14 +58,14 @@
 
 .catImgCover{
   width: 22vw;
-  height: 15vh;
+  height: 16vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .imgCat{
   width: 22vw;
-  height: 15vh;
+  height: 16vh;
 	border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -112,19 +114,21 @@
 .carouselImageCover{
   overflow-x: auto;
   display: flex;
+	justify-content: center;
+	align-items: center;
   width: 40dvw;
-	height: 17vh;
+	height: 18vh;
 }
 .slider {
 	width: 40dvw;
-	height: 15vh;
+	height: 16vh;
   animation: move-right 10s  infinite linear;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .imgSlide {
 	width: 40vw;
-  height: 15vh;
+  height: 16vh;
 	border-radius: 5px;
 }
 
