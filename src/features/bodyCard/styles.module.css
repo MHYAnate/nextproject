@@ -46,6 +46,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding-top: 3vh;
  }
 
  .tabCover{
@@ -148,9 +149,7 @@
   left: 1dvw;
   top: 1svh;
   position: fixed;
-  background-color: white;
   z-index: 8;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  
  .svg{
