@@ -123,8 +123,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
  }
 
  .titleCover{
