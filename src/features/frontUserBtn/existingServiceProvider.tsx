@@ -36,7 +36,7 @@ const  SlowPost: React.FC<post> =()=> {
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className={styles.svg}
+					className={styles.svgM}
 				>
 					<path
 						strokeLinecap="round"
