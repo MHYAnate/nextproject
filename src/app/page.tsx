@@ -27,13 +27,12 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div className={styles.carouselCover}>
 					<InCarousel Services={Services} />
 				</div>
 				<div>
 					<PanelCard />
 				</div>
-
 				<div className={styles.bodyCard}>
 					<VendorCard />
 					<PlatformCard />

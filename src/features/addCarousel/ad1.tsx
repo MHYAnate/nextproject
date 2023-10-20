@@ -70,9 +70,9 @@ const InCarousel: React.FC<CarouselProps> = memo(({ Services }) => {
 		<div className={styles.parent}>
 			<div className={styles.mainCard}>
 				<div className={styles.titleTop}>
-					<span className={styles.titleTopSpan}>
-						{Services[activeIndex].category} Services such as{" "}
-						{Services[activeIndex]?.services[inneractiveIndex]?.name} Service
+					<span className={styles.titleTopSpan}>Access{" "}
+						{Services[activeIndex].category} Vendors For{" "}
+						{Services[activeIndex]?.services[inneractiveIndex]?.name} Services
 					</span>
 				</div>
 				<div className={styles.mainBody}>

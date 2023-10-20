@@ -6,13 +6,13 @@ export const Services = [
     "services": [
       {
         "id": 1,
-        "name": "Auto spray",
+        "name": "Auto Spray",
         "src": "/service/auto_spray.jpg",
         "link": "",
       },
       {
         "id": 2,
-        "name": "Car ac",
+        "name": "Car A.C",
         "src": "/service/car_ac.jpg",
         "link": "",
       },
@@ -24,13 +24,13 @@ export const Services = [
       },
       {
         "id": 4,
-        "name": "Panel beater",
+        "name": "Panel beating",
         "src": "/service/panel_beater.jpg",
         "link": "",
       },
       {
         "id": 5,
-        "name": "Re-Wire",
+        "name": "Re-Wiring",
         "src": "/service/re-wire.jpg",
         "link": "",
       },
@@ -133,7 +133,7 @@ export const Services = [
 			},
       {
 				"id": 13,
-				"name": "Shoe repair",
+				"name": "Shoe repairing",
 				"src": "/service/shoe_repair.jpg",
 				"link": "",
 			},
@@ -164,7 +164,7 @@ export const Services = [
     "services": [
       {
         "id": 1,
-        "name": "Architecture",
+        "name": "Architectural",
         "src": "/service/architecture.jpg",
         "link": "",
       },
@@ -188,7 +188,7 @@ export const Services = [
       },
       {
         "id": 5,
-        "name": "Car wash",
+        "name": "Car Washing",
         "src": "/service/car_wash.jpg",
         "link": "",
       },

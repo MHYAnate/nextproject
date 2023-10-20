@@ -25,14 +25,14 @@
 
 .bodyCard{
   width:100dvw;
-  height: 50svh;
+  height: 45svh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-
+  margin-top: 1vh;
 }
 .other{
   margin-bottom: 2svh;
