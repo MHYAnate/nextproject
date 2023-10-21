@@ -155,4 +155,11 @@
  .svg{
   width: 9dvw;
   height: 4svh;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  color: black;
+  color: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1vw;
  }
