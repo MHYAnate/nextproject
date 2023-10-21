@@ -75,7 +75,7 @@
 }
 .close{
   left: 1dvw;
-  top: 1svh;
+  top: 1px;
   position: fixed;
   z-index: 8;
  }
@@ -206,7 +206,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1svh;
   background-image: linear-gradient(to top,#108a00, #ADFF29);
   
 }
