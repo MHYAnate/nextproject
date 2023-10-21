@@ -78,7 +78,6 @@
   top: 1svh;
   position: fixed;
   z-index: 8;
-
  }
 
  .svgM{
@@ -122,6 +121,7 @@
 .existingClientUser{
  width: 99dvw;
  height: 95svh;
+ margin-top: 1.4vh;
 }
 .newClientUser{
   width: 99dvw;
