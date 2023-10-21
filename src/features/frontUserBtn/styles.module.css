@@ -71,6 +71,7 @@
   border: 1px solid black;
   border-radius: 2px;
   padding: 1vw;
+  border-top-left-radius: 3px;
 }
 .close{
   left: 1dvw;
