@@ -27,7 +27,7 @@ export const ContactUsTab = () => {
 							id="Layer_1"
 							data-name="Layer 1"
 							viewBox="0 0 24 24"
-							className={styles.svg}
+							className={styles.svgP}
               fill="dodgerblue"
               stroke="dodgerblue"
 						>
