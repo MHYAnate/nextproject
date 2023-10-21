@@ -115,17 +115,17 @@
 
 .existingClientUser{
  width: 99dvw;
- height: 77svh;
+ height: 95svh;
 }
 .newClientUser{
   width: 99dvw;
-  height: 77svh;
+  height: 95svh;
   display: flex;
   justify-content: center;
 }
 .existingServiceProviderUser{
   width: 99dvw;
- height: 77svh;
+ height: 95svh;
 }
 
 .existingClientUserIn{
@@ -134,7 +134,7 @@
   justify-content: center;
   align-items: center;
   width: 99dvw;
-  height: 77svh;
+  height: 95svh;
   
   
 }
@@ -156,7 +156,7 @@
   align-items: center;
   justify-content: space-between;
   width: 99dvw;
-  height: 77svh;
+  height: 95svh;
   
   
 }
@@ -166,7 +166,7 @@
   align-items: center;
   justify-content: space-between;
   width: 99dvw;
-  height: 77svh;
+  height: 95svh;
   
   
 }
@@ -177,7 +177,7 @@
   justify-content: center;
   overflow-y: auto;
   width: 99dvw;
-  height: 47svh;
+  height: 85svh;
 }
 .existingServiceProviderUserIn{
   display: flex;
@@ -185,7 +185,7 @@
   align-items: center;
   background-color: white;
   width: 99dvw;
-  height: 77svh;
+  height: 95svh;
   
   
 }
@@ -234,7 +234,7 @@
   position: fixed;
   top: 0.01svh;
   z-index: 5;
-  height: 81svh;
+  height: 95svh;
 }
 
 
@@ -249,7 +249,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .logIn{
   font-weight: bold;
   color: white;
