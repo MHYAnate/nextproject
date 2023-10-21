@@ -22,7 +22,7 @@ const SlowPost: React.FC<post> = () => {
 	}
 
 	return (
-		<li className={styles.existingClientUserIn}>
+		<li className={styles.existingServiceProviderUserIn}>
 			<div className={styles.userSvg}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
