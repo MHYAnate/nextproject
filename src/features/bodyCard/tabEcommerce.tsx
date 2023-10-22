@@ -36,7 +36,7 @@ export const CommerceTab = () => {
 						</div>
 					) : (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}>E Commerce</p>
+							<p className={styles.aims}>Ecommerce</p>
 							<hr />
 							<Image
 								className={styles.img}

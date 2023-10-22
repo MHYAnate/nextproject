@@ -1,0 +1,31 @@
+.renderCover{
+  
+  border: 1px solid black;
+  min-width: 10vw;
+  min-height: 10vh;
+}
+.rendeSelect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.click{
+  width: 20vw;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.mainContainer{
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  min-width: 20vw;
+  min-height: 20vh;
+}
+
+.tabHolder{
+  background-color: white;
+}

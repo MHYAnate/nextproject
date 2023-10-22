@@ -2,14 +2,18 @@
 
 import { Services } from "@/features/addCarousel/data";
 
+import AutomotiveRender from "@/features/try/try";
 
 
-function ClientPage() {
+
+const ClientPage = () => {
 	return (
 		<>
-			<div></div>
+			<div>checking
+				<AutomotiveRender Services={Services}/>
+			</div>
 		</>
 	);
-}
+};
 
 export default ClientPage;
