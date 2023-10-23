@@ -109,10 +109,9 @@
   width: 90vw;
   height: 15vh;
   display: flex;
-  column-gap: 2vw;
   align-items: center;
   justify-content: center;
-  
+  gap: 1vw;
  }
  .panel{
   background-color: white;
@@ -161,7 +160,7 @@
 
  .svgP{
   width: 10dvw;
-  height: 5svh;
+  height: 4.5vh;
   margin-left: 1vw;
   margin-top: 1vh;
   color: black;

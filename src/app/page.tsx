@@ -34,8 +34,13 @@ export default function Home() {
 					<PanelCard />
 				</div>
 				<div className={styles.bodyCard}>
-					<VendorCard />
-					<PlatformCard />
+					<div className={styles.inCardA}>
+						<VendorCard />
+					</div>
+
+					<div className={styles.inCardB}>
+						<PlatformCard />
+					</div>
 				</div>
 				<div className={styles.userbtn}>
 					<UserBtn />

@@ -30,11 +30,39 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  row-gap: 2vh;
   align-items: center;
   background-color: white;
   margin-top: 1vh;
-  padding-top: 3vh;
+  padding-top: 1vh;
+}
+.inCardA{
+  width: 91vw;
+  height: 19vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-top: 0.5px solid silver;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.inCardB{
+  width: 91vw;
+  height: 19vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 0.5px solid silver;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 .other{
   margin-bottom: 2svh;
