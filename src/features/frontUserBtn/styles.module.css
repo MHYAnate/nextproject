@@ -71,10 +71,10 @@
   border: 1px solid black;
   border-radius: 2px;
   padding: 1vw;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .close{
-  left: 1dvw;
+  right: 1dvw;
   top: 1px;
   position: fixed;
   z-index: 8;
