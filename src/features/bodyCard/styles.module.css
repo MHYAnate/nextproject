@@ -72,6 +72,13 @@
   justify-content: space-between;
   align-items: center;
  }
+ .cov{
+  width: 97vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
  .img{
   width: 21vw;
   height: 8vh;
@@ -144,7 +151,7 @@
  .close{
   left: 1dvw;
   top: 1svh;
-  position: fixed;
+  position: absolute;
   z-index: 8;
  }
  
@@ -167,3 +174,63 @@
   color: black;
   padding: 1vw;
  }
+
+ .renderedServices{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  width: 98vw;
+  flex-wrap: wrap;
+  padding-bottom: 10vh;
+ }
+ .renderCover{
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2vw;
+  gap: 3vw;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+ }
+ .sname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+ }
+
+ .clickFinal{
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2vw;
+  gap: 3vw;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+ }
+ .ServiceHolder{
+  background-color: white;
+ }
+
+ .displayFinalService{
+  width: 98dvw;
+  height: 99vh;
+  left: 1dvw;
+  top: 0.1svh;
+  position: fixed;
+  background-color: white;
+  z-index: 7;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 3vh;
+ }
+
