@@ -44,7 +44,14 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding-top: 3vh;
+ }
+
+ .iCover{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: max-content;
+  width: max-content;
  }
 
  .tabCover{
@@ -62,8 +69,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid silver;
-  border-right: 1px solid silver;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  background-color: #108a00;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
  }
  .intabCover{
   width: 97vw;
@@ -102,7 +111,7 @@
 
  .tabBtnP{
   width: inherit;
-  height: 5vh;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,9 +130,9 @@
   gap: 1vw;
  }
  .panel{
-  background-color: white;
+  background-color: #108a00;
   width: 100vw;
-  height: 7vh;
+  height: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,25 +158,17 @@
  }
  
  .close{
-  right: 1dvw;
-  top: 1svh;
+  right: 2dvw;
+  bottom: 2svh;
   position: fixed;
   z-index: 8;
  }
 
- .close1{
-  right: 1dvw;
-  top: 1svh;
-  position: fixed;
-  z-index: 8;
- }
- .blank{
-  display: none;
- }
+
  
  .svg{
   width: 9dvw;
-  height: 4svh;
+  height: 5svh;
   color: black;
   color: black;
   border-radius: 2px;
@@ -188,11 +189,10 @@
  .svgP{
   width: 10dvw;
   height: 4.5vh;
-  margin-left: 1vw;
-  margin-top: 1vh;
-  color: black;
-  color: black;
+  color: white;
   padding: 1vw;
+  align-self: center;
+  justify-self: center;
  }
 
  .renderedServices{
@@ -251,6 +251,5 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding-top: 3vh;
  }
 

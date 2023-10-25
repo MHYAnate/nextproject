@@ -35,7 +35,6 @@ export default function AboutContainer() {
         <span className={styles.span}>List of available Services</span>
         </div>
       </TabButton>
-      <hr />
       {tab === 'about' && <AboutTab Services={Services} />}
     </>
   );

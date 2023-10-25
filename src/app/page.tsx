@@ -19,7 +19,7 @@ export default function Home() {
 			<div className={styles.main}>
 				<div className={styles.header}>
 					<div className={styles.nav}>
-						<div>
+						<div className={styles.inNav}>
 							<AboutContainer />
 						</div>
 						<div>
@@ -27,11 +27,11 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className={styles.carouselCover}>
-					<InCarousel Services={Services} />
-				</div>
 				<div>
 					<PanelCard />
+				</div>
+				<div className={styles.carouselCover}>
+					<InCarousel Services={Services} />
 				</div>
 				<div className={styles.bodyCard}>
 					<div className={styles.inCardA}>

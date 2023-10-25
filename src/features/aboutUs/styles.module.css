@@ -9,7 +9,6 @@
  z-index: 7;
  overflow-y: auto;
  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- border-bottom: 1px solid silver;
  border-left: 1px solid silver;
  border-right: 1px solid silver;
  border-bottom-left-radius: 5px;
@@ -24,6 +23,7 @@
   width: 65vw;
   border-radius: 3px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid white;
 }
 
 .ServiceClick{
@@ -32,18 +32,21 @@
   align-items: center;
   justify-content: center;
   border: 1px solid white;
-  border-radius: 5px;
-  height: 7svh;
+  border-radius: 2px;
+  height: 6svh;
   width: 90dvw;
-  background-color: #108a00;
-  color: white;
+  background-color: white;
+  color: #108a00;
   padding-left: 2dvw;
+  margin-left: 2vw;
+  border-bottom: 1px solid #108a00;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .renderCover{
   display: flex;
   align-items: center;
-  margin-left: 10dvw;
+  margin-left: 12vw;
   margin-top: 1svh;
   margin-bottom: 1svh;
   font-weight: 500;
@@ -51,6 +54,7 @@
   width: 77dvw;
   border-bottom: .3px solid #108a00;
   padding-bottom: 1svh;
+  
 }
 
 .img{
@@ -74,8 +78,9 @@
   font-weight: bold;
   background-color: #108a00;
   width: 69vw;
-  height: 5.5svh;
+  height: 4svh;
   color: white;
+  border-radius: 3px;
 
 }
 
@@ -83,17 +88,17 @@
   display: flex;
   align-items: center;
   padding-top: 0.5svh;
-  background-color:  #108a00;
+  background-color:  white;
   width: 65vw;
-  height: 5svh;
-  color: white;
+  height: 4svh;
+  color: #108a00;
 }
 .abtSvg{
   width: 8dvw;
   height: 3.5svh;
 }
 .span{
-  font-size: .9rem;
+  font-size: .8rem;
   margin-top: 0.4vh;
   padding-bottom: 0.7vh;
   font-weight: bolder;
@@ -121,6 +126,7 @@
   max-height: 50svh;
   width: 90dvw;
   overflow-y: auto;
+  margin-left: 2vw;
 }
 
 .chevron{

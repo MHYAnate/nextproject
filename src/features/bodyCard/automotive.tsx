@@ -88,6 +88,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 
 	return (
 		<>
+		<div className={styles.iCover}>
 			<div className={styles.intabCover}>
 				<Image
 					className={styles.img}
@@ -103,6 +104,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			<div className={styles.renderedServices}>
 			
 				{renderAutomotiveServices()}
+			</div>
 			</div>
 		</>
 	);

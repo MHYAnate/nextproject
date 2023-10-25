@@ -26,8 +26,8 @@ export const AboutUsTab = () => {
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
 							className={styles.svgP}
-							fill="green"
-							stroke="green"
+							fill="currentcolor"
+							stroke="currentcolor"
 						>
 							<g id="_01_align_center" data-name="01 align center">
 								<path d="M12,24A12,12,0,1,1,24,12,12.013,12.013,0,0,1,12,24ZM12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Z" />
@@ -49,7 +49,7 @@ export const AboutUsTab = () => {
 							id="Isolation_Mode"
 							data-name="Isolation Mode"
 							viewBox="0 0 24 24"
-							className={styles.svg}
+							className={styles.svgP}
 							fill="currentcolor"
 							stroke="currentcolor"
 						>
