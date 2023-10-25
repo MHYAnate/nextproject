@@ -5,16 +5,15 @@
 	align-items: center;
 	width: 100vw;
 	height: 27vh;
-	
 	background-color: white;
 }
 
 .mainCard {
-	width: 99vw;
+	width: 100vw;
 	height: 27vh;
 	flex-direction: column;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -38,7 +37,7 @@
   align-items: center;
   color: white;
 	transform: scaleY(2.5);
-	
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 
 .mainBody{

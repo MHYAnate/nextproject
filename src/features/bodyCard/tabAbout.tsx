@@ -49,7 +49,7 @@ export const AboutUsTab = () => {
 							id="Isolation_Mode"
 							data-name="Isolation Mode"
 							viewBox="0 0 24 24"
-							className={styles.svgP}
+							className={styles.svg}
 							fill="currentcolor"
 							stroke="currentcolor"
 						>
