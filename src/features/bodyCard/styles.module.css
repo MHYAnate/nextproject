@@ -63,14 +63,13 @@
  }
  .tabCoverP{
   width: 33.5vw;
-  height: 4vh;
+  height: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-left: 1px solid white;
   border-right: 1px solid white;
   background-color: #108a00;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
  }
  .intabCover{
   width: 97vw;
@@ -114,7 +113,6 @@
   align-items: center;
   justify-content: center;
   background-color: #108a00;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
  }
  .aims{
   font-size: 0.7rem;
@@ -159,7 +157,7 @@
  
  .close{
   right: 2dvw;
-  bottom: 2svh;
+  top: 2svh;
   position: fixed;
   z-index: 8;
  }
