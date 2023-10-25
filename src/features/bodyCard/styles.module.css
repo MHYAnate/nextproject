@@ -13,9 +13,7 @@
   align-items: center;
   height: 5svh;
   width: 33.5vw;
-  border-radius: 5px;
-  background-color: white;
-  border-radius: 5px;
+  background-color: #108a00;
 }
 
 .inClick{
@@ -65,7 +63,7 @@
  }
  .tabCoverP{
   width: 33.5vw;
-  height: 5vh;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,6 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #108a00;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
  }
  .aims{
   font-size: 0.7rem;
@@ -163,6 +163,12 @@
   position: fixed;
   z-index: 8;
  }
+ .closeP{
+  right: 2dvw;
+  top: 2svh;
+  position: fixed;
+  z-index: 8;
+ }
 
 
  
@@ -188,7 +194,7 @@
 
  .svgP{
   width: 9dvw;
-  height: 3vh;
+  height: 3.5vh;
   color: white;
   padding: 1vw;
   align-self: center;

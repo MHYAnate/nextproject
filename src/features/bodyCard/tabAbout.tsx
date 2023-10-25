@@ -43,7 +43,7 @@ export const AboutUsTab = () => {
 			<hr />
 			{tab === "AboutUs" && (
 				<div>
-					<div className={styles.close} onClick={() => selectTab("")}>
+					<div className={styles.closeP} onClick={() => selectTab("")}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							id="Isolation_Mode"
