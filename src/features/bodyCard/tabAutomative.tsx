@@ -78,14 +78,17 @@ export const AutomativeTab: React.FC<CarouselProps> = ({ Services }) => {
 					<div className={styles.close} onClick={() => selectTab("")}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							id="Isolation_Mode"
-							data-name="Isolation Mode"
 							viewBox="0 0 24 24"
+							strokeWidth={1.5}
 							className={styles.svg}
 							fill="currentcolor"
 							stroke="currentcolor"
 						>
-							<path d="M13.768,1.147a2.5,2.5,0,0,0-3.536,0L0,11.38V21a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.38ZM21,21H16V17.818A3.818,3.818,0,0,0,12.182,14h-.364A3.818,3.818,0,0,0,8,17.818V21H3V12.622l9-9,9,9Z" />
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+							/>
 						</svg>
 					</div>
 					<AutomotiveRender Services={Services} />
