@@ -81,7 +81,7 @@ export const AutomativeTab: React.FC<CarouselProps> = ({ Services }) => {
 							viewBox="0 0 24 24"
 							strokeWidth={1.5}
 							className={styles.svg}
-							fill="currentcolor"
+							fill="none"
 							stroke="currentcolor"
 						>
 							<path
