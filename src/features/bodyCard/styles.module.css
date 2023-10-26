@@ -38,7 +38,7 @@
   position: fixed;
   background-color: white;
   z-index: 7;
-  overflow-y: auto;
+
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -49,7 +49,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 99vh;
+  height: 100svh;
   width: 100vw;
  }
 
@@ -74,7 +74,7 @@
  }
  .intabCover{
   width: 100vw;
-  height: 12vh;
+  height: 15svh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -223,7 +223,8 @@
   justify-content: center;
   align-items: center;
   gap: 3vw;
-  width: 87vw;
+  height: 80vh;
+  width: 85vw;
   overflow-y: auto;
   padding-bottom: 10vh;
  }
@@ -260,7 +261,6 @@
  }
  .ServiceHolder{
   background-color: white;
-  overflow-y: scroll;
  }
 
  .displayFinalService{
@@ -271,7 +271,6 @@
   position: fixed;
   background-color: white;
   z-index: 9;
-  overflow-y: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
