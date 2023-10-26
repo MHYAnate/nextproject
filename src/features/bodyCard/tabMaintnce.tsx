@@ -69,7 +69,7 @@ export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 			</TabButton>
 			<hr />
 			{tab === "Automative" && (
-				<div>
+				<div className={styles.RCover}>
 					<div className={styles.close} onClick={() => selectTab("")}>
 					<svg
 							xmlns="http://www.w3.org/2000/svg"

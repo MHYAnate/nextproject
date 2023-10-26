@@ -57,51 +57,54 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 
 		return maintenanceCategory.services.map((service) => (
 			<>
-			<TabButton
-				key={service.id}
-				onClick={() =>
-					tab === "Auto" && service.name
-						? selectTab("")
-						: selectTab(`Auto${service.name}`)
-				}
-			>
-				{/* You can display the service name, image, or any other information you need */}
-				<Image
-					className={styles.img}
-					src={service.src}
-					alt={service.name}
-					width={500}
-					height={500}
-					unoptimized
-				/>
-				<div className={styles.sname}>{service.name}</div>
-			</TabButton>
-			<div className={styles.ServiceHolder}>
-				{tab === `Auto${service.name}` && (
-					<ServiceHolder services={service} />
-				)}
-			</div>
-		</>
+				<TabButton
+					key={service.id}
+					onClick={() =>
+						tab === "Auto" && service.name
+							? selectTab("")
+							: selectTab(`Auto${service.name}`)
+					}
+				>
+					{/* You can display the service name, image, or any other information you need */}
+					<Image
+						className={styles.img}
+						src={service.src}
+						alt={service.name}
+						width={500}
+						height={500}
+						unoptimized
+					/>
+					<div className={styles.sname}>{service.name}</div>
+				</TabButton>
+				<div className={styles.ServiceHolder}>
+					{tab === `Auto${service.name}` && (
+						<ServiceHolder services={service} />
+					)}
+				</div>
+			</>
 		));
 	}
 
 	return (
 		<>
-			<div className={styles.intabCover}>
-				<Image
-					className={styles.img}
-					src={Services[1].src}
-					alt={Services[1].category}
-					width={500}
-					height={500}
-					unoptimized
-				/>
-				<p className={styles.aims}> {Services[1].category} Services</p>
-				<hr />
-			</div>
-			<div className={styles.renderedServices}>
-					{renderMaintenanceServices()}
+			<div className={styles.iCover}>
+				<div className={styles.intabCover}>
+					<Image
+						className={styles.imgTC}
+						src={Services[1].src}
+						alt={Services[1].category}
+						width={500}
+						height={500}
+						unoptimized
+					/>
+					<p className={styles.inAims}> {Services[1].category} Services</p>
+					<hr />
 				</div>
+				<div className={styles.renderedServices}>
+				{renderMaintenanceServices()}
+				</div>
+			</div>
+			
 		</>
 	);
 };

@@ -33,7 +33,7 @@ const SlowPost = () => {
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.aims}> contact us</p>
+				<p className={styles.inAims}> contact us</p>
 			<hr />
 			</div>
 		</>

@@ -33,7 +33,7 @@ const SlowPost = () => {
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.aims}> Real Time Notification</p>
+				<p className={styles.inAims}> Real Time Notification</p>
 			<hr />
 			</div>
 		</>

@@ -56,7 +56,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 
 		return personalCategory.services.map((service) => (
 			<>
-			<TabButton
+				<TabButton
 					key={service.id}
 					onClick={() =>
 						tab === "Auto" && service.name
@@ -80,25 +80,29 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 						<ServiceHolder services={service} />
 					)}
 				</div>
-				</>
+			</>
 		));
 	}
 
 	return (
 		<>
+			<div className={styles.iCover}>
 			<div className={styles.intabCover}>
-				<Image
-					className={styles.img}
-					src={Services[2].src}
-					alt={Services[2].category}
-					width={500}
-					height={500}
-					unoptimized
-				/>
-				<p className={styles.aims}> {Services[2].category} Services</p>
-				<hr />
+					<Image
+						className={styles.imgTC}
+						src={Services[2].src}
+						alt={Services[2].category}
+						width={500}
+						height={500}
+						unoptimized
+					/>
+					<p className={styles.inAims}> {Services[2].category} Services</p>
+					<hr />
+				</div>
+				<div className={styles.renderedServices}>
+					{renderPersonalServices()}
+				</div>
 			</div>
-			<div className={styles.renderedServices}>{renderPersonalServices()}</div>
 		</>
 	);
 };
