@@ -10,7 +10,7 @@
 
 .mainCard {
 	width: 100vw;
-	height: 27vh;
+	height: 25vh;
 	flex-direction: column;
 	display: flex;
 	justify-content: space-between;
@@ -18,12 +18,14 @@
 }
 
 .titleTop{
-  width: inherit;
-  height: 7vh;
+  width: 87vw;
+  height: 5vh;
 	display: flex;
   justify-content: center;
   align-items: center;
-	background-image: linear-gradient(to top, white, #108a00);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 
@@ -34,8 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  color: #108a00;
   transform: scaleY(1.5);
 }
 
