@@ -91,7 +91,7 @@ export const AutomativeTab: React.FC<CarouselProps> = ({ Services }) => {
 							/>
 						</svg>
 					</div>
-					<div>Select vendors</div>
+					
 					<AutomotiveRender Services={Services} />
 				</div>
 			)}

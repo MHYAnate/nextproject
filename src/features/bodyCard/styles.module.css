@@ -178,18 +178,18 @@
  
  .close{
   right: 2dvw;
-  top: 2svh;
+  top: 1svh;
   position: fixed;
   z-index: 8;
  }
  .closeIn{
-  right: 2dvw;
-  top: 2svh;
+  right: 10dvw;
+  top: 1svh;
   position: fixed;
-  z-index: 9;
-  width: 11vw;
-  height: 5vh;
-  background-color: silver;
+  z-index:11;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 25vw;
  }
  .hidden{
   display: none;

@@ -32,10 +32,10 @@ export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 	return (
 		<>
 			<TabButton
-				onClick={() => (tab === "Automative" ? selectTab("") : selectTab("Automative"))}
+				onClick={() => (tab === "Maintainace" ? selectTab("") : selectTab("Maintainace"))}
 			>
-				<div className={tab === "Automative" ? styles.tabBtnclicked : styles.tabBtn}>
-					{tab === "Automative" ? (
+				<div className={tab === "Maintainace" ? styles.tabBtnclicked : styles.tabBtn}>
+					{tab === "Maintainace" ? (
 						
 						<div className={styles.tabCover}>
 							<p className={styles.aims}> {Services[1].category} Services </p>
@@ -68,7 +68,7 @@ export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 				</div>
 			</TabButton>
 			<hr />
-			{tab === "Automative" && (
+			{tab === "Maintainace" && (
 				<div className={styles.RCover}>
 					
 					<div className={styles.close} onClick={() => selectTab("")}>

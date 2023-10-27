@@ -32,10 +32,10 @@ export const PersonalTab: React.FC<CarouselProps> = ({Services}) =>{
 	return (
 		<>
 			<TabButton
-				onClick={() => (tab === "Automative" ? selectTab("") : selectTab("Automative"))}
+				onClick={() => (tab === "Personal" ? selectTab("") : selectTab("Personal"))}
 			>
-				<div className={tab === "Automative" ? styles.tabBtnclicked : styles.tabBtn}>
-					{tab === "Automative" ? (
+				<div className={tab === "Personal" ? styles.tabBtnclicked : styles.tabBtn}>
+					{tab === "Personal" ? (
 						
 						<div className={styles.tabCover}>
 							<p className={styles.aims}> {Services[2].category} Services </p>
@@ -68,7 +68,7 @@ export const PersonalTab: React.FC<CarouselProps> = ({Services}) =>{
 				</div>
 			</TabButton>
 			<hr />
-			{tab === "Automative" && (
+			{tab === "Personal" && (
 				<div className={styles.RCover}>
 					<div className={styles.close} onClick={() => selectTab("")}>
 					<svg
@@ -86,7 +86,7 @@ export const PersonalTab: React.FC<CarouselProps> = ({Services}) =>{
 							/>
 						</svg>
 					</div>
-					<div>Select vendors</div>
+			
 					<PersonalRender Services={Services} />
 				</div>
 			)  }
