@@ -101,6 +101,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					<hr />
 				</div>
 				<div className={styles.renderedServices}>
+				<div>Select your prefered vendor</div>
 				{renderMaintenanceServices()}
 				</div>
 			</div>

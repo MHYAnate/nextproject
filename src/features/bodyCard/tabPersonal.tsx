@@ -86,6 +86,7 @@ export const PersonalTab: React.FC<CarouselProps> = ({Services}) =>{
 							/>
 						</svg>
 					</div>
+					<div>Select vendors</div>
 					<PersonalRender Services={Services} />
 				</div>
 			)  }

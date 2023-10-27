@@ -70,6 +70,7 @@ export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 			<hr />
 			{tab === "Automative" && (
 				<div className={styles.RCover}>
+					
 					<div className={styles.close} onClick={() => selectTab("")}>
 					<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -86,6 +87,7 @@ export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 							/>
 						</svg>
 					</div>
+					
 					<MaintainaceRender Services={Services} />
 				</div>
 			) }
