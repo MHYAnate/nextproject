@@ -78,7 +78,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 3vw;
   background-image: linear-gradient(to top, white, #108a00);
  }
  .cov{
@@ -94,12 +93,15 @@
   border-radius: 20vh;
  }
  .imgTC{
-  width: 19vw;
-  height: 8vh;
-  border-radius: 5px;
+  width: 25vw;
+  height: 15vh;
   margin-right: 1vw;
  }
-
+ .imgITC{
+  width: 25vw;
+  height: 15vh;
+  margin-right: 1vw;
+ }
  .tabBtnclicked {
   width: inherit;
   height: inherit;
@@ -312,7 +314,7 @@
   display: flex;
   justify-content: flex-start;
   gap: 3vw;
-  padding-left: 3vw;
+  
   align-items: center;
   background-image: linear-gradient(to top, white, #108a00);
   height: 15vh;

@@ -17,7 +17,7 @@ const ServiceHolder = (props: CarouselProps) => {
 			<div className={styles.inDisplayFinalService}>
 				<div className={styles.serviceImg}>
 					<Image
-						className={styles.img}
+						className={styles.imgITC}
 						src={props.services.src}
 						alt={props.services.name}
 						width={500}
