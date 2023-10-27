@@ -33,7 +33,7 @@ const SlowPost = () => {
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.inAims}> Real Time Chatting</p>
+				<p className={styles.inAims}> Real time Community</p>
 			<hr />
 			</div>
 		</>

@@ -23,7 +23,7 @@ export const ChatTab = () => {
 				<div className={tab === "Chat" ? styles.tabBtnclicked : styles.tabBtn}>
 					{tab === "Chat" ? (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}> Chat Room</p>
+							<p className={styles.aims}> Community</p>
 							<hr />
 							<Image
 								className={styles.img}
@@ -36,7 +36,7 @@ export const ChatTab = () => {
 						</div>
 					) : (
 						<div className={styles.tabCover}>
-							<p className={styles.aims}> Chat Room</p>
+							<p className={styles.aims}> Community</p>
 							<hr />
 							<Image
 								className={styles.img}
