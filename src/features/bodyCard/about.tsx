@@ -26,7 +26,7 @@ const SlowPost = () => {
 			
 			<div className={styles.intabCover}>
 				<Ilud/>
-				<p className={styles.aims}>aims at seamless linkages</p>
+				<p className={styles.inAims}>aims at seamless linkages</p>
 			<hr />
 			</div>
 		</>

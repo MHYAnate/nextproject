@@ -26,14 +26,14 @@ const SlowPost = () => {
 			
 			<div className={styles.intabCover}>
 				<Image
-					className={styles.img}
+					className={styles.imgTC}
 					src={"/platform/vacancy.jpg"}
 					alt={"chat"}
 					width={500}
 					height={500}
 					unoptimized
 				/>
-				<p className={styles.aims}> Real Time Vacancy</p>
+				<p className={styles.inAims}> Real Time Vacancy</p>
 			<hr />
 			</div>
 		</>

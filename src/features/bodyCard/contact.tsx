@@ -26,7 +26,7 @@ const SlowPost = () => {
 			
 			<div className={styles.intabCover}>
 				<Image
-					className={styles.img}
+					className={styles.imgTC}
 					src={"/platform/contact.jpg"}
 					alt={"chat"}
 					width={500}
