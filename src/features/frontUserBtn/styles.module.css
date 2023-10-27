@@ -68,10 +68,11 @@
   height: 4svh;
   margin-left: 0.5vw;
   color: black;
-  border: 1px solid black;
   border-radius: 2px;
   padding: 1vw;
   border-top-right-radius: 3px;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+
 }
 .close{
   right: 1dvw;
