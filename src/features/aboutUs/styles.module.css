@@ -2,6 +2,7 @@
  width: 98dvw;
  max-height: 80svh;
  min-height: 37svh;
+ overflow-y: auto;
  left: 1dvw;
  top: 6.9svh;
  position: fixed;

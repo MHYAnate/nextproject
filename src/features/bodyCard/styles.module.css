@@ -182,6 +182,18 @@
   position: fixed;
   z-index: 8;
  }
+ .closeIn{
+  right: 2dvw;
+  top: 2svh;
+  position: fixed;
+  z-index: 9;
+  width: 11vw;
+  height: 5vh;
+  background-color: silver;
+ }
+ .hidden{
+  display: none;
+ }
  .closeP{
   right: 2dvw;
   top: 2svh;
@@ -250,6 +262,13 @@
   font-weight: 900;
   color: #108a00;
  }
+ .tSDiscription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, white, #108a00);
+ }
 
  .clickFinal{
   width: 80vw;
@@ -265,6 +284,16 @@
  .ServiceHolder{
   background-color: white;
  }
+ .sHName{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+ }
 
  .displayFinalService{
   width: 98dvw;
@@ -278,4 +307,19 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
  }
+ 
+ .inDisplayFinalService{
+  display: flex;
+  justify-content: flex-start;
+  gap: 3vw;
+  padding-left: 3vw;
+  align-items: center;
+  background-image: linear-gradient(to top, white, #108a00);
+  height: 15vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: white;
+ }
+
 

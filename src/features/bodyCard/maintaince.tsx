@@ -74,7 +74,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 						height={500}
 						unoptimized
 					/>
-					<div className={styles.sname}>{service.name}</div>
+					<div className={styles.sname}>{service.name}{" "} Vendors</div>
 				</TabButton>
 				<div className={styles.ServiceHolder}>
 					{tab === `Auto${service.name}` && (

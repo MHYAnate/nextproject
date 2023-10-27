@@ -25,7 +25,10 @@ const ServiceHolder = (props: CarouselProps) => {
 						unoptimized
 					/>
 				</div>
-				{props.services.name}
+				<div className={styles.sHName}>
+				{props.services.name} {" "} Vendors
+				</div>
+				
 			</div>
 		</div>
 	);

@@ -75,11 +75,30 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 						height={500}
 						unoptimized
 					/>
-					<div className={styles.sname}>{service.name}</div>
+					<div className={styles.sname}>{service.name}{" "} Vendors</div>
+					
 				</TabButton>
 				<div className={styles.ServiceHolder}>
 					{tab === `Auto${service.name}` && (
-						<ServiceHolder services={service} />
+						<div className={styles.RCover}>
+							<div className={styles.closeIn} onClick={() => selectTab("")}>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							strokeWidth={1.5}
+							className={styles.svg}
+							fill="none"
+							stroke="currentcolor"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+							/>
+						</svg>
+					</div>
+					<ServiceHolder services={service} />
+					</div>
 					)}
 				</div>
 			</>
@@ -102,6 +121,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					<hr />
 				</div>
 				<div className={styles.renderedServices}>
+        
 					{renderAutomotiveServices()}
 				</div>
 			</div>
