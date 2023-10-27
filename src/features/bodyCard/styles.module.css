@@ -79,6 +79,7 @@
   justify-content: flex-start;
   align-items: center;
   background-image: linear-gradient(to top, white, #108a00);
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
  }
  .cov{
   width: 97vw;
@@ -316,7 +317,7 @@
   display: flex;
   justify-content: flex-start;
   gap: 3vw;
-  
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
   align-items: center;
   background-image: linear-gradient(to top, white, #108a00);
   height: 15vh;
