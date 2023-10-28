@@ -98,17 +98,16 @@
   height: 10vh;
   margin-right: 1vw;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  border-top-right-radius: 10vw;
-  border-bottom-right-radius: 3vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 20vw;
  }
  .imgITC{
   width: 20vw;
   height: 10vh;
   margin-right: 1vw;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
- border-top-right-radius: 10vw;
- border-bottom-right-radius: 3vw;
+ border-top-right-radius: 1vw;
+ border-bottom-right-radius: 20vw;
  }
  .tabBtnclicked {
   width: inherit;
