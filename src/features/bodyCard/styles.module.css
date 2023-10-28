@@ -74,7 +74,7 @@
  }
  .intabCover{
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -94,18 +94,21 @@
   border-radius: 20vh;
  }
  .imgTC{
-  width: 25vw;
-  height: 14vh;
+  width: 20vw;
+  height: 10vh;
   margin-right: 1vw;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
+  border-top-right-radius: 30vw;
+  border-bottom-right-radius: 30vw;
  }
  .imgITC{
-  width: 25vw;
-  height: 14vh;
+  width: 20vw;
+  height: 10vh;
   margin-right: 1vw;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+ border-top-right-radius: 30vw;
+ border-bottom-right-radius: 30vw;
  }
  .tabBtnclicked {
   width: inherit;
@@ -141,6 +144,7 @@
  .inAims{
   font-size: 1.4rem;
   font-weight: bolder;
+  align-self: last baseline;
   font-family: 'Times New Roman', Times, serif;
   color: white;
   transform: scaleY(2);
@@ -300,6 +304,7 @@
   font-weight: 900;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  align-self: last baseline;
  }
 
  .displayFinalService{
@@ -318,11 +323,9 @@
  .inDisplayFinalService{
   display: flex;
   justify-content: flex-start;
-  gap: 3vw;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  align-items: center;
   background-image: linear-gradient(to top, white, #108a00);
-  height: 15vh;
+  height: 10vh;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   font-size: 1.2rem;
