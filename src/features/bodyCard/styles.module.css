@@ -98,14 +98,14 @@
   height: 10vh;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
   border-top-right-radius: 1vw;
-  border-bottom-right-radius: 15vw;
+  border-bottom-right-radius: 13vw;
  }
  .imgITC{
   width: 20vw;
   height: 10vh;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
  border-top-right-radius: 1vw;
- border-bottom-right-radius: 15vw;
+ border-bottom-right-radius: 10vw;
  }
  .tabBtnclicked {
   width: inherit;
