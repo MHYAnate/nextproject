@@ -11,6 +11,7 @@
   flex-direction: column;
   width: 100vw;
   height: fit-content;
+  background-color: #108a00;
 }
 .header{
   display: flex;
@@ -30,6 +31,11 @@
 }
 .inNav{
  align-self: center;
+}
+.bodyCover{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bodyCard{
@@ -91,13 +97,8 @@
 
 
 .footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width:100vw;
   height: 7vh;
-  border-top: 1px solid silver;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: black;
 }
 
@@ -142,6 +143,15 @@
 
 
 @media screen and (min-width: 450px){
+
+  .main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .headMain{
     display: flex;
     align-items: center;
@@ -170,5 +180,57 @@
     justify-content: space-between;
     padding-right: 10vw;
   }
- 
+
+  .bodyCover{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bodyCard{
+    width:100dvw;
+    height: 45svh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    margin-top: 1vh;
+    padding-top: 1vh;
+  }
+  .inCardA{
+    width: 87vw;
+    height: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 0.5px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .inCardB{
+    width: 87vw;
+    height: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 0.5px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .footer{
+    width:100vw;
+    height: 7vh;
+    background-color: black;
+  }
 }

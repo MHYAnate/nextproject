@@ -25,7 +25,7 @@ export const AboutUsTab = () => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 24 24"
-							className={styles.svgP}
+							className={styles.abtSvg}
 							fill="currentcolor"
 							stroke="currentcolor"
 						>

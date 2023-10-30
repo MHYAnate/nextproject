@@ -28,6 +28,7 @@ export default function Home() {
 					<PanelCard />
 				</div>
 				</div>
+				<div className={styles.bodyCover}>
 				<div className={styles.carouselCover}>
 					<InCarousel Services={Services} />
 				</div>
@@ -44,6 +45,7 @@ export default function Home() {
 					<UserBtn />
 				</div>
 				<div className={styles.footer}></div>
+				</div>
 			</div>
 		</>
 	);

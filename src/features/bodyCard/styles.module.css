@@ -145,7 +145,11 @@
   transform: scaleY(2);
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
  }
-
+ .abtSvg{
+  width: 8dvw;
+  height: 3.5svh;
+  color: white;
+}
  .vendor{
   width: 90vw;
   height: 15vh;
@@ -222,20 +226,12 @@
   width: 11dvw;
   height: 6svh;
   color: black;
-  color: black;
   border-radius: 2px;
   padding: 1vw;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
  }
 
- .svgP{
-  width: 9dvw;
-  height: 3.5vh;
-  color: white;
-  padding: 1vw;
-  align-self: center;
-  justify-self: center;
- }
+
 
  .renderedServices{
   display: flex;
@@ -358,17 +354,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
     background-color: #108a00;
    }
-   .svgP{
-    width: 7vw;
-    height: 5vh;
-    color: white;
-    padding: 1vw;
-    align-self: center;
-    justify-self: center;
+
+   .svgtb{
+    width: 40vw;
+    height: 20vh;
    }
 
+   .svg1{
+    width: 40vw;
+    height: 20vh;
+   }
+   
+
  }
+
+ 
+ 
