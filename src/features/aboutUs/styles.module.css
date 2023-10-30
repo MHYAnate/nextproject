@@ -82,7 +82,6 @@
   height: 4svh;
   color: white;
   border-radius: 3px;
-
 }
 
 .tabBtnclicked{
@@ -155,6 +154,54 @@
 .tabin{
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 450px){
+ 
+  .click{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 3%;
+    height: 5.5svh;
+    width: 30vw;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .tabBtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5svh;
+    font-weight: bold;
+    background-color: #108a00;
+    width: 30vw;
+    height: 4svh;
+    color: white;
+    border-radius: 3px;
+  }
+  .tabBtnclicked{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.5svh;
+    background-color:  #108a00;
+    width: 30vw;
+    height: 4svh;
+    color: white;
+  }
+  .abtSvg{
+    width: 10dvw;
+    height: 3.5svh;
+  }
+  .span{
+    font-size: .7rem;
+    margin-top: 0.4vh;
+    padding-bottom: 0.7vh;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
 }
 
 
