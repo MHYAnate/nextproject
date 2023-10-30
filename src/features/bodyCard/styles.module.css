@@ -147,14 +147,7 @@
   height: 3.5svh;
   color: white;
 }
- .vendor{
-  width: 90vw;
-  height: 15vh;
-  column-gap: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
+ 
  .panel{
   background-color: #108a00;
   width: 100vw;
@@ -328,6 +321,14 @@
     border-right: 1px solid white;
     background-color: #108a00;
    }
+   .vendor{
+    width: 90vw;
+    height: 15vh;
+    column-gap: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
  }
 
  @media screen and (min-width: 621px){
@@ -418,8 +419,9 @@
    .vendor{
     width: 45vw;
     height: 60vh;
+    row-gap: 0.5vh;
     flex-direction: column;
-    row-gap: 1vw;
+   
     display: flex;
     align-items: center;
     justify-content: center;
