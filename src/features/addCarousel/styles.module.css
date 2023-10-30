@@ -148,3 +148,113 @@
     opacity: 0;
   }
 }
+
+@media screen and (min-width: 621px){
+
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 27vh;
+    background-color: white;
+  }
+
+  .mainCard {
+    width: 50vw;
+    height: 25vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }  .mainBody{
+   display: flex;
+   flex-direction: column;
+   width: max-content;
+   height: max-content;
+  }
+  .titleTop{
+    width: 49vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .bodyCardCategory{
+    width: 47vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .catImgCover{
+    width: 22vw;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgCat{
+    width: 22vw;
+    height: 28vh;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .carouselImageCover{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40dvw;
+    height: 30vh;
+  }
+  .slider {
+    width: 40dvw;
+    height: 28vh;
+    animation: move-right 10s  infinite linear;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 .3px 2.5px 0 rgba(0, 0, 0, 0.15);
+  }
+  .imgSlide {
+    width: 30vw;
+    height: 28vh;
+    border-radius: 5px;
+  }
+
+  .unHighLighted{
+    width: 22vw;
+    height: 7vh;
+    color: #108a00;
+    border: 1px solid #108a00;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .highLighted{
+    width: 22vw;
+    height: 7vh;
+    background-color: #108a00;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .catSpan{
+    font-size: 0.7rem;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+

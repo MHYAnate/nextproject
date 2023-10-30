@@ -50,35 +50,7 @@
   margin-top: 1vh;
   padding-top: 1vh;
 }
-.inCardA{
-  width: 87vw;
-  height: 19vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-top: 0.5px solid silver;
-  border-left: 1px solid silver;
-  border-right: 1px solid silver;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-}
 
-.inCardB{
-  width: 87vw;
-  height: 19vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-bottom: 0.5px solid silver;
-  border-left: 1px solid silver;
-  border-right: 1px solid silver;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-}
 .other{
   margin-bottom: 2svh;
   margin-top: 2svh;
@@ -141,8 +113,39 @@
   text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 }
 
+@media screen and (max-width: 620px){
+  .inCardA{
+    width: 87vw;
+    height: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 0.5px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  
+  .inCardB{
+    width: 87vw;
+    height: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 0.5px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+}
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 621px){
 
   .main{
     display: flex;
@@ -180,57 +183,66 @@
     justify-content: space-between;
     padding-right: 10vw;
   }
+  .carouselCover{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   }
 
   .bodyCover{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
+  }
+  .inBodyCover{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 80vh;
   }
 
   .bodyCard{
-    width:100dvw;
-    height: 45svh;
+    width:50vw;
+    height: 80svh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: white;
     margin-top: 1vh;
-    padding-top: 1vh;
+    padding-top: 50vh;
   }
   .inCardA{
-    width: 87vw;
-    height: 19vh;
+    width: 45vw;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-top: 0.5px solid silver;
-    border-left: 1px solid silver;
-    border-right: 1px solid silver;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    box-shadow: 0;
   }
 
   .inCardB{
-    width: 87vw;
-    height: 19vh;
+    width: 45vw;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-bottom: 0.5px solid silver;
-    border-left: 1px solid silver;
-    border-right: 1px solid silver;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    box-shadow: 0 ;
   }
   .footer{
     width:100vw;
-    height: 7vh;
+    height: 3vh;
     background-color: black;
   }
+
 }
