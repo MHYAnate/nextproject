@@ -17,28 +17,7 @@
 	align-items: center;
 }
 
-.titleTop{
-  width: 87vw;
-  height: 5vh;
-	display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
 
-
-.titleTopSpan{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 0.9rem;
-	font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #108a00;
-  transform: scaleY(1.5);
-}
 
 .mainBody{
 	display: flex;
@@ -148,7 +127,30 @@
     opacity: 0;
   }
 }
-
+@media screen and (max-width: 620px){
+  .titleTop{
+    width: 87vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  
+  .titleTopSpan{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #108a00;
+    transform: scaleY(1.5);
+  }
+}
 @media screen and (min-width: 621px){
 
   .parent {
@@ -183,6 +185,17 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+  
+  .titleTopSpan{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #108a00;
+    transform: scaleY(2);
   }
   .bodyCardCategory{
     width: 47vw;
@@ -249,7 +262,7 @@
   }
   
   .catSpan{
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
     display: flex;

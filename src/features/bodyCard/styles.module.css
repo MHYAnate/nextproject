@@ -148,16 +148,7 @@
   color: white;
 }
  
- .panel{
-  background-color: #108a00;
-  width: 100vw;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
+
 
  .titleCover{
  display: grid;
@@ -329,6 +320,17 @@
     align-items: center;
     justify-content: center;
    }
+
+   .panel{
+    background-color: #108a00;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+   }
  }
 
  @media screen and (min-width: 621px){
@@ -351,7 +353,7 @@
     align-items: center;
     justify-content: center;
     z-index: 3;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+   
    }
 .panelCover{ 
   width: 30vw;
@@ -365,7 +367,6 @@
     align-items: center;
     justify-content: center;
     background-color: #108a00;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
    }
    .tabCoverP{
     width: 10vw;
