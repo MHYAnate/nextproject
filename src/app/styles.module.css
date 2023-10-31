@@ -225,7 +225,7 @@
   
   .inCardA{
     width: 45vw;
-    height: 97vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +236,7 @@
 
   .inCardB{
     width: 45vw;
-    height: 97vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
