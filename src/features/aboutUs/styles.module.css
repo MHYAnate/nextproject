@@ -215,8 +215,7 @@
     border-radius: 3%;
     height: 7svh;
     width: 40vw;
-    border-left: 1px solid #108a00;
-    border-bottom: 1px solid #108a00;
+    
   }
 
   .tabBtn{
@@ -226,7 +225,7 @@
     padding-top: 0.5svh;
     font-weight: bold;
     background-color: white;
-    width: 40vw;
+    width: 30vw;
     height: 7svh;
     color: #108a00;
     border-radius: 3px;
@@ -237,11 +236,12 @@
     align-items: center;
     padding-top: 0.5svh;
     background-color:  #108a00;
-    width: 40vw;
+    width: 30vw;
     height: 4svh;
     color: white;
   }
   .span{
+    display: none;
     font-size: 1.5rem;
     margin-top: 0.4vh;
     padding-bottom: 0.7vh;
