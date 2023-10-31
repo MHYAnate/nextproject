@@ -275,3 +275,88 @@
   justify-content: center;
   width: 100dvw;
 }
+
+@media screen and (min-width: 621px){
+ 
+  .userBtnContainer{
+    height: 10svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;
+    width: 50vw;
+  }
+  .userBtnWrapper2{
+    width: 23dvw;
+    height: 7svh;
+    background-color: #108a00;
+    border-radius: 1svh;
+    color: white;
+    text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
+    font-weight:bold ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  .userBtnWrapper1{
+    width: 50dvw;
+    height: 7svh;
+    background-color: #108a00;
+    border-radius: 1svh;
+    color: white;
+    text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
+    font-weight:bolder ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .userBtn1{
+    width: 20dvw;
+    height: 7svh;
+  }
+  .userBtn2{
+    width: 47dvw;
+    height: 6svh;
+  }
+  .caseContainer{
+    width: 100vw;
+    margin-bottom: -2.5svh;
+  }
+  .case{
+    height: 10svh;
+    width: 47dvw;
+    height: fit-content;
+  }
+  .existingUserIn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50dvw;
+    height: 10svh;
+  }
+  
+  .newUserIn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50dvw;
+    height: 10svh;
+  }
+
+  
+.newUser{
+  display: flex;
+  justify-content: flex-start;
+  width: 100dvw;
+}
+.existingUser{
+  display: flex;
+  justify-content: flex-start;
+  width: 100dvw;
+}
+  
+}

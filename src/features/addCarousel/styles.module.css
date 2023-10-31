@@ -156,18 +156,19 @@
     justify-content: center;
     align-items: center;
     width: 50vw;
-    height: 27vh;
+    height: 77vh;
     background-color: white;
   }
 
   .mainCard {
     width: 50vw;
-    height: 25vh;
+    height: 70vh;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }  .mainBody{
+  }  
+  .mainBody{
    display: flex;
    flex-direction: column;
    width: max-content;
@@ -175,7 +176,7 @@
   }
   .titleTop{
     width: 49vw;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -145,6 +145,7 @@
   }
 }
 
+
 @media screen and (min-width: 621px){
 
   .main{
@@ -157,65 +158,71 @@
 
   .headMain{
     display: flex;
-    align-items: center;
+    align-items: first baseline;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100vw;
+    height: 15vh;
     height: fit-content;
-    background-color:  #108a00;
+    background-color:  white;
+    border-bottom: 1px solid #108a00;
   }
 
   .header{
     display: flex;
     flex-direction: row-reverse;
     width: 68vw;
-    height: 7vh;
+    height: 14vh;
     justify-content: space-around;
-    align-items: center;
+    align-items: first baseline;
   }
 
   .nav{
     width: 68vw;
-    height: 7vh;
-    background-color:#108a00;
+    height: 10vh;
+    background-color:white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10vw;
   }
-  .carouselCover{
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-   }
+  
 
   .bodyCover{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     width: 100vw;
+    height: 90vh;
   }
   .inBodyCover{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
   }
 
+  .carouselCover{
+    padding-top: 1vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
   .bodyCard{
-    width:50vw;
-    height: 80svh;
+    height: 70vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    margin-top: 1vh;
-    padding-top: 20vh;
   }
+
+  
   .inCardA{
     width: 45vw;
     height: 49vh;
@@ -225,7 +232,6 @@
     background-color: white;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    box-shadow: 0;
   }
 
   .inCardB{
@@ -237,12 +243,16 @@
     background-color: white;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    box-shadow: 0 ;
+  }
+
+  .userbtn{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    height: fit-content;
   }
   .footer{
-    width:100vw;
-    height: 3vh;
-    background-color: black;
+    display: none;
   }
 
 }

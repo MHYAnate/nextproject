@@ -369,12 +369,17 @@
    }
    .tabCoverP{
     width: 10vw;
-    height: 5vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #108a00;
+    background-color: white;
    }
+   .abtSvg{
+    width: 8dvw;
+    height: 3.5svh;
+    color: #108a00;
+  }
 
    .svgtb{
     width: 40vw;
