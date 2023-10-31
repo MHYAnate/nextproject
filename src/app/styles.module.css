@@ -218,14 +218,14 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
   
   .inCardA{
     width: 45vw;
-    height: 49vh;
+    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +236,7 @@
 
   .inCardB{
     width: 45vw;
-    height: 49vh;
+    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;

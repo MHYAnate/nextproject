@@ -148,7 +148,16 @@
   color: white;
 }
  
-
+ .panel{
+  background-color: #108a00;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+ }
 
  .titleCover{
  display: grid;
@@ -320,17 +329,6 @@
     align-items: center;
     justify-content: center;
    }
-
-   .panel{
-    background-color: #108a00;
-    width: 100vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-   }
  }
 
  @media screen and (min-width: 621px){
@@ -340,8 +338,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15svh;
-    width: 25vw;
+    height: 31svh;
+    width: 27vw;
     border-radius: 5px;
     background-color: white;
     border-radius: 5px;
@@ -393,7 +391,7 @@
    
    .img{
     width: 20vw;
-    height: 8vh;
+    height: 20vh;
     border-radius: 20vh;
    }
    .aims{
@@ -405,7 +403,7 @@
 
    .tabBtn{
     width: 36vw;
-    height: 15vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -414,7 +412,7 @@
    }
    .tabCover{
     width: 34vw;
-    height: 10vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -424,10 +422,9 @@
 
    .vendor{
     width: 45vw;
-    height: 60vh;
+    height: 120vh;
     row-gap: 0.5vh;
     flex-direction: column;
-   
     display: flex;
     align-items: center;
     justify-content: center;
