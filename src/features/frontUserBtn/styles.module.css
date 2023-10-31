@@ -1,9 +1,8 @@
 .coverDiv{
-  width: 50vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-self: first baseline;
 }
 .caseContainer{
   width: 100%;
@@ -278,7 +277,13 @@
 }
 
 @media screen and (min-width: 621px){
- 
+  .coverDiv{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: first baseline;
+  }
   .userBtnContainer{
     height: 10svh;
     display: flex;
