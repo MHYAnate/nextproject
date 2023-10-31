@@ -226,7 +226,7 @@
     height: 30vh;
   }
   .slider {
-    width: 40dvw;
+    width: 22vw;
     height: 28vh;
     animation: move-right 10s  infinite linear;
     border-radius: 5px;
