@@ -14,6 +14,7 @@
  border-right: 1px solid silver;
  border-bottom-left-radius: 5px;
  border-bottom-right-radius: 5px;
+ animation: Slide-Down 1s  linear;
 }
 
 
@@ -34,6 +35,7 @@
   border-bottom: 1px solid  #108a00;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bolder;
+  animation: Slide-Down 2s  linear;
 }
 
 .renderCover{
@@ -148,6 +150,22 @@
   display: flex;
   align-items: center;
 }
+
+@keyframes Slide-Down {
+  0% {
+    transform: translateY(-40vh);
+    opacity: 0;
+  }
+
+  50%{
+    transform: translateY(-20vh);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0svh);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 620px){
   .click{
     display: flex;
@@ -159,53 +177,7 @@
   }
 }
 
-/* @media screen and (min-width: 621px){
- 
-  .click{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 3%;
-    height: 7svh;
-    width: 30vw;
-  
-  }
 
-  .tabBtn{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 0.5svh;
-    font-weight: bold;
-    background-color: white;
-    width: 30vw;
-    height: 7svh;
-    color: #108a00;
-    border-radius: 3px;
-  }
-  .tabBtnclicked{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 0.5svh;
-    background-color:  #108a00;
-    width: 30vw;
-    height: 4svh;
-    color: white;
-  }
-  .abtSvg{
-    width: 10dvw;
-    height: 3.5svh;
-  }
-  .span{
-    font-size: .7rem;
-    margin-top: 0.4vh;
-    padding-bottom: 0.7vh;
-    font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-} */
 @media screen and (min-width: 621px){
 
   .click{
@@ -214,7 +186,7 @@
     justify-content: flex-start;
     border-radius: 3%;
     height: 7svh;
-    width: 38vw;
+    width: 36.5vw;
     
   }
 
@@ -252,7 +224,76 @@
     width: 10dvw;
     height: 5svh;
   }
+
+  .renderCover{
+    display: flex;
+    align-items: center;
+    margin-left: 12vw;
+    margin-top: 1svh;
+    margin-bottom: 1svh;
+    font-weight: 500;
+    height: 10svh;
+    font-family: 'Times New Roman', Times, serif;
+    width: 77dvw;
+    border-bottom: .3px solid #108a00;
+    padding-bottom: 1svh;
+    
+  }
+  .img{
+    width: 5dvw;
+    height: 7svh;
+    border-radius: 50%;
+    margin-right: 1dvw;
+  }
+  
+  .img1{
+    width: 5dvw;
+    height: 7svh;
+    border-radius: 5%;
+    margin-right: 3dvw;
+  }
+  .ServiceClick{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 10svh;
+    width: 90dvw;
+    background-color: white;
+    color: #108a00;
+    padding-left: 2dvw;
+    margin-left: 2vw;
+    border-bottom: 1px solid  #108a00;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bolder;
+    animation: Slide-Down 2s  linear;
+  }
+
+  .lineContainer{
+    width: 98dvw;
+    max-height: 89svh;
+    min-height: 37svh;
+    overflow-y: auto;
+    left: 1dvw;
+    top: 14svh;
+    position: fixed;
+    background-color: white;
+    z-index: 7;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: Slide-Down 1s  linear;
+   }
+  
 }
+@media screen and (min-width: 919px){}
+@media screen and (min-width: 1161px){}
+
 
 
 
