@@ -34,7 +34,7 @@
   border-bottom: 1px solid  #108a00;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bolder;
-  animation: Slide-Down 1s  linear;
+  animation: Slide-Down 0.5s  linear;
 }
 
 .renderCover{
