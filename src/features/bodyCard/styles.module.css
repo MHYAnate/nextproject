@@ -38,7 +38,7 @@
   position: fixed;
   background-color: white;
   z-index: 7;
-
+  animation:Appear 0.2s linear;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -103,9 +103,14 @@
  border-bottom-right-radius: 10vw;
  }
  .tabBtnclicked {
-  width: inherit;
-  height: inherit;
+  width: 27vw;
+  height: 38vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #108a00;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
 
 
@@ -182,6 +187,7 @@
   top: 2svh;
   position: fixed;
   z-index: 8;
+  animation:Appear 0.5s linear;
  }
  .svg{
   width: 9dvw;
@@ -291,7 +297,24 @@
   font-weight: 900;
   font-size: 1.2rem;
   color: white;
+  animation:Appear 0.3s linear;
  }
+
+ @keyframes Slide-Down {
+  0% {
+    transform: translateY(-40vh);
+    opacity: 0;
+  }
+
+  50%{
+    transform: translateY(-20vh);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0svh);
+    opacity: 1;
+  }
+}
 
  @keyframes Appear {
   0% {
