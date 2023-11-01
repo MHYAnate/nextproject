@@ -6,6 +6,7 @@
 	width: 100vw;
 	height: 27vh;
 	background-color: white;
+  animation: Appear .7s linear;
 }
 
 .mainCard {
@@ -110,7 +111,21 @@
 	border-radius: 5px;
 }
 
+@keyframes Appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
 
+  50%{
+    transform: scale(0.5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 @keyframes move-right {
   0% {
