@@ -189,7 +189,7 @@
   
   .titleTopSpan{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     display: flex;
     justify-content: center;
@@ -271,4 +271,18 @@
   }
   
 }
+
+@media screen and (min-width: 919px){
+  .titleTopSpan{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #108a00;
+    transform: scaleY(2);
+  }
+}
+
 
