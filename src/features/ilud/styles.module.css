@@ -5,7 +5,8 @@
   height: 5.5svh;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 30vw;
-  background-color: #108a00
+  background-color: #108a00;
+  animation: Appear 2.5s linear;
 }
 .ilud{
   text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
@@ -23,7 +24,21 @@
 .mix{
   margin-left: -1.7vw;
 }
+@keyframes Appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
 
+  50%{
+    transform: scale(0.5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 
 @media screen and (max-width: 620px){
