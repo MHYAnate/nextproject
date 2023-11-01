@@ -50,6 +50,7 @@
   width: 77dvw;
   border-bottom: .3px solid #108a00;
   padding-bottom: 1svh;
+  animation: Slide-Down 1s  linear;
   
 }
 
@@ -237,6 +238,7 @@
     width: 77dvw;
     border-bottom: .3px solid #108a00;
     padding-bottom: 1svh;
+    animation: Slide-Down 1s  linear;
     
   }
   .img{

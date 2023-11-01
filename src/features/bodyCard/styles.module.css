@@ -293,6 +293,22 @@
   color: white;
  }
 
+ @keyframes Appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50%{
+    transform: scale(0.5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
  @media screen and (max-width: 620px){
   .tabCoverP{
     width: 33.5vw;
