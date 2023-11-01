@@ -142,7 +142,6 @@
   width: 99dvw;
   height: 95svh;
   
-  
 }
 .logInHeader{
   color: white;
@@ -163,8 +162,7 @@
   justify-content: space-between;
   width: 99dvw;
   height: 95svh;
-  
-  
+  animation: Slide-Up 1s  linear; 
 }
 .newServiceProviderUserIn{
   display: flex;
@@ -173,8 +171,7 @@
   justify-content: space-between;
   width: 99dvw;
   height: 95svh;
-  
-  
+  animation: Slide-Up 1s  linear; 
 }
 .overFlow{
   display: flex;
@@ -192,8 +189,7 @@
   background-color: white;
   width: 99dvw;
   height: 95svh;
-  
-  
+  animation: Slide-Up 1s  linear;
 }
 
 .userSvg{
@@ -240,6 +236,7 @@
   top: 0.00001px;
   z-index: 5;
   height: 95svh;
+  animation: Slide-Up 1s  linear;
 }
 
 
@@ -274,6 +271,21 @@
   display: flex;
   justify-content: center;
   width: 100dvw;
+}
+@keyframes Slide-Up {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+
+  50%{
+    transform: translateY(-50vh);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0svh);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 621px){
