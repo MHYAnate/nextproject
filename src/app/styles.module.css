@@ -115,20 +115,34 @@
 }
 @keyframes Appear {
   0% {
-    transform: scale(0);
+    transform: scale(0.8);
     opacity: 0;
   }
 
   50%{
-    transform: scale(0.5);
-    opacity: .5;
+    transform: scale(0.9);
+    opacity: .2;
   }
   to {
     transform: scale(1);
     opacity: 1;
   }
 }
+@keyframes Appearin {
+  0% {
+    transform: scale(.8);
+    opacity: 0;
+  }
 
+  50%{
+    transform: scale(0.9);
+    opacity: .2;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 620px){
   .inCardA{
     width: 87vw;
@@ -250,7 +264,7 @@
     background-color: white;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    animation: Appear 1s linear;
+    animation: Appearin 2s linear;
   }
 
   .inCardB{
@@ -262,7 +276,7 @@
     background-color: white;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    animation: Appear 1.3s linear;
+    animation: Appearin 2s linear;
   }
 
   .userbtn{
