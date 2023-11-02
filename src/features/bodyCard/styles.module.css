@@ -188,14 +188,7 @@
   z-index: 8;
   animation:Appear 1s linear;
  }
- .svg{
-  width: 9dvw;
-  height: 5svh;
-  color: white;
-  border-radius: 2px;
-  padding: 1vw;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
+
 
  .svg1{
   width: 11dvw;
@@ -247,17 +240,7 @@
   background-image: linear-gradient(to top, white, #108a00);
  }
 
- .clickFinal{
-  width: 80vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 2vw;
-  gap: 3vw;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
- }
+
  .ServiceHolder{
   background-color: white;
  }
@@ -332,6 +315,15 @@
 }
 
  @media screen and (max-width: 620px){
+
+  .svg{
+    width: 9dvw;
+    height: 5svh;
+    color: white;
+    border-radius: 2px;
+    padding: 1vw;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+   }
   .tabCoverP{
     width: 33.5vw;
     height: 3vh;
@@ -369,9 +361,75 @@
     background-color: #108a00;
     box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
    }
+   .clickFinal{
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2vw;
+    gap: 3vw;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+   }
  }
 
  @media screen and (min-width: 621px){
+
+  .imgITC{
+    width: 20vw;
+    height: 20vh;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+   border-bottom-right-radius: 10vw;
+   }
+
+  .inDisplayFinalService{
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to top, white, #108a00);
+    height: 20vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: white;
+    animation:Slide-Down 0.5s linear;
+   }
+
+   .svg{
+  width: 9dvw;
+  height: 5svh;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+ }
+
+  .inAims{
+    font-size: 3rem;
+    font-weight: bolder;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    transform: scaleY(2);
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+   }
+
+  .imgTC{
+    width: 20vw;
+    height: 20vh;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-right-radius: 13vw;
+   }
+
+  .intabCover{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to top, white, #108a00);
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+   }
 
 
   .click{
@@ -383,7 +441,8 @@
     border-radius: 5px;
     background-color: white;
     border-radius: 5px;
-  }  .panel{
+  }  
+  .panel{
     background-color: #108a00;
     width: 30vw;
     height: 5vh;
@@ -419,7 +478,15 @@
     height: 3.5svh;
     color: #108a00;
   }
-
+  .sname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: #108a00;
+   }
    .svgtb{
     width: 40vw;
     height: 20vh;
@@ -433,6 +500,23 @@
     width: 22vw;
     height: 28vh;
     border-radius: 20vh;
+   }
+   .clickFinal{
+    width: 80vw;
+    height: 21vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+   }
+   
+   .imgin{
+      width: 15vw;
+      height: 20vh;
+      border-top-right-radius: 25vh;
+      border-bottom-right-radius: 25vh;
    }
    .aims{
     font-size: 1.2rem;
