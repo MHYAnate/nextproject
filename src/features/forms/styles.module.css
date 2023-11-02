@@ -236,6 +236,14 @@
 }
 
 @media screen and (min-width: 621px){
+
+	.formContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50dvw;
+	}
+	
 	.form {
 		display: flex;
 		justify-content: flex-start;

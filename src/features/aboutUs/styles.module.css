@@ -202,8 +202,8 @@
     align-items: center;
     justify-content: flex-start;
     border-radius: 3%;
-    height: 7svh;
-    width: 36.5vw;
+    height: 10svh;
+    width: 10vw;
     
   }
 
@@ -211,11 +211,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 0.5svh;
+    padding-top: 1svh;
     font-weight: bold;
     background-color: white;
-    width: 30vw;
-    height: 7svh;
+    width: 10dvw;
+    height: 10svh;
     color: #108a00;
     border-radius: 3px;
   }
@@ -223,11 +223,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 0.5svh;
-    background-color:  #108a00;
-    width: 30vw;
+    padding-top: 1svh;
+    background-color:  white;
+    width: 10vw;
     height: 4svh;
-    color: white;
+    color: red;
   }
   .span{
     display: none;
@@ -238,8 +238,8 @@
     font-family: 'Times New Roman', Times, serif;
   }
   .abtSvg{
-    width: 10dvw;
-    height: 5svh;
+    width: 9dvw;
+    height: 9svh;
   }
 
   .renderCover{

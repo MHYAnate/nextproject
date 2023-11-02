@@ -64,20 +64,17 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .svg{
-  width: 9dvw;
-  height: 4svh;
-  margin-left: 0.5vw;
+  width: 5dvw;
+  height: 8svh;
   color: black;
-  border-radius: 2px;
-  padding: 1vw;
-  border-top-right-radius: 3px;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-
+  border-radius: 1svh;
+  border: 1px solid silver;
 }
 .close{
   right: 1dvw;
   top: 1px;
   position: fixed;
+  color: black;
   z-index: 8;
  }
 
@@ -320,7 +317,7 @@
   .userBtnWrapper1{
     width: 50dvw;
     height: 7svh;
-    background-color: #108a00;
+    background-color: red;
     border-radius: 1svh;
     color: white;
     text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
@@ -498,11 +495,10 @@
  }
  .svg{
   width: 9dvw;
-  height: 4svh;
+  height: 5svh;
   margin-left: 0.5vw;
   color: black;
   border-radius: 2px;
-  padding: 1vw;
   border-top-right-radius: 3px;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
   z-index: 9;
