@@ -68,7 +68,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					{/* You can display the service name, image, or any other information you need */}
 
 					<Image
-						className={styles.imgin}
+						className={styles.img}
 						src={service.src}
 						alt={service.name}
 						width={500}
@@ -111,7 +111,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 				</div>
 				<div className={styles.renderedServices}>
         <div>Select your prefered vendor</div>
-					{renderAutomotiveServices()}
+					<div>{renderAutomotiveServices()}</div>
 				</div>
 			</div>
 		</>
