@@ -375,6 +375,40 @@
  }
 
  @media screen and (min-width: 621px){
+  .lineContainer{
+    width: 50dvw;
+    height: 99vh;
+   left: 50vw;
+    top: 0.1svh;
+    position: fixed;
+    background-color: white;
+    z-index: 7;
+    animation:Slide-Down 0.5s linear;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   }
+
+  .renderedServices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    height: 80vh;
+    width: 50vw;
+    overflow-y: auto;
+    padding-bottom: 10vh;
+    align-items: flex-end;
+   }
+  .iCover{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100svh;
+    width: 50vw;
+   }
 
   .imgITC{
     width: 20vw;
@@ -422,7 +456,7 @@
    }
 
   .intabCover{
-    width: 100vw;
+    width: 50vw;
     height: 20vh;
     display: flex;
     justify-content: flex-start;
