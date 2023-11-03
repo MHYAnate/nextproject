@@ -1,646 +1,639 @@
-.click{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 17svh;
-  width: 25vw;
-  border-radius: 5px;
-  background-color: white;
-  border-radius: 5px;
+.click {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 17svh;
+	width: 25vw;
+	border-radius: 5px;
+	background-color: white;
+	border-radius: 5px;
 }
-.Klick{
-  display: flex;
-  align-items: center;
-  height: 5svh;
-  width: 33.5vw;
-  background-color: #108a00;
-}
-
-.inClick{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
-  height: 7svh;
-  width: 90dvw;
-  background-color: #108a00;
-  color: white;
-  padding-left: 2dvw;
+.Klick {
+	display: flex;
+	align-items: center;
+	height: 5svh;
+	width: 33.5vw;
+	background-color: #108a00;
 }
 
-.lineContainer{
-  width: 98dvw;
-  height: 99vh;
-  left: 1dvw;
-  top: 0.1svh;
-  position: fixed;
-  background-color: white;
-  z-index: 7;
-  animation:Slide-Down 0.5s linear;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
- }
-
- .iCover{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100svh;
-  width: 100vw;
- }
-
- .tabCover{
-  width: 21vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
- }
- .tabCoverP{
-  width: 33.5vw;
-  height: 3vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #108a00;
- }
- .intabCover{
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: linear-gradient(to top, white, #108a00);
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
- }
- .cov{
-  width: 97vw;
-  height: 15vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
-
- .imgTC{
-  width: 20vw;
-  height: 10vh;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  border-bottom-right-radius: 13vw;
- }
- .imgITC{
-  width: 20vw;
-  height: 10vh;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
- border-bottom-right-radius: 10vw;
- }
- .tabBtnclicked {
-  width: 27vw;
-  height: 38vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
-
-
-
- .aims{
-  font-size: 0.7rem;
-  font-family: 'Times New Roman', Times, serif;
-  color: #108a00;
-  font-weight: 900;
- }
- .inAims{
-  font-size: 1.4rem;
-  font-weight: bolder;
-  align-self: last baseline;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-  transform: scaleY(2);
-  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
- }
- .abtSvg{
-  width: 8dvw;
-  height: 3.5svh;
-  color: white;
-}
- 
- .panel{
-  background-color: #108a00;
-  width: 100vw;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
-
- .titleCover{
- display: grid;
- align-items: center;
- justify-content: start;
- width: 85vw;
-  
- }
- .cardTitle{
-  margin-top: 1svh;
-  font-size:1rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  color: #108a00;
- }
- 
- .close{
-  right: 2dvw;
-  top: 1svh;
-  position: fixed;
-  z-index: 8;
- }
- .closeIn{
-  right: 10dvw;
-  top: 1svh;
-  position: fixed;
-  z-index:11;
-  width: 15vw;
-  height: 7vh;
-  border-radius: 25vw;
- }
- .hidden{
-  display: none;
- }
- .closeP{
-  right: 2dvw;
-  top: 2svh;
-  position: fixed;
-  z-index: 8;
-  animation:Appear 1s linear;
- }
-
-
- .svg1{
-  width: 11dvw;
-  height: 6svh;
-  color: black;
-  border-radius: 2px;
-  padding: 1vw;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
-
-
-
- .renderedServices{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 3vw;
-  height: 80vh;
-  width: 85vw;
-  overflow-y: auto;
-  padding-bottom: 10vh;
- }
- .renderCover{
-  width: 80vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 2vw;
-  gap: 3vw;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
- }
- .sname{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 900;
-  color: #108a00;
- }
- .tSDiscription{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to top, white, #108a00);
- }
-
-
- .ServiceHolder{
-  background-color: white;
- }
- .sHName{
- display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 900;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-  align-self: last baseline;
- }
-
- .displayFinalService{
-  width: 98dvw;
-  height: 99vh;
-  left: 1dvw;
-  top: 0.1svh;
-  position: fixed;
-  background-color: white;
-  z-index: 9;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
- }
- 
- .inDisplayFinalService{
-  display: flex;
-  justify-content: flex-start;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(to top, white, #108a00);
-  height: 10vh;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  color: white;
-  animation:Slide-Down 0.5s linear;
- }
-
- @keyframes Slide-Down {
-  0% {
-    transform: translateY(-40vh);
-    opacity: 0;
-  }
-
-  50%{
-    transform: translateY(-20vh);
-    opacity: .5;
-  }
-  to {
-    transform: translateY(0svh);
-    opacity: 1;
-  }
+.inClick {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	height: 7svh;
+	width: 90dvw;
+	background-color: #108a00;
+	color: white;
+	padding-left: 2dvw;
 }
 
- @keyframes Appear {
-  0% {
-    transform: scale(1);
-    opacity: 0;
-  }
-
-  50%{
-    transform: scale(1.5);
-    opacity: .5;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.lineContainer {
+	width: 98dvw;
+	height: 99vh;
+	left: 1dvw;
+	top: 0.1svh;
+	position: fixed;
+	background-color: white;
+	z-index: 7;
+	animation: Slide-Down 0.5s linear;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
- @media screen and (max-width: 620px){
-
-  .img{
-    width: 15vw;
-    height: 8vh;
-    border-radius: 5px;
-   }
-
-  .svg{
-    width: 9dvw;
-    height: 5svh;
-    color: white;
-    border-radius: 2px;
-    padding: 1vw;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-   }
-  .tabCoverP{
-    width: 33.5vw;
-    height: 3vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    background-color: #108a00;
-   }
-   .vendor{
-    width: 90vw;
-    height: 15vh;
-    column-gap: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-   .tabBtn{
-    width: 25vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-   }
-   .tabBtnP{
-    width: inherit;
-    height: 4vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #108a00;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-   }
-   .clickFinal{
-    margin-left: 1vw;
-    width: 80vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 2vw;
-    gap: 3vw;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-   }
- }
-
- @media screen and (min-width: 621px){
-  .lineContainer{
-    width: 50dvw;
-    height: 99vh;
-   left: 50vw;
-    top: 0.1svh;
-    position: fixed;
-    background-color: white;
-    z-index: 7;
-    animation:Slide-Down 0.5s linear;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-   }
-
-  .renderedServices{
-    display: flex;
-flex-direction: row;
- justify-content: center;
- align-items: center;
- gap: 1vw;
-    height: 80vh;
-    width: 50vw;
-    overflow-y: auto;
-    padding-bottom: 10vh;
-    align-items: flex-end;
-   }
-  .iCover{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100svh;
-    width: 50vw;
-   }
-
-  .imgITC{
-    width: 20vw;
-    height: 20vh;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-   border-bottom-right-radius: 10vw;
-   }
-
-  .inDisplayFinalService{
-    display: flex;
-    justify-content: flex-start;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-    background-image: linear-gradient(to top, white, #108a00);
-    height: 20vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: white;
-    animation:Slide-Down 0.5s linear;
-   }
-
-   .svg{
-  width: 9dvw;
-  height: 5svh;
-  color: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
-
-  .inAims{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    align-self: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    transform: scaleY(2);
-    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-   }
-
-  .imgTC{
-    width: 20vw;
-    height: 20vh;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-    border-bottom-right-radius: 13vw;
-   }
-
-  .intabCover{
-    width: 50vw;
-    height: 20vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-image: linear-gradient(to top, white, #108a00);
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-   }
-
-
-  .click{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 39svh;
-    width: 27vw;
-    border-radius: 5px;
-    background-color: white;
-    border-radius: 5px;
-  }  
-  .panel{
-    background-color: #108a00;
-    width: 30vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-   
-   }
-.panelCover{ 
-  width: 30vw;
-    height: 5vh;
+.iCover {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100svh;
+	width: 100vw;
 }
 
-   .tabBtnP{
-    width: 10vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #108a00;
-   }
-   .tabCoverP{
-    width: 10vw;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-   }
-   .abtSvg{
-    width: 8dvw;
-    height: 3.5svh;
-    color: #108a00;
-  }
-  .sname{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    color: #108a00;
-   }
-   .svgtb{
-    width: 40vw;
-    height: 20vh;
-   }
-   .svg1{
-    width: 40vw;
-    height: 20vh;
-   }
-   
-   .img{
-    width: 15vw;
-      height: 20vh;
-      border-radius: 5px;
-   }
-   .clickFinal{
-    padding-left: .3vw;
-    margin-left: 1vw;
-    width: 47vw;
-    height: 21vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3vw;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-   }
-   
-   
-   .aims{
-    font-size: 1.2rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #108a00;
-    font-weight: 900;
-   }
-
-   .tabBtn{
-    width: 27vw;
-    height: 38vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid silver;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   }
-   .tabCover{
-    width: 27vw;
-    height: 38vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 1vw;
-    flex-direction: column;
-   }
-
-   .vendor{
-    width: 45vw;
-    height: 140vh;
-    row-gap: 0.5vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-
- }
-
- @media screen and (min-width: 919px){
-  .aims{
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #108a00;
-    font-weight: 900;
-   }
- }
-
- @media screen and (min-width: 1161px){
-
-  .aims{
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #108a00;
-    font-weight: 900;
-   }
-  .img{
-    width: 10vw;
-    height: 20vh;
-    border-radius: 5px;
-   }
-   .inAims{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    align-self: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    transform: scaleY(2);
-    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-   }
- }
-
- @media screen and (min-width: 700px){
-
-.renderedServices{
- display: flex;
-flex-direction: row;
- justify-content: center;
- align-items: center;
- gap: 1vw;
- height: 80vh;
- width: 50vw;
- overflow-y: auto;
- padding-bottom: 10vh;
+.tabCover {
+	width: 21vw;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.tabCoverP {
+	width: 33.5vw;
+	height: 3vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #108a00;
+}
+.intabCover {
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: linear-gradient(to top, white, #108a00);
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.cov {
+	width: 97vw;
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
+.imgTC {
+	width: 20vw;
+	height: 10vh;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-right-radius: 13vw;
+}
+.imgITC {
+	width: 20vw;
+	height: 10vh;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-right-radius: 10vw;
+}
+.tabBtnclicked {
+	width: 27vw;
+	height: 38vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
- }
+.aims {
+	font-size: 0.7rem;
+	font-family: "Times New Roman", Times, serif;
+	color: #108a00;
+	font-weight: 900;
+}
+.inAims {
+	font-size: 1.4rem;
+	font-weight: bolder;
+	align-self: last baseline;
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	transform: scaleY(2);
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+.abtSvg {
+	width: 8dvw;
+	height: 3.5svh;
+	color: white;
+}
 
+.panel {
+	background-color: #108a00;
+	width: 100vw;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
- 
- 
+.titleCover {
+	display: grid;
+	align-items: center;
+	justify-content: start;
+	width: 85vw;
+}
+.cardTitle {
+	margin-top: 1svh;
+	font-size: 1rem;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	color: #108a00;
+}
+
+.close {
+	right: 2dvw;
+	top: 1svh;
+	position: fixed;
+	z-index: 8;
+}
+.closeIn {
+	right: 10dvw;
+	top: 1svh;
+	position: fixed;
+	z-index: 11;
+	width: 15vw;
+	height: 7vh;
+	border-radius: 25vw;
+}
+.hidden {
+	display: none;
+}
+.closeP {
+	right: 2dvw;
+	top: 2svh;
+	position: fixed;
+	z-index: 8;
+	animation: Appear 1s linear;
+}
+
+.svg1 {
+	width: 11dvw;
+	height: 6svh;
+	color: black;
+	border-radius: 2px;
+	padding: 1vw;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.renderedServices {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 3vw;
+	height: 80vh;
+	width: 85vw;
+	overflow-y: auto;
+	padding-bottom: 10vh;
+}
+.renderCover {
+	width: 80vw;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 2vw;
+	gap: 3vw;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+.sname {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 900;
+	color: #108a00;
+}
+.tSDiscription {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to top, white, #108a00);
+}
+
+.ServiceHolder {
+	background-color: white;
+}
+.sHName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 900;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	align-self: last baseline;
+}
+
+.displayFinalService {
+	width: 98dvw;
+	height: 99vh;
+	left: 1dvw;
+	top: 0.1svh;
+	position: fixed;
+	background-color: white;
+	z-index: 9;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.inDisplayFinalService {
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	background-image: linear-gradient(to top, white, #108a00);
+	height: 10vh;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: white;
+	animation: Slide-Down 0.5s linear;
+}
+
+@keyframes Slide-Down {
+	0% {
+		transform: translateY(-40vh);
+		opacity: 0;
+	}
+
+	50% {
+		transform: translateY(-20vh);
+		opacity: 0.5;
+	}
+	to {
+		transform: translateY(0svh);
+		opacity: 1;
+	}
+}
+
+@keyframes Appear {
+	0% {
+		transform: scale(1);
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale(1.5);
+		opacity: 0.5;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.img {
+		width: 15vw;
+		height: 8vh;
+		border-radius: 5px;
+	}
+
+	.svg {
+		width: 9dvw;
+		height: 5svh;
+		color: white;
+		border-radius: 2px;
+		padding: 1vw;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+	.tabCoverP {
+		width: 33.5vw;
+		height: 3vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+		background-color: #108a00;
+	}
+	.vendor {
+		width: 90vw;
+		height: 15vh;
+		column-gap: 1vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.tabBtn {
+		width: 25vw;
+		height: 15vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 5px;
+	}
+	.tabBtnP {
+		width: inherit;
+		height: 4vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #108a00;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	}
+	.clickFinal {
+		margin-left: 1vw;
+		width: 80vw;
+		height: 10vh;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-left: 2vw;
+		gap: 3vw;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 5px;
+	}
+}
+
+@media screen and (min-width: 621px) {
+	.lineContainer {
+		width: 50dvw;
+		height: 99vh;
+		left: 50vw;
+		top: 0.1svh;
+		position: fixed;
+		background-color: white;
+		z-index: 7;
+		animation: Slide-Down 0.5s linear;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	.renderedServices {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1vw;
+		height: 80vh;
+		width: 50vw;
+		overflow-y: auto;
+		padding-bottom: 10vh;
+		align-items: flex-end;
+	}
+	.iCover {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100svh;
+		width: 50vw;
+	}
+
+	.imgITC {
+		width: 20vw;
+		height: 20vh;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		border-bottom-right-radius: 10vw;
+	}
+
+	.inDisplayFinalService {
+		display: flex;
+		justify-content: flex-start;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		background-image: linear-gradient(to top, white, #108a00);
+		height: 20vh;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 900;
+		font-size: 1.2rem;
+		color: white;
+		animation: Slide-Down 0.5s linear;
+	}
+
+	.svg {
+		width: 9dvw;
+		height: 5svh;
+		color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.inAims {
+		font-size: 1.5rem;
+		font-weight: bolder;
+		align-self: center;
+		font-family: "Times New Roman", Times, serif;
+		color: white;
+		transform: scaleY(2);
+		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	}
+
+	.imgTC {
+		width: 20vw;
+		height: 20vh;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		border-bottom-right-radius: 13vw;
+	}
+
+	.intabCover {
+		width: 50vw;
+		height: 20vh;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: linear-gradient(to top, white, #108a00);
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.click {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 39svh;
+		width: 27vw;
+		border-radius: 5px;
+		background-color: white;
+		border-radius: 5px;
+	}
+	.panel {
+		background-color: #108a00;
+		width: 30vw;
+		height: 5vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 3;
+	}
+	.panelCover {
+		width: 30vw;
+		height: 5vh;
+	}
+
+	.tabBtnP {
+		width: 10vw;
+		height: 5vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #108a00;
+	}
+	.tabCoverP {
+		width: 10vw;
+		height: 7vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: white;
+	}
+	.abtSvg {
+		width: 8dvw;
+		height: 3.5svh;
+		color: #108a00;
+	}
+	.sname {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5rem;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 900;
+		color: #108a00;
+	}
+	.svgtb {
+		width: 40vw;
+		height: 20vh;
+	}
+	.svg1 {
+		width: 40vw;
+		height: 20vh;
+	}
+
+	.img {
+		width: 15vw;
+		height: 20vh;
+		border-radius: 5px;
+	}
+	.clickFinal {
+		padding-left: 0.3vw;
+		margin-left: 1vw;
+		width: 47vw;
+		height: 21vh;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 3vw;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 5px;
+	}
+
+	.aims {
+		font-size: 1.2rem;
+		font-family: "Times New Roman", Times, serif;
+		color: #108a00;
+		font-weight: 900;
+	}
+
+	.tabBtn {
+		width: 27vw;
+		height: 38vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid silver;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.tabCover {
+		width: 27vw;
+		height: 38vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding-left: 1vw;
+		flex-direction: column;
+	}
+
+	.vendor {
+		width: 45vw;
+		height: 140vh;
+		row-gap: 0.5vh;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 919px) {
+	.aims {
+		font-size: 1.5rem;
+		font-family: "Times New Roman", Times, serif;
+		color: #108a00;
+		font-weight: 900;
+	}
+}
+
+@media screen and (min-width: 1161px) {
+	.aims {
+		font-size: 2rem;
+		font-family: "Times New Roman", Times, serif;
+		color: #108a00;
+		font-weight: 900;
+	}
+	.img {
+		width: 10vw;
+		height: 20vh;
+		border-radius: 5px;
+	}
+	.inAims {
+		font-size: 2.5rem;
+		font-weight: bolder;
+		align-self: center;
+		font-family: "Times New Roman", Times, serif;
+		color: white;
+		transform: scaleY(2);
+		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.renderedServices {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1vw;
+		height: 80vh;
+		width: 50vw;
+		overflow-y: auto;
+		padding-bottom: 10vh;
+	}
+}

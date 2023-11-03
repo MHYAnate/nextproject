@@ -204,13 +204,13 @@
   
   .titleTopSpan{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #108a00;
-    transform: scaleY(2);
+    transform: scaleY(3);
   }
   .bodyCardCategory{
     width: 47vw;
