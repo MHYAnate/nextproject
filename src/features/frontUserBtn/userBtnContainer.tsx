@@ -35,6 +35,9 @@ export default function UserBtn() {
             <span className={tab === 'Existing'?styles.tabSpan2:styles.tabSpan1}>
             Log In
            </span>
+           <span className={tab === 'Existing'?styles.tabSpan2C:styles.tabSpan1C}>
+            cancel
+           </span>
           </TabButton>
         </div>
         <div className={tab === 'New'?styles.userBtnWrapper1:styles.userBtnWrapper2}>
@@ -43,6 +46,9 @@ export default function UserBtn() {
           >
              <span className={tab === 'New'?styles.tabSpan2:styles.tabSpan1}>
               Sign Up
+            </span>
+            <span className={tab === 'New'?styles.tabSpan2C:styles.tabSpan1C}>
+              cancel
             </span>
           </TabButton>
         </div>
