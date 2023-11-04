@@ -576,7 +576,7 @@
 		height: 38vh;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		padding-left: 1vw;
 		flex-direction: column;
 	}
