@@ -23,6 +23,13 @@
   width: 100%;
 }
 
+.tabSpan1N{
+  text-shadow: 0.1px 1px 4px black, 0 0 28px white, 0 0 5x white;
+}
+.tabSpan2N{
+  text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
+}
+
 .tabSpan1{
   text-shadow: 0.1px 1px 4px black, 0 0 28px white, 0 0 5x white;
 }

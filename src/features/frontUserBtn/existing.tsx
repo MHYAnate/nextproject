@@ -71,7 +71,7 @@ const SlowPost: React.FC<post> = () => {
 						}
 					>
 						<span
-							className={tab === "Existing" ? styles.tabSpan2 : styles.tabSpan1}
+							className={tab === "Existing" ? styles.tabSpan2N : styles.tabSpan1N}
 						>
 							Log in as Vendor
 						</span>
@@ -85,7 +85,7 @@ const SlowPost: React.FC<post> = () => {
 					<TabButton
 						onClick={() => (tab === "New" ? selectTab("") : selectTab("New"))}
 					>
-						<span className={tab === "New" ? styles.tabSpan2 : styles.tabSpan1}>
+						<span className={tab === "New" ? styles.tabSpan2N : styles.tabSpan1N}>
 						Log in as Client
 						</span>
 					</TabButton>
