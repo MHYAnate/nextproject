@@ -67,8 +67,6 @@
   width: 5dvw;
   height: 8svh;
   color: black;
-  border-radius: 1svh;
-  border: 1px solid silver;
 }
 .close{
   right: 1dvw;
@@ -498,10 +496,6 @@
   height: 5svh;
   margin-left: 0.5vw;
   color: black;
-  border-radius: 2px;
-  border-top-right-radius: 3px;
-  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-  z-index: 9;
 }
 
 }
