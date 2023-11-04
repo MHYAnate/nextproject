@@ -318,7 +318,7 @@
 		box-shadow: -2px 2px 5px grey;
 		margin-top: 1.5svh;
 		margin-bottom: 1.5svh;
-		height: 10svh;
+		height: 7svh;
 	}
 	
 	.passWord {
@@ -343,7 +343,7 @@
 	
 	.passWordSvg {
 		width: 5dvw;
-		height: 8svh;
+		height: 4svh;
 		color: white;
 		border-radius: 3svh;
 	}
@@ -375,7 +375,7 @@
 	}
 	.input1{
 		width: 3dvw;
-		height: 8svh;
+		height: 5svh;
 		border-radius: 7px;
 		display: flex;
 		padding-left: 2.5%;
