@@ -94,6 +94,17 @@
   margin-bottom: 1.5svh;
   height: 5svh;
 }
+.passcodeContainerV{
+	margin-top: 1.5svh;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 59dvw;
+  height: 6svh;
+	border: 2px solid silver;
+}
 
 .passWord {
 	width: 74dvw;
