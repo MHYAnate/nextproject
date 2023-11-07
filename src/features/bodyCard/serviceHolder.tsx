@@ -42,9 +42,11 @@ async function initMap(): Promise<void> {
     title: 'Uluru'
   });
 }
+React.useEffect(()=>{
+	initMap();
+})
 
 
-initMap();
 	return (
 		<div className={styles.displayFinalService}>
 			<div className={styles.inDisplayFinalService}>
