@@ -276,6 +276,21 @@
 	animation: Slide-Down 0.5s linear;
 }
 
+.body{
+	height: 89vh;
+	width: 100vw;
+}
+
+.map{
+	width: 100vw;
+	height: 30vh;
+}
+
+.inBody{
+	width: 100vw;
+	height: 59vh;
+}
+
 @keyframes Slide-Down {
 	0% {
 		transform: translateY(-40vh);
