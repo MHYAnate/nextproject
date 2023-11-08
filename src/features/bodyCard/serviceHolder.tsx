@@ -55,10 +55,6 @@ const ServiceHolder = (props: CarouselProps) => {
 			</div>
 			<div className={styles.body}>
 				<div id="map" className={styles.map}>
-					<script
-						async
-						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCN0cgiDpCY-3N5fHnIONkyep1Th8h6mk&libraries=marker&callback=initMap"
-					></script>
 					
 				</div>
 				<div className={styles.inBody}></div>
