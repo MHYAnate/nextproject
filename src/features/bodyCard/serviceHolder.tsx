@@ -22,14 +22,18 @@ const ServiceHolder = (props: CarouselProps) => {
 		version: "weekly",
 		
 	});
-	
-	loader.load().then(async () => {
+
+	React.useEffect(()=>{
+		loader.load().then(async () => {
 		const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
 		map = new Map(document.getElementById("map") as HTMLElement, {
 			center: { lat: 9.036485, lng: 7.476240 },
 			zoom: 13,
 		});
 	});
+	}, [Map])
+	
+	
 
 	// Initialize and add the map
 	
