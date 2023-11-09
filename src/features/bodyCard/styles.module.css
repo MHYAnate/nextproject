@@ -269,6 +269,7 @@
 		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	background-image: linear-gradient(to top, white, #108a00);
 	height: 10vh;
+	width: inherit;
 	font-family: "Times New Roman", Times, serif;
 	font-weight: 900;
 	font-size: 1.2rem;
@@ -284,6 +285,7 @@
 .map{
 	width: 100vw;
 	height: 30vh;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .inBody{
@@ -443,6 +445,7 @@
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 		background-image: linear-gradient(to top, white, #108a00);
 		height: 20vh;
+		width: inherit;
 		font-family: "Times New Roman", Times, serif;
 		font-weight: 900;
 		font-size: 1.2rem;
@@ -605,6 +608,27 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+
+	.body{
+		height: 79vh;
+		width: 98vw;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	.map{
+		width: 48.5vw;
+		height: 76vh;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	.inBody{
+		width: 48.5vw;
+		height: 76vh;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
 }
 
 @media screen and (min-width: 919px) {
@@ -623,6 +647,7 @@
 		transform: scaleY(2);
 		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 	}
+
 }
 
 @media screen and (min-width: 1161px) {
