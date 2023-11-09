@@ -72,7 +72,10 @@ const ServiceHolder = (props: CarouselProps) => {
 					></script>
 				</div>
 				<div className={styles.inBody}>
-					
+					<div className={styles.filter}></div>
+					<div className={styles.vendorsDisplay}>
+
+					</div>
 				</div>
 			</div>
 		</div>
