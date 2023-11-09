@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React from "react";
 import { Loader } from "@googlemaps/js-api-loader"
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -11,32 +11,52 @@ interface CarouselProps {
 		link: string;
 	};
 }
-
+interface load {
+	map : any;
+	version:string;
+	title:string;
+}
 
 const ServiceHolder = (props: CarouselProps) => {
 
-	let startTime = performance.now();
-
-	const loader = new Loader({
-		apiKey: "AIzaSyDCN0cgiDpCY-3N5fHnIONkyep1Th8h6mk",
-		version: "weekly",
-		
-	});
-
-	React.useEffect(()=>{
-		loader.load().then(async () => {
-		const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
-		map = new Map(document.getElementById("map") as HTMLElement, {
-			center: { lat: 9.036485, lng: 7.476240 },
-			zoom: 13,
-		});
-	});
-	}, [Map])
-	
-	
 
 	// Initialize and add the map
+let map;
+
+async function initMap(): Promise<void> {
+  // The location of area two
+  const position = { lat: 9.036485, lng: 7.476240 };
+
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
+
+  // The map, centered at Uluru
+  map = new Map(
+    document.getElementById('map') as HTMLElement,
+    {
+      zoom: 15,
+      center: position,
+      mapId: 'DEMO_MAP_ID',
+    }
+  );
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: 'Uluru'
+  });
+}
+React.useEffect(()=>{
+	setTimeout(()=>{
+initMap();
+	}, 1000)
 	
+},[])
+
 
 	return (
 		<div className={styles.displayFinalService}>
@@ -55,7 +75,9 @@ const ServiceHolder = (props: CarouselProps) => {
 			</div>
 			<div className={styles.body}>
 				<div id="map" className={styles.map}>
-					
+				<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCN0cgiDpCY-3N5fHnIONkyep1Th8h6mk&callback=initMap">
+</script>
 				</div>
 				<div className={styles.inBody}></div>
 			</div>

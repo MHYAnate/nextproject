@@ -16,7 +16,7 @@ let map: google.maps.Map;
 
 function initMap(): void {
   // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
+  const position = { lat: 9.036485, lng: 7.476240 };
 
   // The map, centered at Uluru
   const Map = new google.maps.Map(
