@@ -11,11 +11,6 @@ interface CarouselProps {
 		link: string;
 	};
 }
-interface load {
-	map : any;
-	version:string;
-	title:string;
-}
 
 const ServiceHolder = (props: CarouselProps) => {
 
@@ -24,7 +19,7 @@ const ServiceHolder = (props: CarouselProps) => {
 let map;
 
 async function initMap(): Promise<void> {
-  // The location of area two
+  // The location of area 2 section 1 oyo street block 30 flat 2 garki Abuja
   const position = { lat: 9.036485, lng: 7.476240 };
 
   // Request needed libraries.
@@ -50,12 +45,13 @@ async function initMap(): Promise<void> {
     title: 'Uluru'
   });
 }
-React.useEffect(()=>{
+
+
 	setTimeout(()=>{
-initMap();
+    initMap();
 	}, 1000)
 	
-},[])
+
 
 
 	return (
