@@ -1,5 +1,6 @@
 import React from "react";
 import { Loader } from "@googlemaps/js-api-loader";
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
@@ -16,38 +17,89 @@ const ServiceHolder = (props: CarouselProps) => {
 	// Initialize and add the map
 	let map;
 
-	async function initMap(): Promise<void> {
-		// The location of area 2 section 1 oyo street block 30 flat 2 garki Abuja
-		const position = { lat: 9.036485, lng: 7.47624 };
-
+	async function initMap() {
 		// Request needed libraries.
-		//@ts-ignore
-		const { Map } = (await google.maps.importLibrary(
-			"maps"
-		)) as google.maps.MapsLibrary;
-
-		const { AdvancedMarkerElement } = (await google.maps.importLibrary(
-			"marker"
-		)) as google.maps.MarkerLibrary;
-
-		// The map, centered at Uluru
-		map = new Map(document.getElementById("map") as HTMLElement, {
-			zoom: 15,
-			center: position,
-			mapId: "DEMO_MAP_ID",
+		const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+		const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker") as google.maps.MarkerLibrary;
+	
+		const map = new google.maps.Map(
+			document.getElementById("map") as HTMLElement,
+			{
+				zoom: 3,
+				center: { lat: 9.036485, lng: 7.47624 },
+				mapId: 'DEMO_MAP_ID',
+			}
+		);
+	
+		const infoWindow = new google.maps.InfoWindow({
+			content: "",
+			disableAutoPan: true,
 		});
-
-		// The marker, positioned at Uluru
-		const marker = new AdvancedMarkerElement({
-			map: map,
-			position: position,
-			title: "Uluru",
+	
+		// Create an array of alphabetical characters used to label the markers.
+		const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	
+		// Add some markers to the map.
+		const markers = locations.map((position, i) => {
+			const label = labels[i % labels.length];
+			const pinGlyph = new google.maps.marker.PinElement({
+				glyph: label,
+				glyphColor: "white",
+			})
+			const marker = new google.maps.marker.AdvancedMarkerElement({
+				position,
+				content: pinGlyph.element,
+			});
+	
+			// markers can only be keyboard focusable when they have click listeners
+			// open info window when marker is clicked
+			marker.addListener("click", () => {
+				infoWindow.setContent(position.lat + ", " + position.lng);
+				infoWindow.open(map, marker);
+			});
+			return marker;
 		});
+	
+		// Add a marker clusterer to manage the markers.
+		new MarkerClusterer({ markers, map });
+	}
+	
+	const locations = [
+		{ lat: 9.036485, lng: 7.47624 },
+		{ lat: 9.136485, lng: 7.57624 },
+		{ lat: 9.236485, lng: 7.67624 },
+		{ lat: 9.336485, lng: 7.77624 },
+		{ lat: 9.436485, lng: 7.87624 },
+		{ lat: 9.536485, lng: 7.97624 },
+		{ lat: 9.636485, lng: 7.08624 },
+		{ lat: 9.736485, lng: 7.19624 },
+		{ lat: 9.836485, lng: 7.28624 },
+		{ lat: 9.936485, lng: 7.37624 },
+		{ lat: 9.926485, lng: 7.46624 },
+		{ lat: 9.816485, lng: 7.55624 },
+		{ lat: 9.706485, lng: 7.65624 },
+		{ lat: 9.616485, lng: 7.74624 },
+		{ lat: 9.526485, lng: 7.83624 },
+		{ lat: 9.436485, lng: 7.92624 },
+		{ lat: 9.326485, lng: 7.01624 },
+		{ lat: 9.216485, lng: 7.92624 },
+		{ lat: 9.106485, lng: 7.83624 },
+		{ lat: 9.216485, lng: 7.74624 },
+		{ lat: 9.326485, lng: 7.65624 },
+		{ lat: 9.436485, lng: 7.55624 },
+		{ lat: 9.546485, lng: 7.64624 },
+	];
+	
+	initMap();
+React.useEffect(()=>{
+	if(Map){
+		setTimeout(() => {
+			initMap();
+		}, 1000);
 	}
 
-	setTimeout(() => {
-		initMap();
-	}, 1000);
+})
+	
 
 	return (
 		<div className={styles.displayFinalService}>
