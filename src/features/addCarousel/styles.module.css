@@ -95,11 +95,11 @@
   display: flex;
 	justify-content: center;
 	align-items: center;
-  width: 40dvw;
+  width: 40vw;
 	height: 20vh;
 }
 .slider {
-	width: 40dvw;
+	width: 40vw;
 	height: 18vh;
   animation: move-right 10s  infinite linear;
 	border-radius: 5px;
@@ -237,7 +237,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40dvw;
+    width: 40vw;
     height: 30vh;
   }
   .slider {

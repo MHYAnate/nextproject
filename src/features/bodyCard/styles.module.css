@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 17svh;
+	height: 17vh;
 	width: 25vw;
 	border-radius: 5px;
 	background-color: white;
@@ -11,7 +11,7 @@
 .Klick {
 	display: flex;
 	align-items: center;
-	height: 5svh;
+	height: 5vh;
 	width: 33.5vw;
 	background-color: #108a00;
 }
@@ -23,18 +23,18 @@
 	justify-content: center;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
-	height: 7svh;
-	width: 90dvw;
+	height: 7vh;
+	width: 90vw;
 	background-color: #108a00;
 	color: white;
-	padding-left: 2dvw;
+	padding-left: 2vw;
 }
 
 .lineContainer {
-	width: 98dvw;
+	width: 98vw;
 	height: 99vh;
-	left: 1dvw;
-	top: 0.1svh;
+	left: 1vw;
+	top: 0.1vh;
 	position: fixed;
 	background-color: white;
 	z-index: 7;
@@ -49,7 +49,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	height: 100svh;
+	height: 100vh;
 	width: 100vw;
 }
 
@@ -127,8 +127,8 @@
 	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 .abtSvg {
-	width: 8dvw;
-	height: 3.5svh;
+	width: 8vw;
+	height: 3.5vh;
 	color: white;
 }
 
@@ -150,7 +150,7 @@
 	width: 85vw;
 }
 .cardTitle {
-	margin-top: 1svh;
+	margin-top: 1vh;
 	font-size: 1rem;
 	font-family: "Times New Roman", Times, serif;
 	font-weight: bolder;
@@ -160,14 +160,14 @@
 }
 
 .close {
-	right: 2dvw;
-	top: 1svh;
+	right: 2vw;
+	top: 1vh;
 	position: fixed;
 	z-index: 8;
 }
 .closeIn {
-	right: 10dvw;
-	top: 1svh;
+	right: 10vw;
+	top: 1vh;
 	position: fixed;
 	z-index: 11;
 	width: 15vw;
@@ -178,16 +178,16 @@
 	display: none;
 }
 .closeP {
-	right: 2dvw;
-	top: 2svh;
+	right: 2vw;
+	top: 2vh;
 	position: fixed;
 	z-index: 8;
 	animation: Appear 1s linear;
 }
 
 .svg1 {
-	width: 11dvw;
-	height: 6svh;
+	width: 11vw;
+	height: 6vh;
 	color: black;
 	border-radius: 2px;
 	padding: 1vw;
@@ -250,10 +250,10 @@
 }
 
 .displayFinalService {
-	width: 98dvw;
+	width: 98vw;
 	height: 99vh;
-	left: 1dvw;
-	top: 0.1svh;
+	left: 1vw;
+	top: 0.1vh;
 	position: fixed;
 	background-color: white;
 	z-index: 9;
@@ -315,7 +315,7 @@
 		opacity: 0.5;
 	}
 	to {
-		transform: translateY(0svh);
+		transform: translateY(0vh);
 		opacity: 1;
 	}
 }
@@ -354,8 +354,8 @@
 	}
 
 	.svg {
-		width: 9dvw;
-		height: 5svh;
+		width: 9vw;
+		height: 5vh;
 		color: white;
 		border-radius: 2px;
 		padding: 1vw;
@@ -417,10 +417,10 @@
 
 @media screen and (min-width: 621px) {
 	.lineContainer {
-		width: 50dvw;
+		width: 50vw;
 		height: 99vh;
 		left: 50vw;
-		top: 0.1svh;
+		top: 0.1vh;
 		position: fixed;
 		background-color: white;
 		z-index: 7;
@@ -447,7 +447,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		height: 100svh;
+		height: 100vh;
 		width: 50vw;
 	}
 
@@ -475,8 +475,8 @@
 	}
 
 	.svg {
-		width: 9dvw;
-		height: 5svh;
+		width: 9vw;
+		height: 5vh;
 		color: white;
 		border-radius: 2px;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -515,7 +515,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 39svh;
+		height: 39vh;
 		width: 27vw;
 		border-radius: 5px;
 		background-color: white;
@@ -552,8 +552,8 @@
 		background-color: white;
 	}
 	.abtSvg {
-		width: 8dvw;
-		height: 3.5svh;
+		width: 8vw;
+		height: 3.5vh;
 		color: #108a00;
 	}
 	.sname {

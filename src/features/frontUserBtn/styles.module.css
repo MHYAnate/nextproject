@@ -6,17 +6,17 @@
 }
 .caseContainer{
   width: 100%;
-  margin-bottom: -2.5svh;
+  margin-bottom: -2.5vh;
 }
 
 .case{
-  height: 10svh;
-  width: 47dvw;
+  height: 10vh;
+  width: 47vw;
   height: fit-content;
 }
 
 .userBtnContainer{
-  height: 10svh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -46,28 +46,28 @@
 }
 
 .userBtn1{
-  width: 47dvw;
-  height: 7svh;
+  width: 47vw;
+  height: 7vh;
 }
 .userBtn2{
-  width: 99dvw;
-  height: 6svh;
+  width: 99vw;
+  height: 6vh;
 }
 
 .userBtn2{
-  width: 47dvw;
-  height: 7svh;
+  width: 47vw;
+  height: 7vh;
   box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
-  border-radius: 1svh;
+  border-radius: 1vh;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
 }
 .userBtnWrapper1{
-  width: 99dvw;
-  height: 7svh;
+  width: 99vw;
+  height: 7vh;
   background-color: red;
-  border-radius: 1svh;
+  border-radius: 1vh;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bolder ;
@@ -79,12 +79,12 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .svg{
-  width: 5dvw;
-  height: 8svh;
+  width: 5vw;
+  height: 8vh;
   color: black;
 }
 .close{
-  right: 1dvw;
+  right: 1vw;
   top: 1px;
   position: fixed;
   color: black;
@@ -92,17 +92,17 @@
  }
 
  .svgM{
-  width: 10dvw;
-  height: 7svh;
+  width: 10vw;
+  height: 7vh;
 }
  
  
 
 .userBtnWrapper2{
-  width: 47dvw;
-  height: 7svh;
+  width: 47vw;
+  height: 7vh;
   background-color: #108a00;
-  border-radius: 1svh;
+  border-radius: 1vh;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
@@ -117,31 +117,31 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 99dvw;
-  height: 10svh;
+  width: 99vw;
+  height: 10vh;
 }
 
 .newUserIn{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 99dvw;
-  height: 10svh;
+  width: 99vw;
+  height: 10vh;
 }
 
 .existingClientUser{
- width: 99dvw;
- height: 95svh;
+ width: 99vw;
+ height: 95vh;
 }
 .newClientUser{
-  width: 99dvw;
-  height: 95svh;
+  width: 99vw;
+  height: 95vh;
   display: flex;
   justify-content: center;
 }
 .existingServiceProviderUser{
-  width: 99dvw;
- height: 95svh;
+  width: 99vw;
+ height: 95vh;
 }
 
 .existingClientUserIn{
@@ -149,8 +149,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 99dvw;
-  height: 95svh;
+  width: 99vw;
+  height: 95vh;
   
 }
 .logInHeader{
@@ -158,8 +158,8 @@
   font-weight: bold;
   box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-shadow: 0.25px 0.25px 1px white, 0 0 7px white, 0 0 1.25px white;
-  width:99dvw;
-  height: 5svh;
+  width:99vw;
+  height: 5vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -170,8 +170,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 99dvw;
-  height: 95svh;
+  width: 99vw;
+  height: 95vh;
   animation: Slide-Up 1s  linear; 
 }
 .newServiceProviderUserIn{
@@ -179,8 +179,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 99dvw;
-  height: 95svh;
+  width: 99vw;
+  height: 95vh;
   animation: Slide-Up 1s  linear; 
 }
 .overFlow{
@@ -189,24 +189,24 @@
   align-items: center;
   justify-content: center;
   overflow-y: auto;
-  width: 99dvw;
-  height: 85svh;
+  width: 99vw;
+  height: 85vh;
 }
 .existingServiceProviderUserIn{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 99dvw;
-  height: 95svh;
+  width: 99vw;
+  height: 95vh;
   animation: Slide-Up 1s  linear;
 }
 
 .userSvg{
-  width:99dvw;
-  height: 7svh;
-  border-top-left-radius: 1svh;
-  border-top-right-radius: 1svh;
+  width:99vw;
+  height: 7vh;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
   border-top: 3px solid #108a00;
   border-left: 3px solid #108a00;
   border-right:3px solid #108a00;
@@ -221,7 +221,7 @@
   font-weight: bold;
   color: black;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
-  margin-top: 1svh;
+  margin-top: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,8 +232,8 @@
   font-weight: bold;
   color: black;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
-  margin-top: 1svh;
-  margin-bottom: 1svh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,17 +245,17 @@
   position: fixed;
   top: 0.00001px;
   z-index: 5;
-  height: 95svh;
+  height: 95vh;
   animation: Slide-Up 1s  linear;
 }
 
 
 
 .logInCover{
-  width: 99dvw;
-  height: 7svh;
-  border-bottom-left-radius: 1dvw;
-  border-bottom-right-radius: 1dvw;
+  width: 99vw;
+  height: 7vh;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
   background-color:#108a00;
   display: flex;
   justify-content: center;
@@ -265,9 +265,9 @@
   font-weight: bold;
   color: white;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
-  width: 40dvw;
-  height: 5svh;
-  border-radius: 14svh;
+  width: 40vw;
+  height: 5vh;
+  border-radius: 14vh;
   background-color: #108a00;
   box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
 }
@@ -275,12 +275,12 @@
 .newUser{
   display: flex;
   justify-content: center;
-  width: 100dvw;
+  width: 100vw;
 }
 .existingUser{
   display: flex;
   justify-content: center;
-  width: 100dvw;
+  width: 100vw;
 }
 @keyframes Slide-Up {
   0% {
@@ -293,7 +293,7 @@
     opacity: .5;
   }
   to {
-    transform: translateY(0svh);
+    transform: translateY(0vh);
     opacity: 1;
   }
 }
@@ -307,17 +307,17 @@
     justify-self: first baseline;
   }
   .userBtnContainer{
-    height: 10svh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 50vw;
   }
   .userBtnWrapper2{
-    width: 23dvw;
-    height: 7svh;
+    width: 23vw;
+    height: 7vh;
     background-color: #108a00;
-    border-radius: 1svh;
+    border-radius: 1vh;
     color: white;
     text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
     font-weight:bold ;
@@ -328,10 +328,10 @@
    
   }
   .userBtnWrapper1{
-    width: 50dvw;
-    height: 7svh;
+    width: 50vw;
+    height: 7vh;
     background-color: red;
-    border-radius: 1svh;
+    border-radius: 1vh;
     color: white;
     text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
     font-weight:bolder ;
@@ -343,55 +343,55 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .userBtn1{
-    width: 20dvw;
-    height: 7svh;
+    width: 20vw;
+    height: 7vh;
   }
   .userBtn2{
-    width: 47dvw;
-    height: 6svh;
+    width: 47vw;
+    height: 6vh;
   }
   .caseContainer{
     width: 100vw;
-    margin-bottom: -2.5svh;
+    margin-bottom: -2.5vh;
   }
   .case{
-    height: 10svh;
-    width: 50dvw;
+    height: 10vh;
+    width: 50vw;
     height: fit-content;
   }
   .existingUserIn{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50dvw;
-    height: 10svh;
+    width: 50vw;
+    height: 10vh;
   }
   
   .newUserIn{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50dvw;
-    height: 10svh;
+    width: 50vw;
+    height: 10vh;
   }
 
   
 .newUser{
   display: flex;
   justify-content: flex-start;
-  width: 100dvw;
+  width: 100vw;
 }
 .existingUser{
   display: flex;
   justify-content: flex-start;
-  width: 100dvw;
+  width: 100vw;
 }
 
 .logInCover{
-  width: 50dvw;
-  height: 7svh;
-  border-bottom-left-radius: 1dvw;
-  border-bottom-right-radius: 1dvw;
+  width: 50vw;
+  height: 7vh;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
   background-color:#108a00;
   display: flex;
   justify-content: center;
@@ -401,31 +401,31 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50dvw;
-  height: 10svh;
+  width: 50vw;
+  height: 10vh;
 }
 
 .newUserIn{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50dvw;
-  height: 10svh;
+  width: 50vw;
+  height: 10vh;
 }
 
 .existingClientUser{
- width: 50dvw;
- height: 95svh;
+ width: 50vw;
+ height: 95vh;
 }
 .newClientUser{
-  width: 50dvw;
-  height: 95svh;
+  width: 50vw;
+  height: 95vh;
   display: flex;
   justify-content: center;
 }
 .existingServiceProviderUser{
-  width: 50dvw;
- height: 95svh;
+  width: 50vw;
+ height: 95vh;
 }
 
 .existingClientUserIn{
@@ -433,8 +433,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50dvw;
-  height: 95svh;
+  width: 50vw;
+  height: 95vh;
   
 }
 .logInHeader{
@@ -442,8 +442,8 @@
   font-weight: bold;
   box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-shadow: 0.25px 0.25px 1px white, 0 0 7px white, 0 0 1.25px white;
-  width:50dvw;
-  height: 5svh;
+  width:50vw;
+  height: 5vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -454,8 +454,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 50dvw;
-  height: 95svh;
+  width: 50vw;
+  height: 95vh;
   animation: Slide-Up 1s  linear; 
 }
 .newServiceProviderUserIn{
@@ -463,8 +463,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 50dvw;
-  height: 95svh;
+  width: 50vw;
+  height: 95vh;
   animation: Slide-Up 1s  linear; 
 }
 .overFlow{
@@ -473,23 +473,23 @@
   align-items: center;
   justify-content: center;
   overflow-y: auto;
-  width: 50dvw;
-  height: 85svh;
+  width: 50vw;
+  height: 85vh;
 }
 .existingServiceProviderUserIn{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 50dvw;
-  height: 95svh;
+  width: 50vw;
+  height: 95vh;
   animation: Slide-Up 1s  linear;
 }
 .userSvg{
-  width:50dvw;
-  height: 7svh;
-  border-top-left-radius: 1svh;
-  border-top-right-radius: 1svh;
+  width:50vw;
+  height: 7vh;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
   border-top: 3px solid #108a00;
   border-left: 3px solid #108a00;
   border-right:3px solid #108a00;
@@ -500,15 +500,15 @@
   
 }
 .close{
-  left: 40.3dvw;
+  left: 40.3vw;
   top: 1px;
   position: fixed;
   z-index: 8;
-  width: 10dvw;
+  width: 10vw;
  }
  .svg{
-  width: 9dvw;
-  height: 5svh;
+  width: 9vw;
+  height: 5vh;
   margin-left: 0.5vw;
   color: black;
 }
