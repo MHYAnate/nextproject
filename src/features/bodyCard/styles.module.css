@@ -344,7 +344,7 @@
 		width: 20vw;
 		height: 5vh;
 		border-radius: 7vh;
-		margin-left: zvw;
+		margin-left: 0.5vw;
 		margin-top: 0.5vw;
 	}
 	.img {
@@ -670,7 +670,7 @@
 		width: 20vw;
 		height: 5vh;
 		border-radius: 7vh;
-		margin-left: zvw;
+		margin-left: 2vw;
 		margin-top: 0.5vw;
 	}
 }
@@ -698,7 +698,7 @@
 		width: 5vw;
 		height: 5vh;
 		border-radius: 7vh;
-		margin-left: zvw;
+		margin-left: 2vw;
 		margin-top: 0.5vw;
 	}
 
@@ -732,7 +732,7 @@
 		width: 5vw;
 		height: 5vh;
 		border-radius: 7vh;
-		margin-left: zvw;
+		margin-left: 1vw;
 		margin-top: 0.5vw;
 	}
 }
@@ -745,7 +745,7 @@
 		width: 10vw;
 		height: 5vh;
 		border-radius: 7vh;
-		margin-left: zvw;
+		margin-left: 0.5vw;
 		margin-top: 0.5vw;
 	}
 	.renderedServices {

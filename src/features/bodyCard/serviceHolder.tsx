@@ -142,7 +142,6 @@ const ServiceHolder = (props: CarouselProps) => {
 		{ lat: 9.546485, lng: 7.64624 },
 	];
 	
-	initMap();
 React.useEffect(()=>{
 	if(Map){
 		setTimeout(() => {
