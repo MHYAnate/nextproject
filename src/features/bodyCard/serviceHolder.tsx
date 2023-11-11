@@ -12,10 +12,14 @@ interface CarouselProps {
 		link: string;
 	};
 }
+declare global {
+	interface Window {
+		initMap: () => void;
+	}
+}
 
 const ServiceHolder = (props: CarouselProps) => {
-	// Initialize and add the map
-	let map;
+	
 
 	async function initMap() {
 		// Request needed libraries.
@@ -35,6 +39,54 @@ const ServiceHolder = (props: CarouselProps) => {
 			content: "",
 			disableAutoPan: true,
 		});
+
+		const locationButton = document.getElementById("locate") as HTMLElement;
+
+
+  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+
+	locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position: GeolocationPosition) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found.");
+          infoWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter()!);
+        }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter()!);
+    }
+		function handleLocationError(
+			browserHasGeolocation: boolean,
+			infoWindow: google.maps.InfoWindow,
+			pos: google.maps.LatLng
+		) {
+			infoWindow.setPosition(pos);
+			infoWindow.setContent(
+				browserHasGeolocation
+					? "Error: The Geolocation service failed."
+					: "Error: Your browser doesn't support geolocation."
+			);
+			infoWindow.open(map);
+		}
+		
+		
+		
+  });
+
+
 	
 		// Create an array of alphabetical characters used to label the markers.
 		const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -97,7 +149,6 @@ React.useEffect(()=>{
 			initMap();
 		}, 1000);
 	}
-
 })
 	
 
@@ -124,7 +175,9 @@ React.useEffect(()=>{
 					></script>
 				</div>
 				<div className={styles.inBody}>
-					<div className={styles.filter}></div>
+					<div className={styles.filter}>
+						<button id="locate" className={styles.locate}>locate</button>
+					</div>
 					<div className={styles.vendorsDisplay}>
 
 					</div>

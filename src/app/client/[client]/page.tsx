@@ -23,7 +23,7 @@ const currentUser = auth.currentUser;
 firebaseConfig
 
 const ClientPage =() => {
-
+ 
 
  if(!currentUser){
 	redirect("/");

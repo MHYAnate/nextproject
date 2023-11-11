@@ -303,7 +303,16 @@
 	height: 35vh;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.locate{
+  background-color: #108a00;
+	color: white;
+	font-size:large;
+	width: 5vw;
+	height: 5vh;
+	border-radius: 7vh;
+	margin-left: 0.5vw;
+	margin-top: 0.5vw;
+}
 @keyframes Slide-Down {
 	0% {
 		transform: translateY(-40vh);
