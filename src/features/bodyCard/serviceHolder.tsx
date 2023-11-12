@@ -1,5 +1,4 @@
 import React from "react";
-import { Loader } from "@googlemaps/js-api-loader";
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -56,7 +55,7 @@ const ServiceHolder = (props: CarouselProps) => {
           };
 
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found.");
+          infoWindow.setContent("Current Position");
           infoWindow.open(map);
           map.setCenter(pos);
         },
@@ -142,13 +141,13 @@ const ServiceHolder = (props: CarouselProps) => {
 		{ lat: 9.546485, lng: 7.64624 },
 	];
 	
-React.useEffect(()=>{
-	if(Map){
+
+	
 		setTimeout(() => {
 			initMap();
 		}, 1000);
-	}
-})
+
+
 	
 
 	return (
