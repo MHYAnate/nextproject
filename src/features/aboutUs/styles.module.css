@@ -72,10 +72,10 @@
   align-items: center;
   padding-top: 0.5vh;
   font-weight: bold;
-  background-color: #F2FFE9;
+  background-color:  #108a00;
   width: 69vw;
   height: 4vh;
-  color: #108a00;
+  color: white;
   border-radius: 3px;
 }
 
@@ -191,6 +191,7 @@
     height: 5.5vh;
     width: 65vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #108a00;
   }
 }
 
