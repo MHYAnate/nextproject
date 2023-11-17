@@ -381,7 +381,8 @@
 	}
 	.tabBtn {
 		width: 25vw;
-		height: 15vh;
+		height: 17vh;
+		background-color: #F2FFE9;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
