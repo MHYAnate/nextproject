@@ -11,7 +11,7 @@
   flex-direction: column;
   width: 100vw;
   height: fit-content;
-  background-color: #108a00;
+  background-color: #F2FFE9;
 }
 .header{
   display: flex;
@@ -24,7 +24,7 @@
 .nav{
   width: 100vw;
   height: 7vh;
-  background-color:#108a00;
+  background-color: #F2FFE9;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

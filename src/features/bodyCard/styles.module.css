@@ -13,7 +13,7 @@
 	align-items: center;
 	height: 5vh;
 	width: 33.5vw;
-	background-color: #108a00;
+	background-color: #F2FFE9;
 }
 
 .inClick {
@@ -67,7 +67,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #108a00;
+	background-color: #F2FFE9;
 }
 .intabCover {
 	width: 100vw;
@@ -129,11 +129,11 @@
 .abtSvg {
 	width: 8vw;
 	height: 3.5vh;
-	color: white;
+	color: #108a00;
 }
 
 .panel {
-	background-color: #108a00;
+	background-color:#F2FFE9;
 	width: 100vw;
 	height: 5vh;
 	display: flex;
@@ -369,7 +369,7 @@
 		justify-content: center;
 		border-left: 1px solid white;
 		border-right: 1px solid white;
-		background-color: #108a00;
+		background-color: #F2FFE9;
 	}
 	.vendor {
 		width: 90vw;
@@ -396,7 +396,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #108a00;
+		background-color: #F2FFE9;
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	}
