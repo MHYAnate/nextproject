@@ -320,7 +320,7 @@ opacity: 0.7;
     opacity: 1;
   }
 }
-@media screen and (min-width: 410px){
+@media screen and (min-width: 400px){
 .cancel{
   position: absolute;
   display: flex;
@@ -340,7 +340,39 @@ opacity: 0.7;
    display: none;
   }
 
+  .cancelSvg{
+    width: 1.5rem;
+    height: 1.5rem;
+   }
+
 }
+
+@media screen and (min-width: 500px){
+  .cancel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 47vw;
+    z-index: 4;
+    width: 2em;
+    height: 2em;
+    border-radius: 3rem;
+    color: #45474B;
+    background-color: #F4CE14;
+    box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
+    opacity: 0.7;
+    }
+    .cancelC{
+     display: none;
+    }
+  
+    .cancelSvg{
+      width: 1.5rem;
+      height: 1.5rem;
+     }
+  
+  }
 
 @media screen and (max-width: 620px){
 .existingUserIn{
