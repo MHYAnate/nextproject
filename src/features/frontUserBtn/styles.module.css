@@ -308,14 +308,15 @@ position: absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-left: 46.3vw;
+left: 45vw;
 z-index: 4;
-width: 1.5rem;
-height: 1.5rem;
+width: 2em;
+height: 2em;
 border-radius: 3rem;
 color: #45474B;
 background-color: #F4CE14;
 box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
+bottom: 12vh;
 }
 .cancelC{
  display: none;
