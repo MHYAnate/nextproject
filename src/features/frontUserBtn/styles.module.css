@@ -124,7 +124,7 @@
   height: 7vh;
   position: absolute;
   z-index: 3;
- bottom: 9vh;
+
 }
 
 .newUserIn{
@@ -135,7 +135,7 @@
   height: 7vh;
   position: absolute;
   z-index: 3;
- bottom: 9vh;
+
 }
 
 .existingClientUser{
