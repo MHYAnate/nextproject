@@ -99,11 +99,11 @@
  
 
 .userBtnWrapper2{
-  width: 47vw;
+  width: 49.5vw;
   height: 7vh;
   background-color: #F4CE14;
-  border-radius: 1vh;
-  color: white;
+  
+  color: #495E57;
   text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
   font-weight:bold ;
   display: flex;

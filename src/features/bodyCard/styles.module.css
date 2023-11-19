@@ -387,7 +387,8 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		box-shadow: 0 0.3px 1px 0 #F4CE14, 0 1px 4px 0 #F4CE14;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 5px;
 	}
 	.tabBtnP {
@@ -608,7 +609,8 @@
 		align-items: center;
 		justify-content: center;
 		border: 1px solid silver;
-		box-shadow: 0 0.3px 1px 0 #F4CE14, 0 1px 4px 0 #F4CE14;
+		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	}
 	.tabCover {
 		width: 27vw;
