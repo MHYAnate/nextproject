@@ -288,7 +288,7 @@ position: absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-left: 46vw;
+left: 45vw;
 z-index: 4;
 width: 2em;
 height: 2em;
@@ -319,6 +319,27 @@ opacity: 0.7;
     transform: translateY(0vh);
     opacity: 1;
   }
+}
+@media screen and (min-width: 410px){
+.cancel{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 46vw;
+  z-index: 4;
+  width: 2em;
+  height: 2em;
+  border-radius: 3rem;
+  color: #45474B;
+  background-color: #F4CE14;
+  box-shadow: 0 2px 4px 0 black, 0 0.75px 2.5px 0 white;
+  opacity: 0.7;
+  }
+  .cancelC{
+   display: none;
+  }
+
 }
 
 @media screen and (max-width: 620px){
