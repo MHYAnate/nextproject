@@ -115,6 +115,18 @@
   justify-content: space-around;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.userBtnWrapper2In{
+  width: 49.5vw;
+  height: 9vh;
+  background-color: #F4CE14;
+  color: #495E57;
+  text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
+  font-weight:bold ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .existingUserIn{
   display: flex;

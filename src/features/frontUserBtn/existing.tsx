@@ -62,7 +62,7 @@ const SlowPost: React.FC<post> = () => {
 			<li className={styles.existingUserIn}>
 				<div
 					className={
-						tab === "Existing" ? styles.userBtnWrapper1 : styles.userBtnWrapper2
+						tab === "Existing" ? styles.userBtnWrapper1 : styles.userBtnWrapper2In
 					}
 				>
 					<TabButton
@@ -79,7 +79,7 @@ const SlowPost: React.FC<post> = () => {
 				</div>
 				<div
 					className={
-						tab === "New" ? styles.userBtnWrapper1 : styles.userBtnWrapper2
+						tab === "New" ? styles.userBtnWrapper1 : styles.userBtnWrapper2In
 					}
 				>
 					<TabButton
