@@ -5,14 +5,13 @@
 	align-items: center;
 	width: 100vw;
 	height: 27vh;
-	background-color: #F2FFE9;
-  animation: Appear 2s linear;
+	background-color: #45474B;
 }
 
 .mainCard {
 	width: 100vw;
 	height: 25vh;
-  background-color: #F2FFE9;
+  background-color: #45474B;
 	flex-direction: column;
 	display: flex;
 	justify-content: space-between;
@@ -63,8 +62,8 @@
   background-color: #F2FFE9;
   width: 22vw;
   height: 5vh;
-  color: #108a00;
-  border: 1px solid #108a00;
+  color: #495E57;
+  border: 1px solid #F4CE14;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -74,8 +73,8 @@
 .highLighted{
   width: 22vw;
   height: 5.5vh;
-  background-color: #108a00;
-  color: white;
+  background-color: #F4CE14;
+  color: #495E57;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -113,21 +112,7 @@
 	border-radius: 5px;
 }
 
-@keyframes Appear {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
 
-  50%{
-    transform: scale(0.9);
-    opacity: .2;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 @keyframes move-right {
   0% {
@@ -154,7 +139,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #A6CF98;
+    background-color: #F4CE14;
   }
   
   
@@ -165,7 +150,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #108a00;
+    color: #495E57;
     transform: scaleY(1.5);
   }
 }

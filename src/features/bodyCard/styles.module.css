@@ -13,7 +13,7 @@
 	align-items: center;
 	height: 5vh;
 	width: 33.5vw;
-	background-color: #A6CF98;
+	background-color: #F5F7F8;
 }
 
 .inClick {
@@ -67,7 +67,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #A6CF98;
+	background-color: #F5F7F8;
 }
 .intabCover {
 	width: 100vw;
@@ -114,7 +114,7 @@
 .aims {
 	font-size: 0.7rem;
 	font-family: "Times New Roman", Times, serif;
-	color: #108a00;
+	color: #495E57;
 	font-weight: 900;
 }
 .inAims {
@@ -129,11 +129,11 @@
 .abtSvg {
 	width: 8vw;
 	height: 3.5vh;
-	color: #108a00;
+		color: #495E57;
 }
 
 .panel {
-	background-color:#F2FFE9;
+	background-color:#45474B;
 	width: 100vw;
 	height: 5vh;
 	display: flex;
@@ -369,7 +369,7 @@
 		justify-content: center;
 		border-left: 1px solid white;
 		border-right: 1px solid white;
-		background-color: #A6CF98;
+		background-color: #F5F7F8;
 	}
 	.vendor {
 		width: 90vw;
@@ -387,8 +387,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
-			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		box-shadow: 0 0.3px 1px 0 #F4CE14, 0 1px 4px 0 #F4CE14;
 		border-radius: 5px;
 	}
 	.tabBtnP {
@@ -397,7 +396,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #A6CF98;
+		background-color: #F5F7F8;
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	}
@@ -597,7 +596,7 @@
 	.aims {
 		font-size: 1.2rem;
 		font-family: "Times New Roman", Times, serif;
-		color: #108a00;
+		color: #495E57;
 		font-weight: 900;
 	}
 
@@ -609,7 +608,7 @@
 		align-items: center;
 		justify-content: center;
 		border: 1px solid silver;
-		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-shadow: 0 0.3px 1px 0 #F4CE14, 0 1px 4px 0 #F4CE14;
 	}
 	.tabCover {
 		width: 27vw;
@@ -680,7 +679,7 @@
 	.aims {
 		font-size: 1.5rem;
 		font-family: "Times New Roman", Times, serif;
-		color: #108a00;
+		color: #495E57;
 		font-weight: 900;
 	}
   .inAims {
@@ -709,7 +708,7 @@
 	.aims {
 		font-size: 2rem;
 		font-family: "Times New Roman", Times, serif;
-		color: #108a00;
+		color: #495E57;
 		font-weight: 900;
 	}
 	.img {
