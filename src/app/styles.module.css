@@ -157,8 +157,8 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    background-color: white;
   }
-
   .headMain{
     display: flex;
     align-items: first baseline;
