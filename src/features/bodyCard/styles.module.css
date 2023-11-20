@@ -274,7 +274,7 @@
 	justify-content: flex-start;
 	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-	background-image: linear-gradient(to top, white, #108a00);
+	background-image: linear-gradient(to top, #F4CE14, #F5F7F8);
 	height: 10vh;
 	width: inherit;
 	font-family: "Times New Roman", Times, serif;
@@ -345,9 +345,10 @@
 
 @media screen and (max-width: 620px) {
 	.locate{
-		background-color: #108a00;
-		color: white;
+		background-color: #F4CE14;
+		color: #495E57;
 		font-size:large;
+		font-weight: 900;
 		width: 20vw;
 		height: 5vh;
 		border-radius: 7vh;
