@@ -86,7 +86,7 @@
 .svg{
   width: 5vw;
   height: 8vh;
-  color: black;
+  color: #495E57;
 }
 .close{
   right: 1vw;
@@ -99,6 +99,7 @@
  .svgM{
   width: 10vw;
   height: 7vh;
+  color: #495E57;
 }
  
  
@@ -155,16 +156,15 @@
   
 }
 .logInHeader{
-  color: white;
+  color: #495E57;
   font-weight: bold;
-  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-shadow: 0.25px 0.25px 1px white, 0 0 7px white, 0 0 1.25px white;
-  width:99vw;
+  width:100vw;
   height: 5vh;
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #108a00;
+  background-color: #F4CE14;
 }
 .newClientUserIn{
   display: flex;
@@ -204,17 +204,14 @@
 }
 
 .userSvg{
-  width:99vw;
+  width:100vw;
   height: 7vh;
   border-top-left-radius: 1vh;
   border-top-right-radius: 1vh;
-  border-top: 3px solid #108a00;
-  border-left: 3px solid #108a00;
-  border-right:3px solid #108a00;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top,#108a00, #ADFF29);
+  background-image: linear-gradient(to top,#F4CE14,  #F5F7F8);
   
 }
 
