@@ -244,17 +244,7 @@
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 1.2em;
 }
-.sHName {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.2rem;
-	font-family: "Times New Roman", Times, serif;
-	font-weight: 900;
-	color: white;
-	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-	align-self: last baseline;
-}
+
 
 .displayFinalService {
 	width: 98vw;
@@ -344,6 +334,17 @@
 }
 
 @media screen and (max-width: 620px) {
+	.sHName {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2rem;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 900;
+		color: white;
+		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+		align-self: last baseline;
+	}
 	.locate{
 		background-color: #F4CE14;
 		color: #495E57;
@@ -426,6 +427,17 @@
 }
 
 @media screen and (min-width: 621px) {
+	.sHName {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 900;
+		color: white;
+		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+		align-self: last baseline;
+	}
 	.lineContainer {
 		width: 50vw;
 		height: 99vh;
@@ -474,7 +486,7 @@
 		justify-content: flex-start;
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-		background-image: linear-gradient(to top, white, #108a00);
+			background-image: linear-gradient(to top, #F4CE14, #F5F7F8);
 		height: 20vh;
 		width: inherit;
 		font-family: "Times New Roman", Times, serif;
@@ -487,24 +499,26 @@
 	.svg {
 		width: 9vw;
 		height: 5vh;
-		color: white;
+		color: #495E57;
 		border-radius: 2px;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	.inAims {
-		font-size: 1.1rem;
+		font-size: 1.5rem;
 		font-weight: bolder;
 		align-self: center;
 		font-family: "Times New Roman", Times, serif;
 		color: white;
-		transform: scaleY(2);
+		transform: scaleY(3);
 		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+		align-self: last baseline;
+		margin-bottom: 1.3vh;
 	}
 
 	.imgTC {
 		width: 20vw;
-		height: 20vh;
+		height: 13.8789vh;
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 		border-bottom-right-radius: 13vw;
@@ -512,11 +526,11 @@
 
 	.intabCover {
 		width: 50vw;
-		height: 20vh;
+		height: 13.8789vh;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		background-image: linear-gradient(to top, white, #108a00);
+		background-image: linear-gradient(to top,#F4CE14, #F5F7F8);
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	}
@@ -574,7 +588,7 @@
 		font-size: 1.5rem;
 		font-family: "Times New Roman", Times, serif;
 		font-weight: 900;
-		color: #108a00;
+		color: #495E57;
 	}
 	.svgtb {
 		width: 40vw;
@@ -602,6 +616,7 @@
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 5px;
+		background-color: #F5F7F8;
 	}
 
 	.aims {
@@ -701,6 +716,7 @@
 		color: white;
 		transform: scaleY(2);
 		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+		align-self: last baseline;
 	}
 	.locate{
 		background-color: #108a00;
