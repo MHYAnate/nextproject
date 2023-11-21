@@ -226,14 +226,16 @@
     flex-direction: row;
     width: 100vw;
     height: 85vh;
+    background-color: #45474B;
   }
 
   .carouselCover{
-    height: 83vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: #45474B;
    }
 
   .bodyCard{
@@ -244,13 +246,13 @@
     justify-content: flex-start;
     align-items: center;
     border-left: 1px solid silver;
-    background-color: white;
+    background-color:#45474B;
   }
 
   
   .inCardA{
     width: 45vw;
-    height: 120vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +263,7 @@
 
   .inCardB{
     width: 45vw;
-    height: 120vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;

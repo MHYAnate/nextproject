@@ -158,11 +158,13 @@
 
   .parent {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding-top: 1.5vh;
+    justify-content: flex-start;
     align-items: center;
     width: 50vw;
     height: 77vh;
-    background-color: white;
+    background-color: #45474B;
   }
 
   .mainCard {
@@ -172,7 +174,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #45474B;
   }  
   .mainBody{
    display: flex;
@@ -189,6 +191,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: #F4CE14;
   }
   
   .titleTopSpan{
@@ -198,7 +201,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #108a00;
+    color: #495E57;
     transform: scaleY(3);
   }
   .bodyCardCategory{
@@ -243,11 +246,11 @@
   }
 
   .unHighLighted{
-    background-color: white;
+    background-color: #F5F7F8;
     width: 22vw;
     height: 7vh;
-    color: #108a00;
-    border: 1px solid #108a00;
+    color: #495E57;
+    border: 1px solid #F4CE14;
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -257,7 +260,7 @@
   .highLighted{
     width: 22vw;
     height: 7vh;
-    background-color: #108a00;
+    background-color: #F4CE14;
     color: white;
     border-radius: 3px;
     display: flex;

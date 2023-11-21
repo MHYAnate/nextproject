@@ -613,14 +613,12 @@
 
 	.tabBtn {
 		width: 27vw;
-		height: 38vh;
+		height: 39vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		border: 1px solid silver;
-		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
-		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	}
 	.tabCover {
 		width: 27vw;
@@ -635,11 +633,12 @@
 	.vendor {
 		width: 45vw;
 		height: 140vh;
-		row-gap: 0.5vh;
+		row-gap: 2.3vh;
 		flex-direction: column;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-color: #45474B;
 	}
 
 

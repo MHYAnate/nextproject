@@ -413,11 +413,11 @@ opacity: 0.7;
     width: 50vw;
   }
   .userBtnWrapper2{
-    width: 23vw;
+    width: 24.5vw;
     height: 7vh;
-    background-color: #108a00;
-    border-radius: 1vh;
-    color: white;
+    background-color: #F4CE14;
+   
+    color: #495E57;
     text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
     font-weight:bold ;
     display: flex;
@@ -427,11 +427,10 @@ opacity: 0.7;
    
   }
   .userBtnWrapper2In{
-    width: 23vw;
+    width: 24.5vw;
     height: 7vh;
-    background-color: #108a00;
-    border-radius: 1vh;
-    color: white;
+    background-color: #F4CE14;
+    color: #495E57;
     text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
     font-weight:bold ;
     display: flex;
@@ -443,9 +442,8 @@ opacity: 0.7;
   .userBtnWrapper1{
     width: 50vw;
     height: 7vh;
-    background-color: red;
-    border-radius: 1vh;
-    color: white;
+    background-color: #45474B;
+    color: #F5F7F8;
     text-shadow: 0.25px 0.25px 1px black, 0 0 7px white, 0 0 1.25px white;
     font-weight:bolder ;
     display: flex;
