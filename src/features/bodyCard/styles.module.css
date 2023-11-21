@@ -406,8 +406,8 @@
 		align-items: center;
 		justify-content: center;
 		background-color: #F5F7F8;
-		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
-			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+		border-left:1px solid #495E57;
+		border-right:1px solid #495E57;
 	}
 	.clickFinal {
 		margin-left: 1vw;
