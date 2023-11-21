@@ -690,8 +690,8 @@
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	.locate{
-		background-color: #108a00;
-		color: white;
+		background-color: #F4CE14;
+		color: #495E57;
 		font-size:large;
 		width: 20vw;
 		height: 5vh;
@@ -719,8 +719,8 @@
 		align-self: last baseline;
 	}
 	.locate{
-		background-color: #108a00;
-		color: white;
+		background-color: #F4CE14;
+		color: #495E57;
 		font-size:large;
 		width: 5vw;
 		height: 5vh;
@@ -753,8 +753,8 @@
 		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 	}
 	.locate{
-		background-color: #108a00;
-		color: white;
+		background-color: #F4CE14;
+		color: #495E57;
 		font-size:large;
 		width: 5vw;
 		height: 5vh;
@@ -766,8 +766,8 @@
 
 @media screen and (min-width: 700px) {
 	.locate{
-		background-color: #108a00;
-		color: white;
+		background-color: #F4CE14;
+		color: #495E57;
 		font-size:large;
 		width: 10vw;
 		height: 5vh;
