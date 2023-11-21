@@ -19,7 +19,7 @@ const NewServiceProvider = memo(function New() {
 const SlowPost: React.FC<post> = () => {
 	let startTime = performance.now();
 
-	while (performance.now() - startTime < 500) {
+	while (performance.now() - startTime < 100) {
 		// Do nothing for 500 ms per item to emulate extremely slow code
 	}
 
