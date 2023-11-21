@@ -161,13 +161,13 @@
 }
 
 .close {
-	right: 2vw;
+	right: 1vw;
 	top: 1vh;
 	position: fixed;
 	z-index: 8;
 }
 .closeIn {
-	right: 10vw;
+	right: 8vw;
 	top: 1vh;
 	position: fixed;
 	z-index: 11;
@@ -427,6 +427,21 @@
 }
 
 @media screen and (min-width: 621px) {
+	.close {
+		right: 1.5vw;
+		top: 1vh;
+		position: fixed;
+		z-index: 8;
+	}
+	.closeIn {
+		right: 4vw;
+		top: 1vh;
+		position: fixed;
+		z-index: 11;
+		width: 4vw;
+		height: 7vh;
+		border-radius: 25vw;
+	}
 	.sHName {
 		display: flex;
 		justify-content: center;
@@ -497,7 +512,7 @@
 	}
 
 	.svg {
-		width: 9vw;
+		width: 3vw;
 		height: 5vh;
 		color: #495E57;
 		border-radius: 2px;
@@ -560,7 +575,7 @@
 	}
 
 	.tabBtnP {
-		width: 16vw;
+		width: 16.2vw;
 		height: 5vh;
 		display: flex;
 		align-items: center;
@@ -569,7 +584,7 @@
 		border-right: 1px solid #495E57;
 	}
 	.tabCoverP {
-		width: 16vw;
+		width: 16.2vw;
 		height: 7vh;
 		display: flex;
 		align-items: center;
