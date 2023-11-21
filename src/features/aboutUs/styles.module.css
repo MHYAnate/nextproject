@@ -30,7 +30,6 @@
   width: 90vw;
   background-color: #F5F7F8;
   color: #F5F7F8;
-  padding-left: 2vw;
   margin-left: 2vw;
   border-bottom: 1px solid  #F5F7F8;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -92,8 +91,9 @@
 .tabHolder{
   display: flex;
   align-items: center;
-  width: 90vw;
+  width: 89vw;
   justify-content: space-between;
+  padding-left: 1vw;
 }
 .tabControl{
   max-height: 50vh;
@@ -310,7 +310,6 @@
     width: 90vw;
     background-color: white;
     color: #108a00;
-    padding-left: 2vw;
     margin-left: 2vw;
     border-bottom: 1px solid  #108a00;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
