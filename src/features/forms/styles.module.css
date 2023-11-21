@@ -173,7 +173,7 @@
 .svg{
   width: 10vw;
   height: 4vh;
-  color: black;
+  color: #495E57;
   border-radius: 1vh;
 	border: 1px solid silver;
 }
@@ -275,7 +275,7 @@
 		width: 50vw;
 		height: 89vh;
 		overflow-y: auto;
-		background-image: linear-gradient(to bottom, white, whitesmoke);
+		background-color: #45474B;
 		padding-bottom: 3vh;
 	}
 	
@@ -362,11 +362,11 @@
 	}
 	
 	.button {
-		background-color: #108a00;
+		background-color: #F4CE14;
 		color: white;
 		width: 42vw;
 		margin-top: 3vh;
-		box-shadow: 0 2px 4px 0 #108a00, 0 0.75px 2.5px 0 white;
+		box-shadow: 0 2px 4px 0 #F4CE14, 0 0.75px 2.5px 0 white;
 		height: 7vh;
 		border-radius: 1vh;
 	}
@@ -412,7 +412,7 @@
 	.svg{
 		width: 5vw;
 		height: 5vh;
-		color: black;
+		color: #495E57;
 		border-radius: 1vh;
 		border: 1px solid silver;
 	}
@@ -449,7 +449,7 @@
 		justify-content: center;
 		align-items: center;
 		font-family: 'Times New Roman', Times, serif;
-		color: #108a00;
+		  color: #F5f7f8;
 		position: relative;
 		top: 0.3em;
 		height: 2vh;
@@ -457,7 +457,7 @@
 	.paspinComfirm1{
 		align-items: center;
 		font-family: 'Times New Roman', Times, serif;
-		color: #108a00;
+		  color: #F5f7f8;
 		position: relative;
 		top: 0.3em;
 		height: 2vh;

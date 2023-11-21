@@ -12,7 +12,7 @@
   flex-direction: column;
   width: 100vw;
   height: fit-content;
-  background-color:#45474B;
+  background-color:#F5F7F8;
 }
 .header{
   display: flex;
@@ -25,14 +25,16 @@
 .nav{
   width: 100vw;
   height: 7vh;
-  background-color: #45474B;
+  background-color: #F5F7F8;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 .inNav{
  align-self: center;
+
 }
 .bodyCover{
   display: flex;
@@ -151,43 +153,51 @@
 
 @media screen and (min-width: 621px){
 
+  .panelCover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+  }
+
   .main{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: #F5F7F8;
   }
   .headMain{
     display: flex;
-    align-items: first baseline;
+    align-items: center;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     width: 100vw;
     height: 15vh;
     height: fit-content;
-    background-color:  white;
+    background-color:  #F5F7F8;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 
   .header{
     display: flex;
     flex-direction: row-reverse;
-    width: 68vw;
+    width: 50vw;
     height: 14vh;
-    justify-content: space-around;
-    align-items: first baseline;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav{
-    width: 68vw;
+    width: 50vw;
     height: 10vh;
-    background-color:white;
+    background-color:#F5F7F8;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 17vw;
   }
   
 

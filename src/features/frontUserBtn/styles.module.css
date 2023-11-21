@@ -456,7 +456,7 @@ opacity: 0.7;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .userBtn1{
-    width: 20vw;
+    width: 47vw;
     height: 7vh;
   }
   .userBtn2{
@@ -545,7 +545,7 @@ opacity: 0.7;
   
 }
 .logInHeader{
-  color: white;
+  color: #495E57;
   font-weight: bold;
   box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-shadow: 0.25px 0.25px 1px white, 0 0 7px white, 0 0 1.25px white;
@@ -554,7 +554,7 @@ opacity: 0.7;
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #108a00;
+  background-color: #F4CE14;
 }
 .newClientUserIn{
   display: flex;
@@ -597,13 +597,10 @@ opacity: 0.7;
   height: 7vh;
   border-top-left-radius: 1vh;
   border-top-right-radius: 1vh;
-  border-top: 3px solid #108a00;
-  border-left: 3px solid #108a00;
-  border-right:3px solid #108a00;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top,#108a00, #ADFF29);
+  background-image: linear-gradient(to top,#F4CE14,  #F5F7F8);
   
 }
 .close{

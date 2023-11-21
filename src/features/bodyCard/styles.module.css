@@ -546,25 +546,26 @@
 	}
 
 	.tabBtnP {
-		width: 10vw;
+		width: 16vw;
 		height: 5vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #108a00;
+		border-left: 1px solid #495E57;
+		border-right: 1px solid #495E57;
 	}
 	.tabCoverP {
-		width: 10vw;
+		width: 16vw;
 		height: 7vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: white;
+		background-color: #F5F7F8;
 	}
 	.abtSvg {
 		width: 8vw;
 		height: 3.5vh;
-		color: #108a00;
+		color: #495E57;
 	}
 	.sname {
 		display: flex;
