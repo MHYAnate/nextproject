@@ -29,8 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  
 }
 .inNav{
  align-self: center;
@@ -118,6 +117,17 @@
 }
 
 @media screen and (max-width: 620px){
+  .nav{
+    width: 100vw;
+    height: 7vh;
+    background-color: #F5F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   .inCardA{
     width: 87vw;
     height: 21vh;
