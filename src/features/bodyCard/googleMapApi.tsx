@@ -135,6 +135,7 @@ export const GoogleMapApi = (props: CarouselProps) => {
 	];
 
 
-		initMap();
+	 initMap();
 	
-};
+};	
+
