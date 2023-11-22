@@ -2,7 +2,7 @@ import React from "react";
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import { GoogleMapApi } from "./googleMapApi";
+
 
 interface CarouselProps {
 	services: {
@@ -21,11 +21,10 @@ declare global {
 const ServiceHolder = (props: CarouselProps) => {
 	
 
-	const set = setTimeout(() => {
-		GoogleMapApi(props);
-	}, 1000);
+
   
- if(set){
+ 
+	
 
 	return (
 		<div className={styles.displayFinalService}>
@@ -60,16 +59,6 @@ const ServiceHolder = (props: CarouselProps) => {
 			</div>
 		</div>
 	);
- }else{
-	return (
-		<div className={styles.displayFinalService}>
-			loading
-		</div>
-	);
- }
-	
-
-	
 };
 ServiceHolder.displayName = "ServiceHolder";
 export default ServiceHolder;

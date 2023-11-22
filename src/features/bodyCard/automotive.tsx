@@ -4,7 +4,8 @@ import styles from "./styles.module.css";
 import { TabButton } from "./btnMain";
 import { Services } from "../addCarousel/data";
 import ServiceHolder from "./serviceHolder";
-import { GoogleMapApi } from "./googleMapApi";
+import {initMap} from "../bodyCard/googleMapApi"
+
 
 interface CarouselProps {
 	Services: {
@@ -55,6 +56,12 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			// Return a message or component indicating that the "Maintenance" category is not found
 			return null;
 		}
+
+		setTimeout(() => {
+			if(tab){
+				initMap()
+			}
+		},1000);
 
 		return autoCategory.services.map((service) => (
 			<>

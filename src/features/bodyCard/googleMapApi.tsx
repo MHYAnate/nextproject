@@ -15,8 +15,7 @@ interface CarouselProps {
 	};
 }
 
-export const GoogleMapApi = (props: CarouselProps) => {
-	async function initMap() {
+	export async function initMap() {
 		// Request needed libraries.
 		const { Map, InfoWindow } = (await google.maps.importLibrary(
 			"maps"
@@ -137,5 +136,5 @@ export const GoogleMapApi = (props: CarouselProps) => {
 
 	 initMap();
 	
-};	
+
 
