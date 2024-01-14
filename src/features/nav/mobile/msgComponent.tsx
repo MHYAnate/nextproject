@@ -23,9 +23,9 @@ export const Ntftions: React.FC<post> = ({ Notification }) => {
 		}
 
 		return Notification.map((NtfctionM) => (
-			<div className={styles.tbCover}>
+			<div key={NtfctionM.id} className={styles.tbCover}>
 				<TabB
-				key={NtfctionM.id}
+				
 					onClick={() =>
 						tabs === `${NtfctionM.Notification}`
 							? setTabs("")
