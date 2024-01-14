@@ -1,6 +1,5 @@
 .renderCover{
-  
-  border: 1px solid black;
+  display: flex;
   min-width: 10vw;
   min-height: 10vh;
 }
@@ -28,4 +27,69 @@
 
 .tabHolder{
   background-color: white;
+}
+.btn{
+  border: 1px solid black;
+}
+.ntfctImg{
+  width: 13vw;
+  height: 9.5vh;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img{
+  display: flex;
+  align-content: flex-start;
+  width: 15vw;
+  height: 12vh;
+}
+.renderSubBody{
+  display: flex;
+  justify-content: space-between;
+  min-height: 12vh;
+  max-height: fit-content;
+  border-bottom: 1px solid #E3E2E2;
+  width: 47vh;
+  padding-top: 0.5vh;
+}
+.noticeMsg{
+  width: 37vw;
+  font-size: 0.9rem;
+  color: rgb(93, 91, 91);
+  display: flex;
+  align-items: normal;
+  text-align: left;
+}
+
+.timeStamp{
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seen{
+ width: 16vw;
+ display: flex;
+ justify-content: flex-end;
+ height: 9vh;
+ margin-top: 1vh;
+}
+
+.see{
+  width: 2vh;
+  height: 2vh;
+}
+
+.input{
+  padding-left: 15px;
+  margin-bottom: 25px;
+  height: 35px;
+  background-color: #e6e3e3;
+  width: 80vw;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
 }

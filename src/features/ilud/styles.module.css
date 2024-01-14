@@ -3,9 +3,10 @@
   justify-content: center;
   align-items: center;
   height: 5.5svh;
-  width: 30vw;
+  width: 25vw;
   animation: Appear 2.5s linear;
 }
+
 .ilud{
   text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
   font-size: 2rem;
@@ -14,12 +15,12 @@
   height: inherit;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .mix{
   margin-left: -1.7vw;
 }
+
 @keyframes Appear {
   0% {
     transform: scale(0);
@@ -36,24 +37,8 @@
   }
 }
 
-
-@media screen and (max-width: 620px){
-  .mix{
-    margin-left: -5.7%;
-  }
-  .ilud{
-  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
-  font-size: 3rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bolder;
-  color: #495E57;
-  width: inherit;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-}
-}
 @media screen and (min-width: 450px){
+
   .cover{
     display: flex;
     justify-content: center;
@@ -63,16 +48,42 @@
     width: 15vw;
     
   }
+
   .mix{
     margin-left: -5.7%;
   }
+
 }
+
 @media screen and (min-width: 520px){
+  
   .mix{
     margin-left: -3.7%;
   }
 }
+
+@media screen and (max-width: 620px){
+
+  .mix{
+    margin-left: -5.7%;
+  }
+
+  .ilud{
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  color:#108a00;
+  width: inherit;
+  height: inherit;
+  display: flex;
+}
+
+}
+
+
 @media screen and (min-width: 620px){
+
   .mix{
     margin-left: -7%;
   } 
@@ -88,7 +99,7 @@
     font-size: 3em;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:#495E57;
+    color:#108a00;
      background-color: #F5F7F8;
     width: inherit;
     height: inherit;

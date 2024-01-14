@@ -1,0 +1,294 @@
+.searchTabCover{
+  display: flex;
+}
+
+.searchSvg{
+  display: flex;
+}
+
+.searchDisplay{
+  display: flex;
+}
+
+.searchPage{
+  display: flex;
+}
+
+.messageTabCover{
+  display: flex;
+}
+
+.messageSvg{
+  display: flex;
+}
+
+.MessageDisplay{
+  display: flex;
+}
+
+.messagePage{
+  display: flex;
+}
+
+.notificationTabCover{
+  display: flex;
+}
+
+.notificationSvg{
+  display: flex;
+}
+
+.noticeDisplay{
+  display: flex;
+}
+
+.noticePage{
+  display: flex;
+}
+
+.navTab{
+  display: flex;
+  justify-content: space-around;
+  width: 47vw;
+}
+.click{
+  display: flex;
+  height: 30px;
+  border-bottom: 1px solid white;
+  width:45vw ;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickIn{
+  width: 80vw;
+  height: 35px;
+  margin-bottom: 5vh;
+}
+
+.notificationSvg{
+  color: black;
+}
+
+.tabSvg{
+  display: block;
+  position: relative;
+}
+.badge{
+  position: absolute;
+  top: 0.5px;
+  right: -0.5px;
+  color: white;
+  background-color: green;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 4.7vw;
+  height: 2.4vh;
+  font-size:0.67rem;
+}
+
+.navSvg{
+  width: 30px;
+  height: 30px;
+}
+
+.svg{
+  width: 35px;
+  height: 35px;
+}
+
+.displayNotice{
+  position: absolute;
+  left: 0.1px;
+  top: 20vh;
+  z-index: 3;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.displayNoticeIn{
+  position: fixed;
+  left: 0.1px;
+  top: 0.1vh;
+  z-index: 3;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: fit-content;
+  z-index: 4;
+  background-color: white;
+}
+.displayNotice{
+  position: absolute;
+  left: 0.1px;
+  top: 20vh;
+  z-index: 3;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+.displayMenu{
+  position: absolute;
+  right: 0.1px;
+  top: 20vh;
+  z-index: 3;
+  width: 45vw;
+  height: fit-content;
+  background-color: green;
+  color: white;
+}
+.setterBackground{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.background{
+  margin-top: 10vh;
+  width: 80vw;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.renderCover{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  max-height: fit-content;
+  width: 80vw;
+  padding-top: 2vh;
+  margin-bottom: 3vh;
+}
+.ntfctImg{
+  width: 13vw;
+  height: 9.5vh;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img{
+  display: flex;
+  align-content: flex-start;
+  width: 15vw;
+  height: 12vh;
+}
+.renderSubBody{
+  display: flex;
+  justify-content: space-between;
+  min-height: 12vh;
+  max-height: fit-content;
+  border-bottom: 1px solid #E3E2E2;
+  width: 47vh;
+  padding-top: 2vh;
+}
+.noticeMsg{
+  width: 37vw;
+  font-size: 0.9rem;
+  color: rgb(93, 91, 91);
+  display: flex;
+  align-items: normal;
+  text-align: left;
+}
+.timeStamp{
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seen{
+ width: 16vw;
+ display: flex;
+ justify-content: flex-end;
+ height: 9vh;
+ margin-top: 1vh;
+}
+.see{
+  width: 2vh;
+  height: 2vh;
+
+}
+
+
+.header{
+  height: 10vh;
+  width: 80vw;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: rgb(101, 101, 101);
+}
+.popHolder{
+  width: 80vw;
+}
+.popHolderIn{
+  width: 80vw;
+}
+
+.displayNtcMsg{
+  display: flex;
+}
+.inDisplayNtcMsg{
+  display: flex;
+}
+
+.msgImg{
+  display: flex;
+}
+
+.tbCover{
+  margin-bottom: 3vh;
+}
+.MobileNavTabContainer{
+  width: 47vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.isActive{
+ border-bottom: 5px solid green;
+ margin-top: 5px;
+  width: 48.9px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inActive{
+  border-bottom: 5px solid white;
+  margin-top: 5px;
+  width: 48.9px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuLister{
+  border-bottom: 1px solid white;
+}
+.menulist{
+  position: fixed;
+  left: 0.1px;
+  top: 20vh;
+  z-index: 4;
+  width: 100vw;
+  min-height: 1px;
+  max-height: fit-content;
+}
+.innerMenu{
+  background-color: white;
+  margin-top: 1px;
+  height: 80vh;
+  color: black;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.innerWrapper{
+ display: flex;
+ justify-content: space-between;
+}
+
+/* .close{
+ 
+} */

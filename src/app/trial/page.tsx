@@ -1,6 +1,6 @@
 "use client";
 
-import { Services } from "@/features/addCarousel/data";
+import { Services } from "@/features/database/data";
 
 import AutomotiveRender from "@/features/try/try";
 
