@@ -2,11 +2,9 @@
 import Ilud from "@/features/ilud/ilud";
 import styles from "./styles.module.css";
 import MobileNavTab from "@/features/nav/mobile/navTab";
-import  {NotificationTab} from "@/features/nav/mobile/notificationsTab";
-import { NoticeTab } from "@/features/bodyCard/tabNotice";
-import { showNotification, hideNotification, updateCountFromLength } from '@/lib/features/slice/notificationSlice'
+import { updateCountFromLength } from '@/lib/features/slice/notificationSlice'
 import {  updateMsgLength } from '@/lib/features/slice/messageSlice'
-import { useAppSelector, useAppDispatch } from '@/lib/hooks'
+import { useAppDispatch } from '@/lib/hooks'
 import { Notification } from '@/features/database/notifiaction';
 import { Messages } from '@/features/database/messages';
 
