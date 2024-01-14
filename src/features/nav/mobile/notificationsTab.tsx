@@ -20,7 +20,7 @@ interface post {
 
 const Ntftions: React.FC<post> = ({ Notification }) => {
 	
-	function renderNtfctionMsg() {
+	function RenderNtfctionMsg() {
 		const [tabs, setTabs] = useState("");
 		if (!Notification) {
 			// Return a message or component indicating that the "Maintenance" category is not found
@@ -30,6 +30,7 @@ const Ntftions: React.FC<post> = ({ Notification }) => {
 		return Notification.map((NtfctionM) => (
 			<div className={styles.tbCover}>
 				<TabB
+				key={NtfctionM.id}
 					onClick={() =>
 						tabs === `${NtfctionM.Notification}`
 							? setTabs("")
@@ -99,7 +100,7 @@ const Ntftions: React.FC<post> = ({ Notification }) => {
 		// Do nothing for 500 ms per item to emulate extremely slow code
 	}
 
-	return <ul>{renderNtfctionMsg()}</ul>;
+	return <ul>{RenderNtfctionMsg()}</ul>;
 };
 
 export const NotificationTab = () => {
