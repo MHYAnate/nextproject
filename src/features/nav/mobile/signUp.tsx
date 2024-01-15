@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-export default function SignUp() {
+export default function SigningUp() {
   return (
     <div className={styles.signUpPage}>
       <p>

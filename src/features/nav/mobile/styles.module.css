@@ -288,7 +288,65 @@
  display: flex;
  justify-content: space-between;
 }
+.formContainer{
+  display: flex;
+  width: 100vw;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputS{
+  color: black;
+  border: 1px solid silver;
+  width: 60vw;
+  height: 15vh;
+}
+.paspinComfirm{
+  color: green;
+}
+.passcodeContainer{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid silver;
+  color: black;
+  width: 60vw;
+  height: 15vh;
+}
 
-/* .close{
- 
-} */
+.input1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid silver;
+  width: 9vw;
+  height: 9vh;
+}
+.btn{
+  border: 1px solid black;
+}
+.svg{
+  color: black;
+  border: 1px solid silver;
+  width: 9vw;
+  height: 9vh;
+}
+.paspinComfirm{
+  color: green;
+}
+.passcodeContainerV{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid silver;
+  color: black;
+  width: 50vw;
+  height: 15vh;
+}
+
+
+

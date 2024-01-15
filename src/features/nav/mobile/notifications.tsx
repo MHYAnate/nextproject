@@ -3,9 +3,9 @@ import styles from "./styles.module.css";
 import { Notification } from '@/features/database/notifiaction';
 
 
-import { useAppSelector, useAppDispatch } from '@/lib/hooks'
+import { useAppDispatch } from '@/lib/hooks'
 
-import { showNotification, hideNotification, updateCountFromLength } from '@/lib/features/slice/notificationSlice'
+import { updateCountFromLength } from '@/lib/features/slice/notificationSlice'
 
 
 
