@@ -94,9 +94,6 @@ export default function LogIn() {
 		if(user == null){
 			return;
 		}
-		if(check){
-			return user !== null;
-		}
 	})
  
 	const check = (document.getElementById(
@@ -536,7 +533,7 @@ export default function LogIn() {
 				</form>
 				<div className={styles.formManegment}>
 						<div className={styles.keepMeSignedInCover}>
-							<input  className={styles.checkBox} type="radio" />
+							<input  className={styles.checkBox} type="checkbox" />
 							<p>Keep me Signed in</p>
 						</div>
 						<Link className={styles.forget} href="/dashboard">Forgot Password?</Link>
