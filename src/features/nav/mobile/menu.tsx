@@ -39,7 +39,7 @@ export default function MenuList() {
 		return (
 			<div className={styles.innerMenu}>
 				<div className={styles.innerWrapper}>
-        <p>Log Page</p>
+        
 					<div className={styles.close} onClick={() => setTab("")}>
 						close
 					</div>

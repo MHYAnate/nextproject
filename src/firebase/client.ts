@@ -13,7 +13,7 @@ const firebaseConfig = initializeApp( {
   messagingSenderId: "656363250376",
   appId: "1:656363250376:web:f55560d94487a205023bfd"
 });
-
+ const faceredirect ="//clict2link.firebaseapp.com/__/auth/handler";
  const auth = getAuth(firebaseConfig);
 
  const database = getFirestore(firebaseConfig);
