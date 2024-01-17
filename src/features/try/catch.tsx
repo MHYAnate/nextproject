@@ -5,7 +5,7 @@ interface SuggestionItemProps {
 
   eachItem: {
     id: number;
-    category: string;
+    category: string; 
     src: string;
     Notification: string;
     suggestion:string;
@@ -22,15 +22,7 @@ const SuggestionItem: React.FC<SuggestionItemProps> = (props) => {
   const {eachItem, fun} = props
   const {id, Notification} = eachItem
  
-  const handleSuggestionClick = () => {
-    fun(props.eachItem.id, props.eachItem.suggestion);
-  };
- 
- 
 
-  const funcall = () => {
-    handleSuggestionClick();
-  }
 
   return (
     <li className={styles.renderCover}>

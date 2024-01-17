@@ -43,7 +43,11 @@ type FormValue = {
 
 const auth = getAuth();
 
-
+// onAuthStateChanged(auth, user =>{
+// 	if(user == null){
+// 		return;
+// 	}
+// })
 const googleAuth = signInWithRedirect(auth,new GoogleAuthProvider());
 
 export default function LogIn() {
@@ -90,11 +94,7 @@ export default function LogIn() {
 	const handleTogglePassword = () => {
 		setPasswordVisible((prevPasswordVisible) => !prevPasswordVisible);
 	};
-	onAuthStateChanged(auth, user =>{
-		if(user == null){
-			return;
-		}
-	})
+
  
 	const check = (document.getElementById(
 		"checkbox"

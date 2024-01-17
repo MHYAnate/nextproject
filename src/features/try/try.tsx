@@ -21,22 +21,17 @@ const SearchComponent : React.FC<props> = ({ suggestionsList}) => {
     setSearchInput(suggestion);
 		 
   };
-
 	
   const filteredList = suggestionsList.filter((eachItem) => {
     const text = eachItem.Notification.toLowerCase();
     return text.includes(searchInput);
 
   });
-	
-
   
     return (
-      <div className="mainDiv">
-
-        <div className="submaindiv">
-          <div className="SearchCon">
-            
+      <div >
+        <div >
+          <div >
             <input
               type="search"
               className={styles.input}

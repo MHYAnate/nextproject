@@ -3,9 +3,7 @@ import { TabNavBtn } from "./TabNavBtn";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { Notification } from "@/features/database/notifiaction";
 import { Messages } from "@/features/database/messages";
-import { Suggestion } from "@/features/database/suggestion";
 import styles from "./styles.module.css";
-import { Ntftions } from "./ntfctionComponent";
 import SearchComponent from "@/features/try/try";
 import MenuList from "./menu";
 
@@ -147,7 +145,7 @@ export default function TabContainer() {
 								<p>Notifications</p>
 							</div>
 							<div className={styles.popHolder}>
-								<Ntftions Notification={Notification} />
+							<SearchComponent suggestionsList={Notification}/>
 							</div>
 						</div>
 					</div>
