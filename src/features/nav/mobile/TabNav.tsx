@@ -6,6 +6,7 @@ import { Messages } from "@/features/database/messages";
 import styles from "./styles.module.css";
 import SearchComponent from "@/features/try/try";
 import MenuList from "./menu";
+import { Suggestion } from "@/features/database/suggestion";
 
 export default function TabContainer() {
 	const [isPending, startTransition] = useTransition();
@@ -119,7 +120,7 @@ export default function TabContainer() {
 							<div className={styles.header}>
 								<p>Search</p>
 							</div>
-              <div  className={styles.popHolder}><SearchComponent suggestionsList={Messages}/></div>
+              <div  className={styles.popHolder}><SearchComponent suggestionsList={Suggestion}/></div>
 							
 						</div>
 					</div>

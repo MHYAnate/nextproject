@@ -13,14 +13,14 @@ interface SuggestionItemProps {
     messages:string;
   };
 
-  fun: (id: number, suggestion: string) => void;
+
 
 }
 
 const SuggestionItem: React.FC<SuggestionItemProps> = (props) => {
   
-  const {eachItem, fun} = props
-  const {id, Notification} = eachItem
+  const {eachItem} = props
+  
  
 
 

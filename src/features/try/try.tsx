@@ -46,7 +46,6 @@ const SearchComponent : React.FC<props> = ({ suggestionsList}) => {
               <SuggestionItem
                 eachItem={eachItem}
                 key={eachItem.id}
-								fun={(eachItem.id, eachItem.suggestion)}
               />
             ))}
           </ul>
