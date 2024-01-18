@@ -29,10 +29,10 @@
 .navlist{
   display: block;
 }
-
-.mobileNavList{ 
+.mobileNavList{
   display: none;
 }
+
 
 .tabletNavList{
   display: none;
@@ -43,7 +43,7 @@
 }
 
 .mobilebody{
-  display: block;
+  display: none;
 }
 
 .mobileCarouselCover{
@@ -67,6 +67,7 @@
 }
 
 @media screen and (max-width: 620px){
+
   .navCover{
     display: flex;
     justify-content: center;
@@ -106,9 +107,12 @@
     display: flex;
     justify-self: flex-end;
     align-self: center;
-    
   }
-
+  .mobilebody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
 }
 
