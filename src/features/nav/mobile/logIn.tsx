@@ -8,9 +8,9 @@ import {
 	createUserWithEmailAndPassword,
 	sendEmailVerification,
 	updateProfile,
-	signInWithRedirect,
 	GoogleAuthProvider,
 	onAuthStateChanged,
+	signInWithPopup,
 } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { TabButton } from "./tabBtn";
@@ -43,12 +43,18 @@ type FormValue = {
 
 const auth = getAuth();
 
-// onAuthStateChanged(auth, user =>{
-// 	if(user == null){
-// 		return;
-// 	}
-// })
-const googleAuth = signInWithRedirect(auth,new GoogleAuthProvider());
+onAuthStateChanged(auth, user =>{
+	if(user == null){
+		return;
+	}
+})
+
+
+async function signIn() {
+  const userCred = await signInWithPopup(auth, new GoogleAuthProvider());
+  // Use userCred here
+}
+
 
 export default function LogIn() {
 	const [tab, setTab] = useState("");
@@ -96,9 +102,7 @@ export default function LogIn() {
 	};
 
  
-	const check = (document.getElementById(
-		"checkbox"
-	) as HTMLInputElement | null)?.value;
+	
 	const userNameId = document.getElementById(
 		"uName"
 	) as HTMLInputElement | null;
@@ -114,10 +118,6 @@ export default function LogIn() {
 		"uAddress"
 	) as HTMLElement | null;
 
-	const userName =
-		(document.querySelector("#uName") as HTMLInputElement)?.value || "";
-	const userAddress =
-		(document.querySelector("#uAddress") as HTMLInputElement)?.value || "";
 
 	const userPin =
 		(document.querySelector("#pin") as HTMLInputElement)?.value || "";
@@ -129,23 +129,19 @@ export default function LogIn() {
 	const check1 = watch("passCode1");
 	const check2 = watch("passCode2");
 	const check3 = watch("passCode3");
-	const checkV0 = watch("passCodeV0");
-	const checkV1 = watch("passCodeV1");
-	const checkV2 = watch("passCodeV2");
-	const checkV3 = watch("passCodeV3");
 
 
 	const passCodeV0 =
-		(document.querySelector('[name="passCodeV0"]') as HTMLInputElement)
+		(document.querySelector('[name="passCode0"]') as HTMLInputElement)
 			?.value || "";
 	const passCodeV1 =
-		(document.querySelector('[name="passCodeV1"]') as HTMLInputElement)
+		(document.querySelector('[name="passCode1"]') as HTMLInputElement)
 			?.value || "";
 	const passCodeV2 =
-		(document.querySelector('[name="passCodeV2"]') as HTMLInputElement)
+		(document.querySelector('[name="passCode2"]') as HTMLInputElement)
 			?.value || "";
 	const passCodeV3 =
-		(document.querySelector('[name="passCodeV3"]') as HTMLInputElement)
+		(document.querySelector('[name="passCode3"]') as HTMLInputElement)
 			?.value || "";
 
 	const pinCode = "c" + "l" + passCodeV0 + passCodeV1 + passCodeV2 + passCodeV3;
@@ -184,45 +180,9 @@ export default function LogIn() {
 		check2,
 		check3,
 		isDirty,
-		userAddressId,
-		userNameId,
-		mobileNumberId,
-		mobileNumberVId,
 	]);
 
-	React.useEffect(() => {
-		if (
-			isDirty &&
-			document.activeElement !== userNameId &&
-			document.activeElement !== mobileNumberId &&
-			document.activeElement !== mobileNumberVId &&
-			document.activeElement !== userAddressId
-		) {
-			if (checkV0) {
-				setFocus("passCodeV1");
-			}
-			if (checkV1) {
-				setFocus("passCodeV2");
-			}
-			if (checkV2) {
-				setFocus("passCodeV3");
-			}
-			if (checkV3) {
-				setFocus("passCodeV3");
-			}
-		}
-	}, [
-		setFocus,
-		checkV0,
-		checkV1,
-		checkV2,
-		checkV3,
-		isDirty,
-		userAddressId,
-		userNameId,
-		mobileNumberId,
-		mobileNumberVId,
-	]);
+
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -267,48 +227,7 @@ export default function LogIn() {
 		setFocus,
 	]);
 
-	React.useEffect(() => {
-		const onKeyUpV = (e: React.KeyboardEvent<HTMLInputElement>) => {
-			if (
-				e.key === "Backspace" &&
-				document.activeElement !== userNameId &&
-				document.activeElement !== mobileNumberId &&
-				document.activeElement !== mobileNumberVId &&
-				document.activeElement !== userAddressId
-			) {
-				if (checkV3) {
-					e.preventDefault();
-					setFocus("passCodeV3");
-				} else if (checkV2) {
-					e.preventDefault();
-					setFocus("passCodeV2");
-				} else if (checkV1) {
-					e.preventDefault();
-					setFocus("passCodeV1");
-				} else if (checkV0) {
-					e.preventDefault();
-					setFocus("passCodeV0");
-				}
-			}
-		};
-
-		window.addEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
-
-		return () => {
-			window.removeEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
-		};
-	}, [
-		checkV0,
-		checkV1,
-		checkV2,
-		checkV3,
-		isDirty,
-		userAddressId,
-		userNameId,
-		mobileNumberId,
-		mobileNumberVId,
-		setFocus,
-	]);
+	
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -354,39 +273,7 @@ export default function LogIn() {
 		setFocus,
 	]);
 
-	React.useEffect(() => {
-		const onKeyUpV = (e: React.KeyboardEvent<HTMLInputElement>) => {
-			if (
-				e.key &&
-				isDirty &&
-				e.key !== "Backspace" &&
-				document.activeElement !== userNameId &&
-				document.activeElement !== mobileNumberId &&
-				document.activeElement !== mobileNumberVId &&
-				document.activeElement !== userAddressId
-			) {
-				if (checkV0) {
-					setFocus("passCodeV1");
-				}
-				if (checkV1) {
-					setFocus("passCodeV2");
-				}
-				if (checkV2) {
-					setFocus("passCodeV3");
-				}
-				if (checkV3) {
-					setFocus("passCodeV3");
-				}
-			}
-		};
-
-		window.addEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
-
-		return () => {
-			window.removeEventListener("keyup", onKeyUpV as any); // Add 'as any' to cast the type
-		};
-	}, [checkV0, checkV1, checkV2, checkV3, isDirty, userNameId, setFocus]);
-
+	
 	React.useEffect(() => {
 		setValue("pinCode", pinCode);
 	}, [setValue, pinCode]);
@@ -405,13 +292,18 @@ export default function LogIn() {
 				userData.password
 			);
 			const user = result.user;
-
 			router.push(`/client/${user.uid}`);
+     
 			await sendEmailVerification(user);
-			await updateProfile(user, {
-				displayName: userName,
-				// photoURL: "https://robohash.org/2?set=set2"
-			});
+			await user.user.reload();
+	
+				
+		
+			
+			// await updateProfile(user, {
+			// 	displayName: userName,
+			// 	// photoURL: "https://robohash.org/2?set=set2"
+			// });
 		} catch (e: any) {
 			error = e;
 		}
@@ -530,6 +422,13 @@ export default function LogIn() {
 					<button className={styles.button} type="submit">
 						Sign In
 					</button>
+					<input
+							{...register("pinCode", {
+								required: "error message",
+							})}
+							id="pin"
+							className={styles.show}
+						/>
 				</form>
 				<div className={styles.formManegment}>
 						<div className={styles.keepMeSignedInCover}>
@@ -540,7 +439,7 @@ export default function LogIn() {
 					</div>
 					<div className={styles.passwordless}>
 						<button className={styles.btnLogFB}>Face Book</button>
-						<button onClick={()=> googleAuth} className={styles.btnLogGg}>Google</button>
+						<button onClick={()=> signIn()} className={styles.btnLogGg}>Google</button>
 					</div>
 			</div>
 

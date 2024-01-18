@@ -404,6 +404,10 @@
   border-radius: 15vh;
 }
 
+.show{
+  display: none;
+}
+
 
 @media screen and (min-height: 600px) {
   .inputS{

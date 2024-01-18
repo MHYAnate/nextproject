@@ -7,6 +7,8 @@ import {  updateMsgLength } from '@/lib/features/slice/messageSlice'
 import { useAppDispatch } from '@/lib/hooks'
 import { Notification } from '@/features/database/notifiaction';
 import { Messages } from '@/features/database/messages';
+import InCarousel from "@/features/carousel/mobile/carousel";
+import { Services } from "@/features/database/data";
 
 export default function Home() {
 	const dispatch = useAppDispatch()
@@ -43,7 +45,9 @@ export default function Home() {
 					</nav>
 				</div>
 				<div className={styles.mobilebody}>
-					<div className={styles.mobileCarouselCover}></div>
+					<div className={styles.mobileCarouselCover}>
+						<InCarousel Services={Services}/>
+						</div>
 					<div className={styles.mobileBurgerMenu}></div>
 					<div className={styles.mobileNewLetter}></div>
 				</div>
