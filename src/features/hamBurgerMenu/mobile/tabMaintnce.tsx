@@ -3,7 +3,6 @@ import { TabButton } from "./btn";
 import styles from "./styles.module.css";
 import MaintainaceRender from "./maintaince";
 import Image from "next/image";
-import { Services } from "../database/data";
 
 interface CarouselProps {
 	Services: {

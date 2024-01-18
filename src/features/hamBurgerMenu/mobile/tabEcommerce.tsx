@@ -3,7 +3,7 @@ import { TabButton } from "./btn";
 import styles from "./styles.module.css";
 import CommerceRender from "./eCommerce";
 import Image from "next/image";
-import { Services } from "../database/data";
+
 
 export const CommerceTab = () => {
 	const [isPending, startTransition] = useTransition();

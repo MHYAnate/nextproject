@@ -3,7 +3,7 @@ import { TabButton } from "./btn";
 import styles from "./styles.module.css";
 import PersonalRender from "./personal";
 import Image from "next/image";
-import { Services } from "../database/data";
+
 
 interface CarouselProps {
 	Services: {
