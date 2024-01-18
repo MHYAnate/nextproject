@@ -7,7 +7,7 @@
 }
 .click{
   display: flex;
-  height: 30px;
+  height: 60px;
   border-bottom: 1px solid white;
   width:45vw ;
   justify-content: center;
@@ -62,6 +62,7 @@
   width: 100vw;
   min-height: 100vh;
   max-height: fit-content;
+  background-color: white;
 }
 
 .displayNoticeIn{
