@@ -21,7 +21,7 @@ export default function MobileNewsLetter() {
 	const userEmail =
 		(document.querySelector("#uNumber") as HTMLInputElement)?.value || "";
 
-	async function SignUp(userData: UserData) {
+const  SignUp = (userData: UserData) =>{
 		let result: any = null;
 		let error: any = null;
 	}
