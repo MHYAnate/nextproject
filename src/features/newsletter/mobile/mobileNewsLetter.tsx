@@ -22,7 +22,7 @@ export default function MobileNewsLetter() {
 	});
 
 	const userEmail =
-		(document.querySelector("#uNumber") as HTMLInputElement)?.value || "";
+		(document.getElementById("uNumber") as HTMLInputElement)?.value || "";
 
 const  SignUp = (userData: UserData) =>{
 		let result: any = null;
