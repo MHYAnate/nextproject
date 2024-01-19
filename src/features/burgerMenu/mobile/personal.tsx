@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import { TabButton } from "./btnMain";
 import { Services } from "@/features/database/data";
 import ServiceHolder from "./serviceHolder";
-import {initMap} from "@/features/hamBurgerMenu/mobile/googleMapApi";
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 interface CarouselProps {
 	Services: {
@@ -20,7 +20,7 @@ interface CarouselProps {
 	}[];
 }
 
-const MaintainaceRender: React.FC<CarouselProps> = memo(() => {
+const PersonalRender: React.FC<CarouselProps> = memo(() => {
 	let items = [];
 
 	for (let i = 1; i < Services.length - 1; i++) {
@@ -45,18 +45,17 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 	while (performance.now() - startTime < 1) {
 		// Do nothing for 1ms per item to emulate extremely slow code
 	}
-
-	const maintenanceCategory = Services.find(
-		(category) => category.category === "Maintenance"
+	const personalCategory = Services.find(
+		(category) => category.category === "Personal"
 	);
 
-	function renderMaintenanceServices() {
-		if (!maintenanceCategory) {
+	function renderPersonalServices() {
+		if (!personalCategory) {
 			// Return a message or component indicating that the "Maintenance" category is not found
 			return null;
 		}
 
-		return maintenanceCategory.services.map((service) => (
+		return personalCategory.services.map((service) => (
 			<>
 				<TabButton
 					key={service.id}
@@ -80,7 +79,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 				<div className={styles.ServiceHolder}>
 					{tab === `Auto${service.name}` && (
 						<div className={styles.RCover}>
-							<div className={styles.closeIn} onClick={() => selectTab("Maintainace")}>
+							<div className={styles.closeIn} onClick={() => selectTab("Personal")}>
 							<svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"className={styles.svg}
 								fill="currentcolor"
 								stroke="currentcolor"><polygon points="24.061 2.061 21.939 -0.061 12 9.879 2.061 -0.061 -0.061 2.061 9.879 12 -0.061 21.939 2.061 24.061 12 14.121 21.939 24.061 24.061 21.939 14.121 12 24.061 2.061"/></svg>
@@ -101,28 +100,27 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 	return (
 		<>
 			<div className={styles.iCover}>
-				<div className={styles.intabCover}>
+			<div className={styles.intabCover}>
 					<Image
 						className={styles.imgTC}
-						src={Services[1].src}
-						alt={Services[1].category}
+						src={Services[2].src}
+						alt={Services[2].category}
 						width={500}
 						height={500}
 						unoptimized
 					/>
-					<p className={styles.inAims}> {Services[1].category} Services</p>
+					<p className={styles.inAims}> {Services[2].category} Services</p>
 					<hr />
 				</div>
 				<div className={styles.renderedServices}>
 				<div className={styles.selectvendors}>Select your prefered vendor</div>
-				{renderMaintenanceServices()}
+					{renderPersonalServices()}
 				</div>
 			</div>
-			
 		</>
 	);
 };
 
-MaintainaceRender.displayName = "MaintainaceRender";
+PersonalRender.displayName = "PersonalRender";
 
-export default MaintainaceRender;
+export default PersonalRender;

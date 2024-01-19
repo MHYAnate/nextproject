@@ -9,7 +9,8 @@ import { Notification } from "@/features/database/notifiaction";
 import { Messages } from "@/features/database/messages";
 import InCarousel from "@/features/carousel/mobile/carousel";
 import { Services } from "@/features/database/data";
-import BurgerMenu from "@/features/hamBurgerMenu/mobile/burgerMenu";
+import BurgerMenu from "@/features/burgerMenu/mobile/burgerMenu";
+import MobileNewsLetter from "@/features/newsletter/mobile/mobileNewsLetter";
 
 export default function Home() {
 	const dispatch = useAppDispatch();
@@ -52,7 +53,9 @@ export default function Home() {
 					<div className={styles.mobileBurgerMenu}>
 						<BurgerMenu />
 					</div>
-					<div className={styles.mobileNewLetter}></div>
+					<div className={styles.mobileNewLetter}>
+						<MobileNewsLetter/>
+					</div>
 				</div>
 				<div className={styles.tabletBody}>
 					<div className={styles.tabletCarouselCover}></div>

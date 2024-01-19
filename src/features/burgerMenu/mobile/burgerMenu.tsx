@@ -1,6 +1,6 @@
 import React from "react";
-import { AutomativeTab } from "@/features/hamBurgerMenu/mobile/tabAutomative";
-import { MaintainaceTab } from "@/features/hamBurgerMenu/mobile/tabMaintnce";
+import { AutomativeTab } from "@/features/burgerMenu/mobile/tabAutomative";
+import { MaintainaceTab } from "@/features/burgerMenu/mobile/tabMaintnce";
 import styles from "./styles.module.css";
 import { Services } from "@/features/database/data";
 import { PersonalTab } from "./tabPersonal";

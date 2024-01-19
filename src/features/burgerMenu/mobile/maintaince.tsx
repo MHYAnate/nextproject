@@ -4,8 +4,7 @@ import styles from "./styles.module.css";
 import { TabButton } from "./btnMain";
 import { Services } from "@/features/database/data";
 import ServiceHolder from "./serviceHolder";
-import {initMap} from "@/features/hamBurgerMenu/mobile/googleMapApi";
-
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 interface CarouselProps {
 	Services: {
@@ -21,7 +20,7 @@ interface CarouselProps {
 	}[];
 }
 
-const AutomotiveRender: React.FC<CarouselProps> = memo(() => {
+const MaintainaceRender: React.FC<CarouselProps> = memo(() => {
 	let items = [];
 
 	for (let i = 1; i < Services.length - 1; i++) {
@@ -47,23 +46,17 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		// Do nothing for 1ms per item to emulate extremely slow code
 	}
 
-	const autoCategory = Services.find(
-		(category) => category.category === "Automotive"
+	const maintenanceCategory = Services.find(
+		(category) => category.category === "Maintenance"
 	);
 
-	function renderAutomotiveServices() {
-		if (!autoCategory) {
+	function renderMaintenanceServices() {
+		if (!maintenanceCategory) {
 			// Return a message or component indicating that the "Maintenance" category is not found
 			return null;
 		}
 
-		setTimeout(() => {
-			if(tab){
-				initMap()
-			}
-		},1000);
-
-		return autoCategory.services.map((service) => (
+		return maintenanceCategory.services.map((service) => (
 			<>
 				<TabButton
 					key={service.id}
@@ -74,7 +67,6 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 					}
 				>
 					{/* You can display the service name, image, or any other information you need */}
-
 					<Image
 						className={styles.img}
 						src={service.src}
@@ -84,12 +76,11 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 						unoptimized
 					/>
 					<div className={styles.sname}>{service.name}{" "} Vendors</div>
-					
 				</TabButton>
 				<div className={styles.ServiceHolder}>
 					{tab === `Auto${service.name}` && (
 						<div className={styles.RCover}>
-							<div className={styles.closeIn} onClick={() => selectTab("Automative")}>
+							<div className={styles.closeIn} onClick={() => selectTab("Maintainace")}>
 							<svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"className={styles.svg}
 								fill="currentcolor"
 								stroke="currentcolor"><polygon points="24.061 2.061 21.939 -0.061 12 9.879 2.061 -0.061 -0.061 2.061 9.879 12 -0.061 21.939 2.061 24.061 12 14.121 21.939 24.061 24.061 21.939 14.121 12 24.061 2.061"/></svg>
@@ -101,9 +92,11 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			</>
 		));
 	}
-
-	 
-	
+	setTimeout(() => {
+		if(tab){
+			initMap()
+		}
+	},1000);
 
 	return (
 		<>
@@ -111,24 +104,25 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 				<div className={styles.intabCover}>
 					<Image
 						className={styles.imgTC}
-						src={Services[0].src}
-						alt={Services[0].category}
+						src={Services[1].src}
+						alt={Services[1].category}
 						width={500}
 						height={500}
 						unoptimized
 					/>
-					<p className={styles.inAims}> {Services[0].category} Services</p>
+					<p className={styles.inAims}> {Services[1].category} Services</p>
 					<hr />
 				</div>
 				<div className={styles.renderedServices}>
-        <div className={styles.selectvendors}>Select your prefered vendor</div>
-					{renderAutomotiveServices()}
+				<div className={styles.selectvendors}>Select your prefered vendor</div>
+				{renderMaintenanceServices()}
 				</div>
 			</div>
+			
 		</>
 	);
 };
 
-AutomotiveRender.displayName = "AutomotiveRender";
+MaintainaceRender.displayName = "MaintainaceRender";
 
-export default AutomotiveRender;
+export default MaintainaceRender;

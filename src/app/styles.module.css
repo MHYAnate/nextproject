@@ -55,7 +55,7 @@
 }
 
 .mobileNewLetter{
-  display: block;
+  display: none;
 }
 
 .tabletBody{
@@ -78,11 +78,11 @@
 
   .nav{
     display: flex;
-    height: 20vh;
+    height: 10vh;
     width: 90vw;
     align-content: center;
     justify-content: space-between;
-    padding-top: 5vh;
+    padding-top: 20px;
    }
 
    .iludCover{
@@ -124,6 +124,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 3vh;
+  }
+  .mobileNewLetter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
   }
   
 }
