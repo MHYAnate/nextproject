@@ -1,6 +1,6 @@
 
 import styles from "./styles.module.css";
-import { useForm } from "react-hook-form";
+import { useForm,SubmitHandler } from "react-hook-form";
 import Image from "next/image";
 
 interface UserData {
@@ -21,13 +21,10 @@ export default function MobileNewsLetter() {
 		mode: "onChange",
 	});
 
-	const userEmail =
-		(document.getElementById("uNumber") as HTMLInputElement)?.value || "";
+	
 
-const  SignUp = (userData: UserData) =>{
-		let result: any = null;
-		let error: any = null;
-	}
+		const onSubmit: SubmitHandler<UserData> = (data) => console.log(data)
+
 
 	return (
 		<div className={styles.body}>
@@ -48,7 +45,7 @@ const  SignUp = (userData: UserData) =>{
 		
 				<form
 					className={styles.form}
-					onSubmit={handleSubmit(() => SignUp({ email: userEmail }))}
+					onSubmit={handleSubmit(() => onSubmit)}
 				>
 					<input
 						type="text"
