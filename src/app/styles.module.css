@@ -47,11 +47,11 @@
 }
 
 .mobileCarouselCover{
-  display: block;
+  display: none;
 }
 
 .mobileBurgerMenu{
-  display: block;
+  display: none;
 }
 
 .mobileNewLetter{
@@ -112,6 +112,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+  .mobileCarouselCover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileBurgerMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
   }
   
 }

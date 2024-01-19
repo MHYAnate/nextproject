@@ -51,7 +51,7 @@
 	align-items: center;
 	height: 100vh;
 	width: 100vw;
-	background-color: #45474B;
+	background-color: white;
 }
 
 .tabCover {
@@ -76,7 +76,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-image: linear-gradient(to top, #F4CE14, #F5F7F8);
+	background-image: linear-gradient(to top, white, #F5F7F8);
 	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 }
@@ -134,7 +134,7 @@
 }
 
 .panel {
-	background-color:#45474B;
+	background-color:#F5F7F8;
 	width: 100vw;
 	height: 5vh;
 	display: flex;
@@ -205,7 +205,8 @@
 	width: 85vw;
 	overflow-y: auto;
 	padding-bottom: 10vh;
-	background-color: #45474B;
+	background-color: white;
+	margin-top: 5px;
 }
 .renderCover {
 	width: 80vw;
@@ -233,7 +234,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(to top, white, #108a00);
+	background-image: linear-gradient(to top, white, #F5F7F8);
 }
 
 .ServiceHolder {
@@ -243,6 +244,7 @@
 	color: #F5F7F8;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-size: 1.2em;
+	text-shadow: 0.25px 0.25px 0.5px black, 0 0 5px black, 0 0 1px black;
 }
 
 
@@ -264,7 +266,7 @@
 	justify-content: flex-start;
 	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-	background-image: linear-gradient(to top, #F4CE14, #F5F7F8);
+	background-image: linear-gradient(to top, white, #F5F7F8);
 	height: 10vh;
 	width: inherit;
 	font-family: "Times New Roman", Times, serif;
@@ -299,6 +301,16 @@
 	width: 100vw;
 	height: 35vh;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.burgerMenu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 85vw;
+	height: max-content;
+	row-gap: 1vh;
 }
 
 @keyframes Slide-Down {
@@ -346,7 +358,7 @@
 		align-self: last baseline;
 	}
 	.locate{
-		background-color: #F4CE14;
+		background-color: #F5F7F8;
 		color: #495E57;
 		font-size:large;
 		font-weight: 900;
@@ -501,7 +513,7 @@
 		justify-content: flex-start;
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
-			background-image: linear-gradient(to top, #F4CE14, #F5F7F8);
+			background-image: linear-gradient(to top, #F5F7F8, #F5F7F8);
 		height: 20vh;
 		width: inherit;
 		font-family: "Times New Roman", Times, serif;
@@ -545,7 +557,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		background-image: linear-gradient(to top,#F4CE14, #F5F7F8);
+		background-image: linear-gradient(to top,#F5F7F8, #F5F7F8);
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 	}
@@ -668,7 +680,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #45474B;
+		background-color: #F5F7F8;
 	}
 
 
@@ -705,7 +717,7 @@
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	.locate{
-		background-color: #F4CE14;
+		background-color: #F5F7F8;
 		color: #495E57;
 		font-size:large;
 		width: 20vw;
@@ -734,7 +746,7 @@
 		align-self: last baseline;
 	}
 	.locate{
-		background-color: #F4CE14;
+		background-color: #F5F7F8;
 		color: #495E57;
 		font-size:large;
 		width: 5vw;
@@ -768,7 +780,7 @@
 		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 	}
 	.locate{
-		background-color: #F4CE14;
+		background-color: #F5F7F8;
 		color: #495E57;
 		font-size:large;
 		width: 5vw;
@@ -781,7 +793,7 @@
 
 @media screen and (min-width: 700px) {
 	.locate{
-		background-color: #F4CE14;
+		background-color: #F5F7F8;
 		color: #495E57;
 		font-size:large;
 		width: 10vw;
