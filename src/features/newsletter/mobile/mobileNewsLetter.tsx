@@ -1,5 +1,7 @@
+
 import styles from "./styles.module.css";
 import { useForm } from "react-hook-form";
+import Image from "next/image";
 
 interface UserData {
 	email: string;
@@ -10,6 +12,7 @@ type FormValue = {
 };
 
 export default function MobileNewsLetter() {
+
 	const { register, handleSubmit, reset } = useForm<FormValue>({
 		defaultValues: {
 			email: "",
@@ -28,10 +31,21 @@ const  SignUp = (userData: UserData) =>{
 
 	return (
 		<div className={styles.body}>
-			<div className={styles.newsNote}>
-				subscribe to our newsletter and receive exclusive offer every week
+			<Image
+			object-fit="cover"
+			className={styles.imgSlide}
+			alt="Picture of the author"
+			src="/platform/news7.jpg"
+			layout="fill"
+			priority={true}
+			unoptimized
+			/>
+			<div className={styles.positioner}>
+				<div className={styles.inpositioner}>
+					<div className={styles.newsNote}>
+				subscribe to our newsletter and receive exclusive offers every week
 	    </div>
-			<div>
+		
 				<form
 					className={styles.form}
 					onSubmit={handleSubmit(() => SignUp({ email: userEmail }))}
@@ -52,6 +66,7 @@ const  SignUp = (userData: UserData) =>{
 						Submit
 					</button>
 				</form>
+			</div>
 			</div>
 		</div>
 	);
