@@ -224,18 +224,28 @@
   border-bottom: 1px solid white;
 }
 .menulist{
-  position: fixed;
-  left: 0.1px;
-  top: 10vh;
+  position: absolute;
+  right: 0.1px;
+  top: 0.1px;
   z-index: 4;
   width: 100vw;
   min-height: 1px;
   max-height: fit-content;
 }
+.signUpDisplay{
+  position: absolute;
+  right: 0.1px;
+  top: 0.1px;
+  z-index: 4;
+  width: 100vw;
+  min-height: 1px;
+  max-height: fit-content;
+}
+
 .innerMenu{
   background-color: white;
   margin-top: 1px;
-  height: 80vh;
+  height: 120vh;
   color: black;
   padding-right: 30px;
   padding-left: 30px;
@@ -246,10 +256,12 @@
 }
 .loginPage{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
 }
+
 .formContainer{
   display: flex;
   flex-direction: column;
@@ -282,6 +294,25 @@
   color: black;
   width: 85vw;
   height: 10vh;
+  border-radius: 15vh;
+  margin-bottom: 5vh;
+  padding-left: 5px;
+}
+.confirmPinContainer{
+  display: flex;
+  width: 85vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.passcodeContainerV{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid silver;
+  color: black;
+  width: 75vw;
+  height: 8vh;
   border-radius: 15vh;
   margin-bottom: 5vh;
   padding-left: 5px;
@@ -373,7 +404,37 @@
   border-radius: 25px;
   margin-top: 10px;
 }
-
+.signupHolder{
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.signupText{
+  width: 45vw;
+  color: silver;
+}
+.signUpBtnText{
+  font-weight: 900;
+}
+.loginPage{
+  position: absolute;
+  right: 0.1px;
+  top: 0.1px;
+  z-index: 4;
+  width: 100vw;
+  min-height: 1px;
+  max-height: fit-content;
+  background-color: white;
+}
+.paspinComfirm{
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
 @media screen and (min-height: 600px) {
   .inputS{
     height: 7.5vh;

@@ -38,7 +38,7 @@ type FormValue = {
 
 const auth = getAuth();
 
-export default function LogIn() {
+export default function SingUp() {
 	const [tab, setTab] = useState("");
 
 	const {
@@ -403,8 +403,8 @@ export default function LogIn() {
 	}
 
 	return (
-		<div className={styles.loginPage}>
-			<div className={styles.formContainer}>
+		<div className={styles.SignUpContainerHolder}>
+			<div >
 				<form
 					className={styles.form}
 					onSubmit={handleSubmit(() =>
@@ -510,7 +510,7 @@ export default function LogIn() {
 							</button>
 						</div>
 					</div>
-					<div>
+					<div className={styles.confirmPinContainer}>
 						<span className={styles.paspinComfirm}>Re-confirm PinCode</span>
 
 						<div className={styles.passcodeContainerV}>
@@ -558,7 +558,7 @@ export default function LogIn() {
 					</div>
 					<div>
 						<button className={styles.button} type="submit">
-							Enter
+							SignUp
 						</button>
 
 						<input
@@ -570,25 +570,6 @@ export default function LogIn() {
 						/>
 					</div>
 				</form>
-			</div>
-
-			<TabButton
-				onClick={() =>
-					tab === "forgotPassword" ? setTab("") : setTab("forgotPassword")
-				}
-			>
-				forgot_Password
-			</TabButton>
-			<TabButton
-				onClick={() => (tab === "signUp" ? setTab("") : setTab("signUp"))}
-			>
-				Sign Up
-			</TabButton>
-			<div className={styles.forgotpasswordDisplay}>
-				{tab === "forgotPassword" && <SigningUp />}
-			</div>
-			<div className={styles.signUpDisplay}>
-				{tab === "signUp" && <SigningUp />}
 			</div>
 		</div>
 	);

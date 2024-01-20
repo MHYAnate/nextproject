@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
-import SignUp from "@/firebase/firebase";
 import { useRouter } from "next/navigation";
 import firebase from "@/firebase/firebase";
 import {
 	getAuth,
 	createUserWithEmailAndPassword,
+	signInWithEmailAndPassword,
 	sendEmailVerification,
 	updateProfile,
 	GoogleAuthProvider,
@@ -15,7 +15,7 @@ import {
 import { doc, setDoc } from "firebase/firestore";
 import { TabButton } from "./tabBtn";
 import { useState } from "react";
-import SigningUp from "./signUp";
+import SignUp from "./signUp";
 import * as React from "react";
 import Link from "next/link";
 
@@ -38,23 +38,21 @@ type FormValue = {
 	passCodeV2: number | string;
 	passCodeV3: number | string;
 	pinCode: number | string;
-	check:boolean;
+	check: boolean;
 };
 
 const auth = getAuth();
 
-onAuthStateChanged(auth, user =>{
-	if(user == null){
+onAuthStateChanged(auth, (user) => {
+	if (user == null) {
 		return;
 	}
-})
-
+});
 
 async function signIn() {
-  const userCred = await signInWithPopup(auth, new GoogleAuthProvider());
-  // Use userCred here
+	const userCred = await signInWithPopup(auth, new GoogleAuthProvider());
+	// Use userCred here
 }
-
 
 export default function LogIn() {
 	const [tab, setTab] = useState("");
@@ -101,8 +99,6 @@ export default function LogIn() {
 		setPasswordVisible((prevPasswordVisible) => !prevPasswordVisible);
 	};
 
- 
-	
 	const userNameId = document.getElementById(
 		"uName"
 	) as HTMLInputElement | null;
@@ -118,7 +114,6 @@ export default function LogIn() {
 		"uAddress"
 	) as HTMLElement | null;
 
-
 	const userPin =
 		(document.querySelector("#pin") as HTMLInputElement)?.value || "";
 
@@ -130,19 +125,18 @@ export default function LogIn() {
 	const check2 = watch("passCode2");
 	const check3 = watch("passCode3");
 
-
 	const passCodeV0 =
-		(document.querySelector('[name="passCode0"]') as HTMLInputElement)
-			?.value || "";
+		(document.querySelector('[name="passCode0"]') as HTMLInputElement)?.value ||
+		"";
 	const passCodeV1 =
-		(document.querySelector('[name="passCode1"]') as HTMLInputElement)
-			?.value || "";
+		(document.querySelector('[name="passCode1"]') as HTMLInputElement)?.value ||
+		"";
 	const passCodeV2 =
-		(document.querySelector('[name="passCode2"]') as HTMLInputElement)
-			?.value || "";
+		(document.querySelector('[name="passCode2"]') as HTMLInputElement)?.value ||
+		"";
 	const passCodeV3 =
-		(document.querySelector('[name="passCode3"]') as HTMLInputElement)
-			?.value || "";
+		(document.querySelector('[name="passCode3"]') as HTMLInputElement)?.value ||
+		"";
 
 	const pinCode = "c" + "l" + passCodeV0 + passCodeV1 + passCodeV2 + passCodeV3;
 
@@ -173,16 +167,7 @@ export default function LogIn() {
 				setFocus("passCode3");
 			}
 		}
-	}, [
-		setFocus,
-		check0,
-		check1,
-		check2,
-		check3,
-		isDirty,
-	]);
-
-
+	}, [setFocus, check0, check1, check2, check3, isDirty]);
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -226,8 +211,6 @@ export default function LogIn() {
 		mobileNumberVId,
 		setFocus,
 	]);
-
-	
 
 	React.useEffect(() => {
 		const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -273,12 +256,11 @@ export default function LogIn() {
 		setFocus,
 	]);
 
-	
 	React.useEffect(() => {
 		setValue("pinCode", pinCode);
 	}, [setValue, pinCode]);
 
-	async function SignUp(userData: UserData) {
+	async function SignIn(userData: UserData) {
 		let result: any = null;
 		let error: any = null;
 
@@ -286,20 +268,17 @@ export default function LogIn() {
 		const { database } = firebase;
 
 		try {
-			result = await createUserWithEmailAndPassword(
+			result = await signInWithEmailAndPassword(
 				auth,
 				userData.email,
 				userData.password
 			);
 			const user = result.user;
 			router.push(`/client/${user.uid}`);
-     
+
 			await sendEmailVerification(user);
 			await user.user.reload();
-	
-				
-		
-			
+
 			// await updateProfile(user, {
 			// 	displayName: userName,
 			// 	// photoURL: "https://robohash.org/2?set=set2"
@@ -311,13 +290,27 @@ export default function LogIn() {
 		return { result, error };
 	}
 
+	const Sign= () => {
+		return (
+			<div className={styles.innerMenu}>
+			<div className={styles.innerWrapper}>
+        
+					<div className={styles.close} onClick={() => setTab("")}>
+						close
+					</div>
+				</div>
+				<SignUp />
+			</div>
+		);
+	};
+
 	return (
-		<div className={styles.loginPage}>
-			<div className={styles.formContainer}>
+		<div>
+			<div>
 				<form
 					className={styles.form}
 					onSubmit={handleSubmit(() =>
-						SignUp({ email: Usernumber, password: userPin })
+						SignIn({ email: Usernumber, password: userPin })
 					)}
 				>
 					<input
@@ -416,31 +409,32 @@ export default function LogIn() {
 						</button>
 					</div>
 
-					
-					
-
 					<button className={styles.button} type="submit">
 						Sign In
 					</button>
 					<input
-							{...register("pinCode", {
-								required: "error message",
-							})}
-							id="pin"
-							className={styles.show}
-						/>
+						{...register("pinCode", {
+							required: "error message",
+						})}
+						id="pin"
+						className={styles.show}
+					/>
 				</form>
 				<div className={styles.formManegment}>
-						<div className={styles.keepMeSignedInCover}>
-							<input  className={styles.checkBox} type="checkbox" />
-							<p>Keep me Signed in</p>
-						</div>
-						<Link className={styles.forget} href="/dashboard">Forgot Password?</Link>
+					<div className={styles.keepMeSignedInCover}>
+						<input className={styles.checkBox} type="checkbox" />
+						<p>Keep me Signed in</p>
 					</div>
-					<div className={styles.passwordless}>
-						<button className={styles.btnLogFB}>Face Book</button>
-						<button onClick={()=> signIn()} className={styles.btnLogGg}>Google</button>
-					</div>
+					<Link className={styles.forget} href="/dashboard">
+						Forgot Password?
+					</Link>
+				</div>
+				<div className={styles.passwordless}>
+					<button className={styles.btnLogFB}>Face Book</button>
+					<button onClick={() => signIn()} className={styles.btnLogGg}>
+						Google
+					</button>
+				</div>
 			</div>
 
 			{/* <TabButton
@@ -449,17 +443,19 @@ export default function LogIn() {
 				}
 			>
 				forgot_Password
-			</TabButton>
-			<TabButton
-				onClick={() => (tab === "signUp" ? setTab("") : setTab("signUp"))}
-			>
-				Sign Up
 			</TabButton> */}
-			<div className={styles.forgotpasswordDisplay}>
-				{tab === "forgotPassword" && <SigningUp />}
+			<div className={styles.signupHolder}>
+				<div className={styles.signupText}>Not yet a member?</div>
+				<TabButton
+					onClick={() => (tab === "signUp" ? setTab("") : setTab("signUp"))}
+				>
+					<p className={styles.signUpBtnText}>Sign Up</p>
+				</TabButton>
 			</div>
-			<div className={styles.signUpDisplay}>
-				{tab === "signUp" && <SigningUp />}
+
+		
+			<div className={styles.menulist}>
+				{tab === "signUp" && <Sign />}
 			</div>
 		</div>
 	);

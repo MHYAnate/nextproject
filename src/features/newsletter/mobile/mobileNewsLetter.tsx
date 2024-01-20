@@ -13,7 +13,9 @@ type FormValue = {
 
 export default function MobileNewsLetter() {
 
-	const { register, handleSubmit, reset } = useForm<FormValue>({
+	const { register, handleSubmit, reset,formState: {
+		isSubmitting,
+	} } = useForm<FormValue>({
 		defaultValues: {
 			email: "",
 		},
@@ -21,7 +23,9 @@ export default function MobileNewsLetter() {
 		mode: "onChange",
 	});
 
-	
+	if ( isSubmitting ) {
+		reset();
+	}
 
 		const onSubmit: SubmitHandler<UserData> = (data) => console.log(data)
 

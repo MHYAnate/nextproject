@@ -24,6 +24,7 @@
   color: white;
   font-weight: 500;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  padding-left: 5px;
 }
 .form{
   display: flex;
@@ -55,4 +56,5 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   align-items: center;
+  
 }
