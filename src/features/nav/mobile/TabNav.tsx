@@ -7,6 +7,9 @@ import styles from "./styles.module.css";
 import SearchComponent from "@/features/try/try";
 import MenuList from "./menu";
 import { Suggestion } from "@/features/database/suggestion";
+import SearchComponentMain from "./searchComponent";
+import { Vendors } from "@/features/database/serviceData";
+import { vendored } from "next/dist/server/future/route-modules/app-page/module.compiled";
 
 export default function TabContainer() {
 	const [isPending, startTransition] = useTransition();
@@ -18,7 +21,7 @@ export default function TabContainer() {
 		});
 	}
 	const notifyBadge = useAppSelector((state) => state.notification.value);
-  const msgBadge = useAppSelector((state) => state.msg.value);
+	const msgBadge = useAppSelector((state) => state.msg.value);
 
 	return (
 		<div className={styles.MobileNavTabContainer}>
@@ -64,7 +67,7 @@ export default function TabContainer() {
 							d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
 						/>
 					</svg>
-          <div className={styles.badge}>{msgBadge}</div>
+					<div className={styles.badge}>{msgBadge}</div>
 				</div>
 			</TabNavBtn>
 			<TabNavBtn
@@ -120,8 +123,9 @@ export default function TabContainer() {
 							<div className={styles.header}>
 								<p>Search</p>
 							</div>
-              <div  className={styles.popHolder}><SearchComponent suggestionsList={Suggestion}/></div>
-							
+							<div className={styles.popHolderSearch}>
+								<SearchComponentMain suggestionsList={Vendors} />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -133,7 +137,9 @@ export default function TabContainer() {
 							<div className={styles.header}>
 								<p>Messages</p>
 							</div>
-              <div  className={styles.popHolder}><SearchComponent suggestionsList={Messages}/></div>
+							<div className={styles.popHolder}>
+								<SearchComponent suggestionsList={Messages} />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -146,7 +152,7 @@ export default function TabContainer() {
 								<p>Notifications</p>
 							</div>
 							<div className={styles.popHolder}>
-							<SearchComponent suggestionsList={Notification}/>
+								<SearchComponent suggestionsList={Notification} />
 							</div>
 						</div>
 					</div>
@@ -154,7 +160,7 @@ export default function TabContainer() {
 			)}
 			{tab === "menu" && (
 				<div className={styles.displayMenu}>
-					<MenuList/>
+					<MenuList />
 				</div>
 			)}
 		</div>

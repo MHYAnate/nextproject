@@ -178,8 +178,14 @@
 .popHolder{
   width: 80vw;
 }
-.popHolderIn{
+.popHolderSearch{
   width: 80vw;
+  height: 80vh;
+  height: 80vh;
+}
+.ul{
+  height: 70vh;
+  overflow-y: auto;
 }
 
 .displayNtcMsg{
@@ -328,10 +334,12 @@
   height: 5vh;
 }
 
-.svg{
-  color: silver;
-  width: 9vw;
+.svg {
+  width: 3vw;
   height: 5vh;
+  color: #495E57;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .formManegment{
   display: flex;
@@ -435,6 +443,176 @@
   align-items: center;
   font-weight: 900;
 }
+
+.input{
+  padding-left: 15px;
+  margin-bottom: 25px;
+  height: 35px;
+  background-color: #e6e3e3;
+  width: 80vw;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: left;
+}
+
+.ServiceHolder {
+	background-color: #F5F7F8;
+  
+}
+
+.searchedVendorCoverBtn{
+  margin-left: 1vw;
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2vw;
+  gap: 3vw;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+    0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  background-color: #F5F7F8;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.RCover{
+  position: fixed;
+  top: 0.1px;
+  left: 0.1px;
+  width: 100vw;
+  height: 123vh;
+  background-color: white;
+}
+.closeContainer{
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+}
+.closeIn {
+	right: 1vw;
+	top: 1vh;
+	position: fixed;
+	z-index: 11;
+	width: 15vw;
+	height: 7vh;
+	border-radius: 25vw;
+}
+.imgTC {
+  width: 20vw;
+  height: 13.8789vh;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+    0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-right-radius: 13vw;
+}
+.displayFinalService {
+	width: 98vw;
+	height: 99vh;
+	left: 1vw;
+	top: 0.1vh;
+	position: fixed;
+	background-color: white;
+	z-index: 9;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.inDisplayFinalService {
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	background-image: linear-gradient(to top, white, #F5F7F8);
+	height: 10vh;
+	width: inherit;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: white;
+	animation: Slide-Down 0.5s linear;
+}
+
+.body{
+	height: 89vh;
+	width: 100vw;
+}
+
+.map{
+	width: 100vw;
+	height: 30vh;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sHName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  align-self: last baseline;
+}
+
+.locate{
+  background-color: #F5F7F8;
+  color: #495E57;
+  font-size:large;
+  font-weight: 900;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 7vh;
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+}
+
+
+.inDisplayFinalService {
+	display: flex;
+	justify-content: flex-start;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	background-image: linear-gradient(to top, white, #F5F7F8);
+	height: 10vh;
+	width: inherit;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: white;
+	animation: Slide-Down 0.5s linear;
+}
+
+.body{
+	height: 89vh;
+	width: 100vw;
+}
+
+.map{
+	width: 100vw;
+	height: 30vh;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.FinalServiceImg {
+	width: 20vw;
+	height: 10vh;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
+		0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-right-radius: 10vw;
+}
+
+.svgClose {
+  width: 9vw;
+  height: 5vh;
+  color: #495E57;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
 @media screen and (min-height: 600px) {
   .inputS{
     height: 7.5vh;
