@@ -3,6 +3,7 @@ import { TabButton } from "./btn";
 import styles from "./styles.module.css";
 import MaintainaceRender from "./maintaince";
 import Image from "next/image";
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 interface CarouselProps {
 	Services: {
@@ -27,6 +28,11 @@ export const MaintainaceTab: React.FC<CarouselProps> = ({Services}) =>{
 			setTab(nextTab);
 		});
 	}
+	setTimeout(() => {
+		if(tab){
+			initMap()
+		}
+	},1000);
 
 	return (
 		<>

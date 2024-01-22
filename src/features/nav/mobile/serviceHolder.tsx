@@ -9,6 +9,11 @@ interface CarouselProps {
 
 }
 
+declare global {
+	interface Window {
+		initMap: () => void;
+	}
+}
 
 const ServiceHolder: React.FC<CarouselProps> = ({Vendors}) => {
 	
@@ -31,7 +36,7 @@ const ServiceHolder: React.FC<CarouselProps> = ({Vendors}) => {
 			</div>
 			<div className={styles.body}>
 				<div id="map" className={styles.map}>
-					<script
+				<script
 						async
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCN0cgiDpCY-3N5fHnIONkyep1Th8h6mk&callback=initMap"
 					></script>

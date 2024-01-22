@@ -4,7 +4,7 @@ import ServiceHolder from "./serviceHolder";
 import { TabButton } from "./btnMain";
 import Image from "next/image";
 import React, { useState, memo, useTransition } from "react";
-import { Vendors } from '@/features/database/serviceData';
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
 interface props {
@@ -44,6 +44,12 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
     return text.includes(searchInput);
 
   });
+
+  setTimeout(() => {
+    if(tab){
+      initMap()
+    }
+  },1000);
   
     return (
       <div >

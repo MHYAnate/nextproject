@@ -6,10 +6,10 @@ import { Messages } from "@/features/database/messages";
 import styles from "./styles.module.css";
 import SearchComponent from "@/features/try/try";
 import MenuList from "./menu";
-import { Suggestion } from "@/features/database/suggestion";
 import SearchComponentMain from "./searchComponent";
-import { Vendors } from "@/features/database/serviceData";
-import { vendored } from "next/dist/server/future/route-modules/app-page/module.compiled";
+import { Vendors } from "@/features/database/serviceData";import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+
+
 
 export default function TabContainer() {
 	const [isPending, startTransition] = useTransition();
@@ -22,6 +22,12 @@ export default function TabContainer() {
 	}
 	const notifyBadge = useAppSelector((state) => state.notification.value);
 	const msgBadge = useAppSelector((state) => state.msg.value);
+
+	setTimeout(() => {
+		if(tab){
+			initMap()
+		}
+	},1000);
 
 	return (
 		<div className={styles.MobileNavTabContainer}>
