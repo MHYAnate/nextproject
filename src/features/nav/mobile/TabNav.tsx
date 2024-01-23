@@ -7,7 +7,8 @@ import styles from "./styles.module.css";
 import SearchComponent from "@/features/try/try";
 import MenuList from "./menu";
 import SearchComponentMain from "./searchComponent";
-import { Vendors } from "@/features/database/serviceData";import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+import { Vendors } from "@/features/database/serviceData";
+// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
 

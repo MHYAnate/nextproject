@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import { TabButton } from "./btnMain";
 import { Services } from "@/features/database/data";
 import ServiceHolder from "./serviceHolder";
-import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 interface CarouselProps {
 	Services: {
@@ -19,6 +19,7 @@ interface CarouselProps {
 		}[];
 	}[];
 }
+
 
 const PersonalRender: React.FC<CarouselProps> = memo(() => {
 	let items = [];
@@ -54,27 +55,27 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			// Return a message or component indicating that the "Maintenance" category is not found
 			return null;
 		}
-		async function myFunction() {
-			try {
+		// async function myFunction() {
+		// 	try {
 	
 		
 		
-				// Await initMap
-				await initMap();
+		// 		// Await initMap
+		// 		await initMap();
 		
-				// Continue with other operations after map is initialized
-				console.log('Map initialized successfully!');
-			} catch (error) {
-				console.error('Error initializing map:', error);
-			}
-		}
+		// 		// Continue with other operations after map is initialized
+		// 		console.log('Map initialized successfully!');
+		// 	} catch (error) {
+		// 		console.error('Error initializing map:', error);
+		// 	}
+		// }
 	
-		setTimeout(() => {
-			if(tab){
-				// initMap()
-				myFunction();
-			}
-		},1000);
+		// setTimeout(() => {
+		// 	if(tab){
+		// 		// initMap()
+		// 		myFunction();
+		// 	}
+		// },1000);
 
 		return personalCategory.services.map((service) => (
 			<>

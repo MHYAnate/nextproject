@@ -11,7 +11,7 @@ import InCarousel from "@/features/carousel/mobile/carousel";
 import { Services } from "@/features/database/data";
 import BurgerMenu from "@/features/burgerMenu/mobile/burgerMenu";
 import MobileNewsLetter from "@/features/newsletter/mobile/mobileNewsLetter";
-import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
 export default function Home() {
@@ -22,23 +22,23 @@ export default function Home() {
 	if (true) {
 		dispatch(updateMsgLength(Messages.length));
 	}
-	async function myFunction() {
-		try {
+	// async function myFunction() {
+	// 	try {
 
 	
 	
-			// Await initMap
-			await initMap();
+	// 		// Await initMap
+	// 		await initMap();
 	
-			// Continue with other operations after map is initialized
-			console.log('Map initialized successfully!');
-		} catch (error) {
-			console.error('Error initializing map:', error);
-		}
-	}
-	if (true) {
-	   myFunction();
-	}
+	// 		// Continue with other operations after map is initialized
+	// 		console.log('Map initialized successfully!');
+	// 	} catch (error) {
+	// 		console.error('Error initializing map:', error);
+	// 	}
+	// }
+	// if (true) {
+	//    myFunction();
+	// }
 
 	return (
 		<>
