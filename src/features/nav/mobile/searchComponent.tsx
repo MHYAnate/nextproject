@@ -64,7 +64,7 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
 							placeholder="vendor quick search"
             />
           </div>
-          <ul className={styles.ul}>
+          {searchInput.length > 0 && (<ul className={styles.ul}>
             {filteredList.map(eachItem => (
               <>
               <TabButton
@@ -104,7 +104,8 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
               </div>
             </>
             ))}
-          </ul>
+          </ul>)}
+          {searchInput.length == 0 && (<p>No vendors found matching your search on directory</p>)}
         </div>
       </div>
     )

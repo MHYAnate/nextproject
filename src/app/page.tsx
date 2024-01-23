@@ -41,9 +41,11 @@ export default function Home() {
 	}
 
 	setTimeout(() => {
+
 		if(true){
 			initMap()
 		}
+		
 	},1000);
 
 	return (
