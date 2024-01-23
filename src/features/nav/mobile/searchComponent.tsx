@@ -67,7 +67,7 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
          
           <ul className={styles.ul}>
             {filteredList.map(eachItem => (
-              <div>
+              <div   key={eachItem.id}>
               <TabButton
                 key={eachItem.id}
                 onClick={() =>
