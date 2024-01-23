@@ -9,7 +9,7 @@ import MenuList from "./menu";
 import SearchComponentMain from "./searchComponent";
 import { Vendors } from "@/features/database/serviceData";
 
-// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
 
@@ -26,11 +26,11 @@ export default function TabContainer() {
 	const notifyBadge = useAppSelector((state) => state.notification.value);
 	const msgBadge = useAppSelector((state) => state.msg.value);
 
-	// setTimeout(() => {
-	// 	if(tab){
-	// 		initMap()
-	// 	}
-	// },1000);
+	setTimeout(() => {
+		if(tab){
+			initMap()
+		}
+	},1000);
 
 	return (
 		<div className={styles.MobileNavTabContainer}>
