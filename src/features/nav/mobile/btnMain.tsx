@@ -8,9 +8,7 @@ interface TabButtonProps {
 }
 
 export const TabButton: React.FC<TabButtonProps>=({ children, isActive, onClick, key })=> {
-  // if (isActive) {
-  //   return <b onClick={onClick}>{children}</b>
-  // }
+
   return (
     
     <button className={styles.searchedVendorCoverBtn} onClick={() => {
