@@ -40,6 +40,12 @@ export default function Home() {
 	   myFunction();
 	}
 
+	setTimeout(() => {
+		if(true){
+			initMap()
+		}
+	},1000);
+
 	return (
 		<>
 			{/*<div className="text text-green-700">BismiLLAHI RAHMAANI RAHIIM</div>*/}

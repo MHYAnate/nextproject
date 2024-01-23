@@ -45,11 +45,11 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
 
   });
 
-  // setTimeout(() => {
-  //   if(tab){
-  //     initMap()
-  //   }
-  // },1000);
+  setTimeout(() => {
+    if(tab){
+      initMap()
+    }
+  },1000);
   
     return (
       <div >
