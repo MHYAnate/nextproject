@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import { TabButton } from "./btnMain";
 import { Services } from "@/features/database/data";
 import ServiceHolder from "./serviceHolder";
-// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 interface CarouselProps {
 	Services: {
@@ -70,12 +70,11 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		// 	}
 		// }
 	
-		// setTimeout(() => {
-		// 	if(tab){
-		// 		// initMap()
-		// 		myFunction();
-		// 	}
-		// },1000);
+		setTimeout(() => {
+			if(tab){
+				initMap()
+			}
+		},1000);
 
 		return personalCategory.services.map((service) => (
 			<>

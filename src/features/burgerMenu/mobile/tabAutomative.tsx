@@ -3,7 +3,6 @@ import { TabButton } from "./btn";
 import styles from "./styles.module.css";
 import AutomotiveRender from "./automotive";
 import Image from "next/image";
-// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
 interface CarouselProps {
@@ -29,11 +28,6 @@ export const AutomativeTab: React.FC<CarouselProps> = ({ Services }) => {
 			setTab(nextTab);
 		});
 	}
-	// setTimeout(() => {
-	// 	if(tab){
-	// 		initMap()
-	// 	}
-	// },1000);
 
 	return (
 		<>

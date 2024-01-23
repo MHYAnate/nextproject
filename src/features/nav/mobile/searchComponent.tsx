@@ -4,7 +4,7 @@ import ServiceHolder from "./serviceHolder";
 import { TabButton } from "./btnMain";
 import Image from "next/image";
 import React, { useState, memo, useTransition } from "react";
-// import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
 interface props {

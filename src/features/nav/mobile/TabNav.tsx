@@ -8,6 +8,7 @@ import SearchComponent from "@/features/try/try";
 import MenuList from "./menu";
 import SearchComponentMain from "./searchComponent";
 import { Vendors } from "@/features/database/serviceData";
+
 // import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
@@ -133,6 +134,7 @@ export default function TabContainer() {
 							</div>
 							<div className={styles.popHolderSearch}>
 								<SearchComponentMain suggestionsList={Vendors} />
+								
 								
 							</div>
 						</div>
