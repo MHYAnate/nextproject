@@ -56,6 +56,28 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			return null;
 		}
 
+		async function myFunction() {
+			try {
+	
+		
+		
+				// Await initMap
+				await initMap();
+		
+				// Continue with other operations after map is initialized
+				console.log('Map initialized successfully!');
+			} catch (error) {
+				console.error('Error initializing map:', error);
+			}
+		}
+	
+		setTimeout(() => {
+			if(tab){
+				// initMap()
+				myFunction();
+			}
+		},1000);
+
 		return maintenanceCategory.services.map((service) => (
 			<>
 				<TabButton
@@ -92,11 +114,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			</>
 		));
 	}
-	setTimeout(() => {
-		if(tab){
-			initMap()
-		}
-	},1000);
+	
 
 	return (
 		<>

@@ -11,6 +11,7 @@ import { Vendors } from "@/features/database/serviceData";import {initMap} from 
 
 
 
+
 export default function TabContainer() {
 	const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState("");
@@ -23,11 +24,11 @@ export default function TabContainer() {
 	const notifyBadge = useAppSelector((state) => state.notification.value);
 	const msgBadge = useAppSelector((state) => state.msg.value);
 
-	setTimeout(() => {
-		if(tab){
-			initMap()
-		}
-	},1000);
+	// setTimeout(() => {
+	// 	if(tab){
+	// 		initMap()
+	// 	}
+	// },1000);
 
 	return (
 		<div className={styles.MobileNavTabContainer}>
@@ -131,6 +132,7 @@ export default function TabContainer() {
 							</div>
 							<div className={styles.popHolderSearch}>
 								<SearchComponentMain suggestionsList={Vendors} />
+								
 							</div>
 						</div>
 					</div>

@@ -22,6 +22,8 @@ interface CarouselProps {
 }
 
 const AutomotiveRender: React.FC<CarouselProps> = memo(() => {
+
+	
 	let items = [];
 
 	for (let i = 1; i < Services.length - 1; i++) {
@@ -41,6 +43,28 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 		});
 	}
 
+	async function myFunction() {
+		try {
+
+	
+	
+			// Await initMap
+			await initMap();
+	
+			// Continue with other operations after map is initialized
+			console.log('Map initialized successfully!');
+		} catch (error) {
+			console.error('Error initializing map:', error);
+		}
+	}
+
+	setTimeout(() => {
+		if(tab){
+			// initMap()
+			myFunction();
+		}
+	},1000);
+
 	let startTime = performance.now();
 
 	while (performance.now() - startTime < 1) {
@@ -57,12 +81,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			return null;
 		}
 
-		setTimeout(() => {
-			if(tab){
-				initMap()
-			}
-		},1000);
-
+		
 		return autoCategory.services.map((service) => (
 			<>
 				<TabButton

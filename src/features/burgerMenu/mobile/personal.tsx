@@ -54,6 +54,27 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			// Return a message or component indicating that the "Maintenance" category is not found
 			return null;
 		}
+		async function myFunction() {
+			try {
+	
+		
+		
+				// Await initMap
+				await initMap();
+		
+				// Continue with other operations after map is initialized
+				console.log('Map initialized successfully!');
+			} catch (error) {
+				console.error('Error initializing map:', error);
+			}
+		}
+	
+		setTimeout(() => {
+			if(tab){
+				// initMap()
+				myFunction();
+			}
+		},1000);
 
 		return personalCategory.services.map((service) => (
 			<>
@@ -91,11 +112,7 @@ const SlowPost: React.FC<CarouselProps> = ({ Services }) => {
 			</>
 		));
 	}
-	setTimeout(() => {
-		if(tab){
-			initMap()
-		}
-	},1000);
+
 
 	return (
 		<>
