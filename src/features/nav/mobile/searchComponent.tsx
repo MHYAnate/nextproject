@@ -30,14 +30,14 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
 	
 	const updateSearchInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(event.target.value);
-		// handleSuggestionClick;
+		handleSuggestionClick;
   };
 
-  // const handleSuggestionClick = (id: string, suggestion: string) => {
+  const handleSuggestionClick = (id: string, suggestion: string) => {
 
-  //   setSearchInput(suggestion);
+    setSearchInput(suggestion);
 		 
-  // };
+  };
 	
   const filteredList = suggestionsList.filter((eachItem) => {
     const text = eachItem.name.toLowerCase();
@@ -65,9 +65,9 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
             />
           </div>
          
-          <ul className={styles.ul}>
+          <div className={styles.ul}>
             {filteredList.map(eachItem => (
-              <div   key={eachItem.id}>
+              <>
               <TabButton
                 key={eachItem.id}
                 onClick={() =>
@@ -103,9 +103,9 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
                 </div>
                 )}
               </div>
-            </div>
+            </>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     )

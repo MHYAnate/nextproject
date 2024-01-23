@@ -12,10 +12,12 @@ export const TabButton: React.FC<TabButtonProps>=({ children, isActive, onClick,
   //   return <b onClick={onClick}>{children}</b>
   // }
   return (
+    
     <button className={styles.searchedVendorCoverBtn} onClick={() => {
       onClick();
     }}>
       {children}
     </button>
+    
   )
 }
