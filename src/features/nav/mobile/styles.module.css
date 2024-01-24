@@ -480,7 +480,8 @@
   border-radius: 5px;
   background-color: #F5F7F8;
   margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-bottom: 3vh; 
+  z-index: 7;
 }
 .RCover{
   position: fixed;
