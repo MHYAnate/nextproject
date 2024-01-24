@@ -189,7 +189,6 @@
 .ul{
   height: 70vh;
   overflow-y: auto;
-  border: 1px solid silver;
 }
 
 .displayNtcMsg{

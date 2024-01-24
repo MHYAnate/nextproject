@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import ServiceHolder from "./serviceHolder";
 import { TabButton } from "./btnMain";
 import Image from "next/image";
-import React, { useState, memo, useTransition } from "react";
+import React, { useState, memo, useTransition, useEffect } from "react";
 import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 
 
@@ -14,55 +14,23 @@ interface props {
 const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
   const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState("");
-	
-	const [searchInput, setSearchInput] = useState(""); 
+  const [filteredResults, setFilteredResults] = useState<any[]>([]);
+	const [searchInput, setSearchInput] = useState("");
+  const [data, setData] = useState<any[]>([]);
+
+  
+  
   function selectTab(nextTab: string) {
 		startTransition(() => {
 			setTab(nextTab);
 		});
 	}
 
-	// let startTime = performance.now();
+	let startTime = performance.now();
 
-	// while (performance.now() - startTime < 1) {
-	// 	// Do nothing for 1ms per item to emulate extremely slow code
-	// }
-
-  const debounce = <T extends (...args: any[]) => any>(
-    func: T,
-    delay: number,
-    immediate: boolean = false
-  ): (...args: Parameters<T>) => void => {
-    let timeoutId: NodeJS.Timeout | null = null;
-    
-    return (...args: Parameters<T>): void => {
-      const later = () => {
-        timeoutId = null;
-        if (!immediate) {
-          func.apply(this, args);
-        }
-      };
-  
-      const callNow = immediate && !timeoutId;
-      
-  
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-  
-      setTimeout(later as any, delay);
-  
-      if (callNow) {
-        func.apply(this, args);
-      }
-    };
-  };
-  
-  // const debouncedFunction = debounce(myFunction, 500, true);
-  
-  // Now, when you call debouncedFunction, it will wait 500ms before executing myFunction
-  
-  
+	while (performance.now() - startTime < 1) {
+		// Do nothing for 1ms per item to emulate extremely slow code
+	}
 	
 	const updateSearchInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(event.target.value);
@@ -70,20 +38,31 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
   };
 
   const handleSuggestionClick = (id: string, suggestion: string) => {
-    setSearchInput(suggestion); 
+
+    setSearchInput(suggestion);
+		 
   };
-	const debouncedFunction = debounce(updateSearchInput, 500, true);
-  const filteredList = suggestionsList.filter((eachItem) => {
-    const text = eachItem.name.toLowerCase();
-    return text.includes(searchInput);
+  useEffect(() => {
+    const filteredList = suggestionsList.filter((eachItem) => {
+      const text = eachItem.name.toLowerCase();
+      return text.includes(searchInput);
+    });
+    setFilteredResults(filteredList);
+  }, [suggestionsList, searchInput]);
 
-  });
+  useEffect(() => {
+    setData(suggestionsList);
+  }, [suggestionsList]);
+ 
+   useEffect(() => {
+    if (tab) {
+      const timerId = setTimeout(() => {
+        initMap();
+      }, 1000);
 
-  setTimeout(() => {
-    if(tab){
-      initMap()
+      return () => clearTimeout(timerId);
     }
-  },1000);
+  }, [tab]);
   
     return (
       <div >
@@ -93,14 +72,14 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
               type="search"
               className={styles.input}
               value={searchInput}
-              onChange={debouncedFunction}
+              onChange={updateSearchInput}
 							src='@/features/try/svg.svg'
 							placeholder="vendor quick search"
             />
           </div>
          
           <div className={styles.ul}>
-            {filteredList.map(eachItem => (
+            {filteredResults.map(eachItem => (
               <>
               <TabButton
                 key={eachItem.id}
