@@ -72,7 +72,7 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
   const handleSuggestionClick = (id: string, suggestion: string) => {
     setSearchInput(suggestion); 
   };
-	const debouncedFunction = debounce(updateSearchInput, 1500, true);
+	const debouncedFunction = debounce(updateSearchInput, 500, true);
   const filteredList = suggestionsList.filter((eachItem) => {
     const text = eachItem.name.toLowerCase();
     return text.includes(searchInput);
