@@ -22,11 +22,47 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
 		});
 	}
 
-	let startTime = performance.now();
+	// let startTime = performance.now();
 
-	while (performance.now() - startTime < 1) {
-		// Do nothing for 1ms per item to emulate extremely slow code
-	}
+	// while (performance.now() - startTime < 1) {
+	// 	// Do nothing for 1ms per item to emulate extremely slow code
+	// }
+
+  const debounce = <T extends (...args: any[]) => any>(
+    func: T,
+    delay: number,
+    immediate: boolean = false
+  ): (...args: Parameters<T>) => void => {
+    let timeoutId: NodeJS.Timeout | null = null;
+    
+    return (...args: Parameters<T>): void => {
+      const later = () => {
+        timeoutId = null;
+        if (!immediate) {
+          func.apply(this, args);
+        }
+      };
+  
+      const callNow = immediate && !timeoutId;
+      
+  
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+  
+      setTimeout(later as any, delay);
+  
+      if (callNow) {
+        func.apply(this, args);
+      }
+    };
+  };
+  
+  // const debouncedFunction = debounce(myFunction, 500, true);
+  
+  // Now, when you call debouncedFunction, it will wait 500ms before executing myFunction
+  
+  
 	
 	const updateSearchInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(event.target.value);
@@ -34,11 +70,9 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
   };
 
   const handleSuggestionClick = (id: string, suggestion: string) => {
-
-    setSearchInput(suggestion);
-		 
+    setSearchInput(suggestion); 
   };
-	
+	const debouncedFunction = debounce(updateSearchInput, 1500, true);
   const filteredList = suggestionsList.filter((eachItem) => {
     const text = eachItem.name.toLowerCase();
     return text.includes(searchInput);
@@ -59,7 +93,7 @@ const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
               type="search"
               className={styles.input}
               value={searchInput}
-              onChange={updateSearchInput}
+              onChange={debouncedFunction}
 							src='@/features/try/svg.svg'
 							placeholder="vendor quick search"
             />
