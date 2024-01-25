@@ -90,7 +90,7 @@
   .cover{
     height: 10svh;
     width: 15vw;
-    background-color: #F5F7F8;
+    background-color: white;
     color: #108a00;
     box-shadow: none;
   }
@@ -100,7 +100,7 @@
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#108a00;
-     background-color: #F5F7F8;
+     background-color: white;
     width: inherit;
     height: inherit;
     justify-content: center;

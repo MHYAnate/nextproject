@@ -11,7 +11,7 @@ interface props {
 	suggestionsList:any[],
 }
 
-const SearchComponent: React.FC<props> = ({ suggestionsList}) => {
+const SearchComponentMain: React.FC<props> = ({ suggestionsList}) => {
   const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState("");
   const [filteredResults, setFilteredResults] = useState<any[]>([]);
@@ -44,7 +44,7 @@ const SearchComponent: React.FC<props> = ({ suggestionsList}) => {
   };
  
     const filteredList = suggestionsList.filter((eachItem) => {
-      const text = eachItem.Notification.toLowerCase();
+      const text = eachItem.name.toLowerCase();
       return text.includes(searchInput);
     });
  
@@ -71,47 +71,49 @@ const SearchComponent: React.FC<props> = ({ suggestionsList}) => {
               value={searchInput}
               onChange={updateSearchInput}
 							src='@/features/try/svg.svg'
-							placeholder="filter"
+							placeholder="vendor quick search"
             />
           </div>
          
           <ul className={styles.ul}>
             {filteredList.map(eachItem => (
-              <li className={styles.renderCover}>
-              <div className={styles.img}>
-                     <Image
-                       className={styles.ntfctImg}
-                       src={eachItem.src}
-                       alt={eachItem.Notification}
-                       width={500}
-                       height={500}
-                       unoptimized
-                     />
-                   </div>
-                   <div className={styles.renderSubBody}>
-                     <div className={styles.noticeMsg}>{eachItem.Notification}</div>
-       
-                     <div className={styles.timeStamp}>
-                       <p>{eachItem.TimeStamp}</p>
-                       <div className={styles.seen}>
-                         <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           fill="green"
-                           viewBox="0 0 24 24"
-                           strokeWidth={1.5}
-                           stroke="green"
-                           className={styles.see}
-                         >
-                           <path
-                             strokeLinecap="round"
-                             strokeLinejoin="round"
-                             d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                           />
-                         </svg>
-                       </div>
-                     </div>
-                   </div>
-           </li>
+              <>
+              <TabButton
+                key={eachItem.id}
+                onClick={() =>
+                  tab === "Auto" && eachItem.name
+                    ? selectTab("")
+                    : selectTab(`Auto${eachItem.name}`)
+                }
+              >
+                {/* You can display the eachItem name, image, or any other information you need */}
+      
+                <Image
+                  className={styles.img}
+                  src={eachItem.src}
+                  alt={eachItem.name}
+                  width={500}
+                  height={500}
+                  unoptimized
+                />
+                <div className={styles.sname}>{eachItem.name}{" "} Vendors</div>
+                
+              </TabButton>
+              <div className={styles.ServiceHolder}>
+                {tab === `Auto${eachItem.name}` && (
+                  <div className={styles.RCover}>
+                    <div className={styles.closeContainer}>
+                    <div className={styles.closeIn} onClick={() => selectTab("Automative")}>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"className={styles.svgClose}
+                      fill="currentcolor"
+                      stroke="currentcolor"><polygon points="24.061 2.061 21.939 -0.061 12 9.879 2.061 -0.061 -0.061 2.061 9.879 12 -0.061 21.939 2.061 24.061 12 14.121 21.939 24.061 24.061 21.939 14.121 12 24.061 2.061"/></svg>
+                </div>
+                </div>
+                <ServiceHolder Vendors={eachItem} />
+                </div>
+                )}
+              </div>
+            </>
             ))}
           </ul>
         </div>
@@ -120,4 +122,4 @@ const SearchComponent: React.FC<props> = ({ suggestionsList}) => {
   }
 
 
-export default SearchComponent
+export default SearchComponentMain

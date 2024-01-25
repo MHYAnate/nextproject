@@ -12,6 +12,8 @@ import { Services } from "@/features/database/data";
 import BurgerMenu from "@/features/burgerMenu/mobile/burgerMenu";
 import MobileNewsLetter from "@/features/newsletter/mobile/mobileNewsLetter";
 import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
+import { useEffect } from "react";
+import DesktopNavTab from "@/features/nav/desktop/navTab";
 
 
 export default function Home() {
@@ -40,13 +42,15 @@ export default function Home() {
 	   myFunction();
 	}
 
-	setTimeout(() => {
+	useEffect(() => {
+    if (true) {
+      const timerId = setTimeout(() => {
+        myFunction();
+      }, 1000);
 
-		if(true){
-			initMap()
-		}
-		
-	},1000);
+      return () => clearTimeout(timerId);
+    }
+  });
 
 	return (
 		<>
@@ -70,7 +74,9 @@ export default function Home() {
 								<MobileNavTab />
 							</div>
 							<div className={styles.tabletNavList}></div>
-							<div className={styles.desktopNavList}></div>
+							<div className={styles.desktopNavList}>
+								<DesktopNavTab/>
+							</div>
 						</div>
 					</nav>
 				</div>

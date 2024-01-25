@@ -305,8 +305,8 @@ export default function LogIn() {
 	};
 
 	return (
-		<div>
-			<div>
+		<div >
+			<div >
 				<form
 					className={styles.form}
 					onSubmit={handleSubmit(() =>
