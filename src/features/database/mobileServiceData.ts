@@ -39,7 +39,7 @@ export const Vendors = [
   },
   {
     "id": 7,
-    "name": "Vulcanizer",
+    "name": "Vulcanizing",
     "src": "/service/vulcanizers.jpg",
     "link": "",
   },
@@ -76,19 +76,19 @@ export const Vendors = [
   },
   {
     "id": 5,
-    "name": "Electrician",
+    "name": "Electrical",
     "src": "/service/electrician.jpg",
     "link": "",
   },
   {
     "id": 6,
-    "name": "Fumigator",
+    "name": "Fumigating",
     "src": "/service/fumigator.jpg",
     "link": "",
   },
   {
     "id": 7,
-    "name": "Gardener",
+    "name": "Gardening",
     "src": "/service/gardeners.jpg",
     "link": "",
   },
@@ -100,7 +100,7 @@ export const Vendors = [
   },
   {
     "id": 9,
-    "name": "Painter",
+    "name": "Painting",
     "src": "/service/painters.jpg",
     "link": "",
   },
@@ -118,7 +118,7 @@ export const Vendors = [
   },
   {
     "id": 12,
-    "name": "Recycler",
+    "name": "Recycling",
     "src": "/service/rycyclers.jpg",
     "link": "",
   },
@@ -143,7 +143,7 @@ export const Vendors = [
   },
   {
     "id": 16,
-    "name": "Welder",
+    "name": "Welding",
     "src": "/service/welding.jpg",
     "link": "",
   },
@@ -157,7 +157,7 @@ export const Vendors = [
   },
   {
     "id": 2,
-    "name": "Barber",
+    "name": "Barbing",
     "src": "/service/barbing.jpg",
     "link": "",
   },
@@ -255,7 +255,7 @@ export const Vendors = [
   },
   {
     "id": 18,
-    "name": "Tailor",
+    "name": "Tailoring",
     "src": "/service/tailor.jpg",
     "link": "",
   },
