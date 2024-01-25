@@ -3,7 +3,7 @@ import { TabButton } from "./tabBtn";
 import { useState, useTransition } from "react";
 import About from "./about";
 import Contact from "./contact";
-import LogIn from "./login";
+import LogIn from "./desktopLogin";
 
 export default function MenuList() {
 	const [tab, setTab] = useState("");
