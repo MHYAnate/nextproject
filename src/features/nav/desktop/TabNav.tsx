@@ -1,14 +1,16 @@
 import { useState, useTransition } from "react";
 import { TabNavBtn } from "./TabNavBtn";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
+import { Notification } from "@/features/database/notifiaction";
+import { Messages } from "@/features/database/messages";
 import styles from "./styles.module.css";
-// import SearchComponent from "@/features/try/try";
+import SearchComponent from "./searchComponent";
 import MenuList from "./menu";
+import SearchComponentMain from "./searchComponent";
+import { Vendors } from "@/features/database/serviceData";
+
 import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
-import SearchComponent from "./searching";
-import NoticeRender from "./searchNotice";
-import { MobileNotificationMessages } from "@/features/database/mobileNoticeMassege";
-import MassegesRender from "./searchMsg";
+
 
 
 
@@ -132,7 +134,9 @@ export default function TabContainer() {
 								<p>Search</p>
 							</div>
 							<div className={styles.popHolderSearch}>
-								<SearchComponent/>
+								<SearchComponentMain suggestionsList={Vendors} />
+								
+								
 							</div>
 						</div>
 					</div>
@@ -146,7 +150,7 @@ export default function TabContainer() {
 								<p>Messages</p>
 							</div>
 							<div className={styles.popHolder}>
-								<MassegesRender MobileNotificationMessages={MobileNotificationMessages} />
+								<SearchComponent suggestionsList={Messages} />
 							</div>
 						</div>
 					</div>
@@ -160,7 +164,7 @@ export default function TabContainer() {
 								<p>Notifications</p>
 							</div>
 							<div className={styles.popHolder}>
-								<NoticeRender MobileNotificationMessages={MobileNotificationMessages}/>
+								<SearchComponent suggestionsList={Notification} />
 							</div>
 						</div>
 					</div>

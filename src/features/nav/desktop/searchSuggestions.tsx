@@ -5,10 +5,12 @@ interface SuggestionItemProps {
 
   eachItem: {
     id: number;
-    name: string; 
+    category: string; 
     src: string;
-		link:string;
-    
+    Notification: string;
+    suggestion:string;
+    TimeStamp: string;
+    messages:string;
   };
 
 
@@ -28,17 +30,17 @@ const SuggestionItem: React.FC<SuggestionItemProps> = (props) => {
 							<Image
 								className={styles.ntfctImg}
 								src={eachItem.src}
-								alt={eachItem.name}
+								alt={eachItem.Notification}
 								width={500}
 								height={500}
 								unoptimized
 							/>
 						</div>
 						<div className={styles.renderSubBody}>
-							<div className={styles.noticeMsg}>{eachItem.name}</div>
+							<div className={styles.noticeMsg}>{eachItem.Notification}</div>
 
 							<div className={styles.timeStamp}>
-								
+								<p>{eachItem.TimeStamp}</p>
 								<div className={styles.seen}>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
