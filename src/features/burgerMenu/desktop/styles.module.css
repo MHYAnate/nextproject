@@ -200,7 +200,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 3vw;
+	gap: 1vw;
 	height: 80vh;
 	width: 85vw;
 	overflow-y: auto;
@@ -425,12 +425,12 @@
 	.clickFinal {
 		margin-left: 1vw;
 		width: 80vw;
-		height: 10vh;
+		height: 15vh;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		padding-left: 2vw;
-		gap: 3vw;
+		gap: 2vw;
 		box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05),
 			0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 5px;
