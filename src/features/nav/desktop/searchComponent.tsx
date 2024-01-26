@@ -77,7 +77,7 @@ const SearchComponent: React.FC<props> = ({ suggestionsList}) => {
          
           <ul className={styles.ul}>
             {filteredList.map(eachItem => (
-              <li className={styles.renderCover}>
+              <li key={eachItem.id} className={styles.renderCover}>
               <div className={styles.img}>
                      <Image
                        className={styles.ntfctImg}
@@ -92,7 +92,7 @@ const SearchComponent: React.FC<props> = ({ suggestionsList}) => {
                      <div className={styles.noticeMsg}>{eachItem.Notification}</div>
        
                      <div className={styles.timeStamp}>
-                       <p>{eachItem.TimeStamp}</p>
+                       <p className={styles.pTime}>{eachItem.TimeStamp}</p>
                        <div className={styles.seen}>
                          <svg
                            xmlns="http://www.w3.org/2000/svg"

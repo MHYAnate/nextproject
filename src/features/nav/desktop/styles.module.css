@@ -119,10 +119,11 @@
   justify-content: space-between;
   min-height: 10vh;
   max-height: fit-content;
-  width: 80vw;
+  width: 75vw;
   padding-top: 2vh;
   margin-bottom: 3vh;
 }
+
 .ntfctImg{
   width: 70px;
   height: 70px;
@@ -157,6 +158,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.pTime{
+  display: flex;
+  justify-content: flex-end;
 }
 .seen{
  width: 16vw;

@@ -8,12 +8,15 @@ import { useAppDispatch } from "@/lib/hooks";
 import { Notification } from "@/features/database/notifiaction";
 import { Messages } from "@/features/database/messages";
 import InCarousel from "@/features/carousel/mobile/carousel";
+import DesktopCarousel from "@/features/carousel/desktop/carousel";
 import { Services } from "@/features/database/data";
 import BurgerMenu from "@/features/burgerMenu/mobile/burgerMenu";
+import DesktopBurgerMenu from "@/features/burgerMenu/desktop/burgerMenu";
 import MobileNewsLetter from "@/features/newsletter/mobile/mobileNewsLetter";
 import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 import { useEffect } from "react";
 import DesktopNavTab from "@/features/nav/desktop/navTab";
+import DesktopNewsLetter from "@/features/newsletter/desktop/desketopNewsLetter";
 
 
 export default function Home() {
@@ -97,7 +100,17 @@ export default function Home() {
 					<div className={styles.tabletNewLetter}></div>
 				</div>
 				<div className={styles.desktopBody}>
-					<div className={styles.desktopCarouselCover}></div>
+					<div className={styles.inDesktopBody}>
+					<div className={styles.desktopCarouselCover}>
+						<DesktopCarousel Services={Services}/>
+					</div>
+					<div className={styles.desktopBurgerMenu}>
+						<DesktopBurgerMenu/>
+					</div>
+					</div>
+					<div className={styles.desktopNewsLetter}>
+						<DesktopNewsLetter/>
+						</div>
 				</div>
 			</div>
 		</>
