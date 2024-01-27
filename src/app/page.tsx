@@ -17,6 +17,10 @@ import {initMap} from "@/features/burgerMenu/mobile/googleMapApi";
 import { useEffect } from "react";
 import DesktopNavTab from "@/features/nav/desktop/navTab";
 import DesktopNewsLetter from "@/features/newsletter/desktop/desketopNewsLetter";
+import TabletCarousel from "@/features/carousel/tablet/carousel";
+import TabletBurgerMenu from "@/features/burgerMenu/tablet/burgerMenu";
+import TabletNewsLetter from "@/features/newsletter/tablet/tabletNewsLetter";
+import TabletNavTab from "@/features/nav/tablet/navTab";
 
 
 export default function Home() {
@@ -76,7 +80,9 @@ export default function Home() {
 							<div className={styles.mobileNavList}>
 								<MobileNavTab />
 							</div>
-							<div className={styles.tabletNavList}></div>
+							<div className={styles.tabletNavList}>
+								<TabletNavTab/>
+							</div>
 							<div className={styles.desktopNavList}>
 								<DesktopNavTab/>
 							</div>
@@ -95,9 +101,18 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.tabletBody}>
-					<div className={styles.tabletCarouselCover}></div>
-					<div className={styles.tabletBurgerMenu}></div>
-					<div className={styles.tabletNewLetter}></div>
+					<div className={styles.tabletCarouselNenwsLetterCover}>
+					<div className={styles.tabletCarouselCover}>
+						<TabletCarousel Services={Services} />
+					</div>
+					<div className={styles.tabletNewLetter}>
+						<TabletNewsLetter/>
+					</div>
+					</div>
+					<div className={styles.tabletBurgerMenu}>
+						<TabletBurgerMenu/>
+					</div>
+					
 				</div>
 				<div className={styles.desktopBody}>
 					<div className={styles.inDesktopBody}>

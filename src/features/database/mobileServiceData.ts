@@ -137,7 +137,7 @@ export const Vendors = [
   },
   {
     "id": 15,
-    "name": "Tiler",
+    "name": "Tiling",
     "src": "/service/tiling.jpg",
     "link": "",
   },
@@ -175,7 +175,7 @@ export const Vendors = [
   },
   {
     "id": 5,
-    "name": "Car washing",
+    "name": "Car wash",
     "src": "/service/car_wash.jpg",
     "link": "",
   },
@@ -194,7 +194,7 @@ export const Vendors = [
   },
   {
     "id": 8,
-    "name": "Event planning",
+    "name": "Event rental",
     "src": "/service/event.jpg",
     "link": "",
   },

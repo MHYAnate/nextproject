@@ -153,17 +153,89 @@
 
 }
 @media screen and (min-width: 621px){
+
+  .tabletBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+  }
+
   .tabletIlud{
     display: flex;
+  }
+  .nav{
+    border: 1px solid silver;
+    border-radius: 3px;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+   }
+   .tabletNavList{
+    display: flex;
+    width: 70vw;
+    justify-content: space-even;
+    flex-grow: 1;
+  }
+ 
+  .tabletCarouselNenwsLetterCover{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 50vw;
+    border-right: 1px solid silver;
+  }
+  .tabletCarouselCover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: max-content;
+  }
+  .tabletNewLetter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+  }
+  .tabletBurgerMenu{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 919px) {
+
+  .tabletBurgerMenu{
+    display: none;
+  }
+
+  .tabletNavList{
+    display: none;
+  }
+  .tabletBody{
+  display: none;
+  }
+  .tabletCarouselNenwsLetterCover{
+    display: none;
+  }
   .mobileBurgerMenu{
     display: none;
-    ;
   }
   .tabletIlud{
+    display: none;
+  }
+  .tabletCarouselCover{
+    display: none;
+  }
+  .tabletNewLetter{
     display: none;
   }
   .navCover{
